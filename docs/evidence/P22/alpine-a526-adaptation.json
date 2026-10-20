@@ -1,0 +1,54 @@
+{
+  "source": "asset-downloads/alpine-a526/extracted/Alpine/Car/car_a526_car1_lod_0.gp4",
+  "scenes": [
+    {
+      "scene": 0,
+      "vertices": 52671,
+      "triangles": 60688,
+      "parts": 44
+    },
+    {
+      "scene": 1,
+      "vertices": 31589,
+      "triangles": 28490,
+      "parts": 2
+    },
+    {
+      "author_io_status": 0,
+      "author_lock": false
+    }
+  ],
+  "source_bounds": [
+    [
+      -0.8889285326004028,
+      -0.5319749712944031,
+      -2.9063682556152344
+    ],
+    [
+      0.8889180421829224,
+      0.5849989056587219,
+      2.344182014465332
+    ]
+  ],
+  "spindle_reference": {
+    "front": [
+      0.8436790704727173,
+      -0.20146505534648895,
+      1.18679940700531
+    ],
+    "rear": [
+      0.775434136390686,
+      -0.20146505534648895,
+      -2.215282440185547
+    ]
+  },
+  "missing_auxiliary_maps": [
+    "glass"
+  ],
+  "tyre_source": "redbull-rb22 CC BY 4.0; shared running gear aligned to GP4 suspension endpoints because GP4 package omits tyres",
+  "bytes": 11089192,
+  "sha256": "b67f86bb9c327f56cfe18849e30f14f0180c9bdc6fdd7e1f3d3bcb845007da94",
+  "textures": "DDS decoded from original TEX; GP4 specular alpha does not become body transparency",
+  "uv_conversion": "Native GP4 UVs and DDS pixels retained",
+  "coordinate_conversion": "GP4 left handed to glTF right handed; front -X, up Y, left +Z; reflected lateral axis and reversed winding"
+}

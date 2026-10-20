@@ -1,0 +1,2250 @@
+{
+  "date": "2026-10-08",
+  "assets": [
+    {
+      "id": "ferrari-sf26",
+      "uid": "e5ca6cecdc42449283f4bed27360f2a7",
+      "source": "https://sketchfab.com/3d-models/2026-ferrari-sf-26-e5ca6cecdc42449283f4bed27360f2a7",
+      "author": "Dave Love SketchFab / Tyler_Dave",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "integrated",
+      "downloaded": true,
+      "converted": true,
+      "verified": true,
+      "integrated": true,
+      "download": {
+        "date": "2026-10-08",
+        "path": "asset-downloads/ferrari-sf26/2026-ferrari-sf-26.zip",
+        "original_filename": "2026-ferrari-sf-26.zip",
+        "bytes": 59147077,
+        "sha256": "3fd70fc239982e7a5a1342da20f47986730b9dd30e540b69360e6b2c62c0767a"
+      },
+      "archive_entries": [
+        {
+          "path": "source/f1_2026_sf26.glb",
+          "bytes": 39220288
+        },
+        {
+          "path": "textures/ferrari_wheel_d_7.png",
+          "bytes": 1695755
+        },
+        {
+          "path": "textures/rear_light_d_24.png",
+          "bytes": 84333
+        },
+        {
+          "path": "textures/generic_main_d.dds_25.png",
+          "bytes": 2730022
+        },
+        {
+          "path": "textures/Normal.dds_5.png",
+          "bytes": 8888337
+        },
+        {
+          "path": "textures/ext_carbon_fiber_d - white_23.png",
+          "bytes": 5024
+        },
+        {
+          "path": "textures/AC_silver.dds_8.png",
+          "bytes": 71
+        },
+        {
+          "path": "textures/flat_nm.dds_0.png",
+          "bytes": 83
+        },
+        {
+          "path": "textures/kers_red_11.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/ferrari_details_d_2.png",
+          "bytes": 1041256
+        },
+        {
+          "path": "textures/kers_blue_12.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/MAT_Carbon_FERRARI3_27.png",
+          "bytes": 20273
+        },
+        {
+          "path": "textures/ferrari_paint_d26_21.png",
+          "bytes": 143728
+        },
+        {
+          "path": "textures/decals26_22.png",
+          "bytes": 1101327
+        },
+        {
+          "path": "textures/chrome_ao_13.png",
+          "bytes": 258034
+        },
+        {
+          "path": "textures/clearled.dds_14.png",
+          "bytes": 943
+        },
+        {
+          "path": "textures/ferrari_driver_19.png",
+          "bytes": 62789
+        },
+        {
+          "path": "textures/gp21_cinture.dds_20.png",
+          "bytes": 214352
+        },
+        {
+          "path": "textures/ext_carbon_fiber_16.png",
+          "bytes": 4554
+        },
+        {
+          "path": "textures/driver_color.dds_30.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/S.dds_6.png",
+          "bytes": 1919203
+        },
+        {
+          "path": "textures/glass_da_32.png",
+          "bytes": 1421
+        },
+        {
+          "path": "textures/mirror_light_d_31.png",
+          "bytes": 183015
+        },
+        {
+          "path": "textures/kers_green_10.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/INT_carbon_fibre2_28.png",
+          "bytes": 5407
+        },
+        {
+          "path": "textures/ferrari_steering_wheel_decals_da_18.png",
+          "bytes": 502640
+        },
+        {
+          "path": "textures/ferrari_decal_da_3.png",
+          "bytes": 947721
+        },
+        {
+          "path": "textures/disc_d.dds_4.png",
+          "bytes": 2291
+        },
+        {
+          "path": "textures/LCD_F175_15.png",
+          "bytes": 15985
+        },
+        {
+          "path": "textures/ext_carbon_fiber_d.dds_1.png",
+          "bytes": 5024
+        },
+        {
+          "path": "textures/ferrari_steering_wheel_d_17.png",
+          "bytes": 88437
+        },
+        {
+          "path": "textures/AC_black_9.png",
+          "bytes": 68
+        }
+      ],
+      "adaptation": {
+        "path": "assets/cars/2026/ferrari-sf26-hires.glb",
+        "bytes": 25813056,
+        "sha256": "24d2923ca014351cb5f345b7b22d79b499835e6c76dec6b5c77ce34d8b369f8b"
+      },
+      "integration_targets": [
+        "asset-library",
+        "main-five-car-story",
+        "P24: 22-car opening, two cars per team"
+      ],
+      "verification": {
+        "scope": "Browser GLTF load, decoded textures, four named wheels for cars; see screenshots. Motion naturalness remains subject to user review.",
+        "evidence": "docs/evidence/P22/library-browser-loads.json"
+      }
+    },
+    {
+      "id": "mclaren-mcl40",
+      "uid": "96214ad5624f42a0861f77008f8d29e7",
+      "source": "https://sketchfab.com/3d-models/2026-mclaren-mcl40-96214ad5624f42a0861f77008f8d29e7",
+      "author": "Dave Love SketchFab / Tyler_Dave",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "integrated",
+      "downloaded": true,
+      "converted": true,
+      "verified": true,
+      "integrated": true,
+      "download": {
+        "date": "2026-10-08",
+        "path": "asset-downloads/mclaren-mcl40/2026-mclaren-mcl40.zip",
+        "original_filename": "2026-mclaren-mcl40.zip",
+        "bytes": 55239508,
+        "sha256": "5322ea20aae0e53f3d8637d5bc2b147c599397e3bcd7a71564b78a3e99851fb5"
+      },
+      "archive_entries": [
+        {
+          "path": "source/f1_2026_mcl40.glb",
+          "bytes": 37085912
+        },
+        {
+          "path": "textures/S.dds_8.png",
+          "bytes": 1104863
+        },
+        {
+          "path": "textures/glass_da.dds_16.png",
+          "bytes": 1421
+        },
+        {
+          "path": "textures/clearled.dds_22.png",
+          "bytes": 943
+        },
+        {
+          "path": "textures/AC_black.DDS_20.png",
+          "bytes": 68
+        },
+        {
+          "path": "textures/disc_d.dds_9.png",
+          "bytes": 2291
+        },
+        {
+          "path": "textures/flat_nm.dds_2.png",
+          "bytes": 83
+        },
+        {
+          "path": "textures/AC_silver.dds_14.png",
+          "bytes": 71
+        },
+        {
+          "path": "textures/mclaren_steering_wheel_d_23.png",
+          "bytes": 1822338
+        },
+        {
+          "path": "textures/mclaren_details_d_4.png",
+          "bytes": 1923018
+        },
+        {
+          "path": "textures/gp21_cinture.dds_13.png",
+          "bytes": 86054
+        },
+        {
+          "path": "textures/carbon_fiber_3.dds_1.png",
+          "bytes": 98927
+        },
+        {
+          "path": "textures/mclaren_driver_1_18.png",
+          "bytes": 17004
+        },
+        {
+          "path": "textures/carbon-fiber_25.png",
+          "bytes": 233598
+        },
+        {
+          "path": "textures/mclaren_paint_d_3.png",
+          "bytes": 7106
+        },
+        {
+          "path": "textures/generic_main2_d_15.png",
+          "bytes": 2785508
+        },
+        {
+          "path": "textures/ext_carbon_fiber_d.dds_5.png",
+          "bytes": 5024
+        },
+        {
+          "path": "textures/gp21_cinture_NM.dds_12.png",
+          "bytes": 439329
+        },
+        {
+          "path": "textures/driver_color.dds_19.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/carbon_fiber_nm_3.dds_0.png",
+          "bytes": 96801
+        },
+        {
+          "path": "textures/int_indicator_d.dds_24.png",
+          "bytes": 8693
+        },
+        {
+          "path": "textures/Normal.dds_7.png",
+          "bytes": 8360665
+        },
+        {
+          "path": "textures/mclaren_wheel_d_10.png",
+          "bytes": 140353
+        },
+        {
+          "path": "textures/mclaren_steering_wheel_decals_da_26.png",
+          "bytes": 189125
+        },
+        {
+          "path": "textures/LCD_21.png",
+          "bytes": 9392
+        },
+        {
+          "path": "textures/mclaren_decal_da_6.png",
+          "bytes": 690240
+        },
+        {
+          "path": "textures/rear_light_2_d.dds_11.png",
+          "bytes": 126649
+        },
+        {
+          "path": "textures/color_gold_27.png",
+          "bytes": 86
+        }
+      ],
+      "adaptation": {
+        "path": "assets/cars/2026/mclaren-mcl40-hires.glb",
+        "bytes": 25929244,
+        "sha256": "71cbcf6a4643fd95a0ad68bbc79344f13be96f96f1a3156f9353a01727ed252a"
+      },
+      "integration_targets": [
+        "asset-library",
+        "main-five-car-story",
+        "P24: 22-car opening, two cars per team"
+      ],
+      "verification": {
+        "scope": "Browser GLTF load, decoded textures, four named wheels for cars; see screenshots. Motion naturalness remains subject to user review.",
+        "evidence": "docs/evidence/P22/library-browser-loads.json"
+      }
+    },
+    {
+      "id": "mercedes-w17",
+      "uid": "b806f1e70aa343219e7158169549b97b",
+      "source": "https://sketchfab.com/3d-models/2026-mercedes-w17-b806f1e70aa343219e7158169549b97b",
+      "author": "Dave Love SketchFab / Tyler_Dave",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "integrated",
+      "downloaded": true,
+      "converted": true,
+      "verified": true,
+      "integrated": true,
+      "download": {
+        "date": "2026-10-08",
+        "path": "asset-downloads/mercedes-w17/2026-mercedes-w17.zip",
+        "original_filename": "2026-mercedes-w17.zip",
+        "bytes": 59146912,
+        "sha256": "c96520c23e94fc5867b1ad825636216949a4aeff0f104125bebf0eb92e026f3f"
+      },
+      "archive_entries": [
+        {
+          "path": "source/f1_2026_w17.glb",
+          "bytes": 40091884
+        },
+        {
+          "path": "textures/generic_main_d_1.png",
+          "bytes": 2597890
+        },
+        {
+          "path": "textures/gp21_cinture_19.png",
+          "bytes": 214352
+        },
+        {
+          "path": "textures/mercedes_decal_da.tif_2.png",
+          "bytes": 864541
+        },
+        {
+          "path": "textures/flat_nm_0.png",
+          "bytes": 83
+        },
+        {
+          "path": "textures/W13LCD2_29.png",
+          "bytes": 10384
+        },
+        {
+          "path": "textures/LIGHTwhite_31.png",
+          "bytes": 83
+        },
+        {
+          "path": "textures/mercedes_steering_wheel_d25_23.png",
+          "bytes": 1337904
+        },
+        {
+          "path": "textures/driver_color_20.png",
+          "bytes": 87
+        },
+        {
+          "path": "textures/mercedes_paint_d.tif_10.png",
+          "bytes": 264555
+        },
+        {
+          "path": "textures/clearled_32.png",
+          "bytes": 943
+        },
+        {
+          "path": "textures/rear_light_2_n.tif_6.png",
+          "bytes": 82917
+        },
+        {
+          "path": "textures/LIGHTGREEN_30.png",
+          "bytes": 83
+        },
+        {
+          "path": "textures/mercedes_details_d.tif_5.png",
+          "bytes": 712200
+        },
+        {
+          "path": "textures/carbon_fiber_3_26.png",
+          "bytes": 20273
+        },
+        {
+          "path": "textures/mercedes_wheel_d.tif_13.png",
+          "bytes": 2069694
+        },
+        {
+          "path": "textures/disc_d_14.png",
+          "bytes": 2291
+        },
+        {
+          "path": "textures/mercedes_steering_wheel_decal_da.tif_24.png",
+          "bytes": 378546
+        },
+        {
+          "path": "textures/ext_carbon_fiber_d_28.png",
+          "bytes": 5024
+        },
+        {
+          "path": "textures/carbon_fiber_2_22.png",
+          "bytes": 98927
+        },
+        {
+          "path": "textures/carbon_fiber_1_4.png",
+          "bytes": 5024
+        },
+        {
+          "path": "textures/gp21_cinture_NM_18.png",
+          "bytes": 439329
+        },
+        {
+          "path": "textures/Normal_15.png",
+          "bytes": 8360665
+        },
+        {
+          "path": "textures/mercedes_paint_halo_11.png",
+          "bytes": 264555
+        },
+        {
+          "path": "textures/AC_silver_17.png",
+          "bytes": 71
+        },
+        {
+          "path": "textures/S_16.png",
+          "bytes": 1104863
+        },
+        {
+          "path": "textures/mercedes_driver_63.tif_8.png",
+          "bytes": 86762
+        },
+        {
+          "path": "textures/rear_light_2_d_7.png",
+          "bytes": 126649
+        },
+        {
+          "path": "textures/int_indicator_d_27.png",
+          "bytes": 2361
+        }
+      ],
+      "adaptation": {
+        "path": "assets/cars/2026/mercedes-w17-hires.glb",
+        "bytes": 27319192,
+        "sha256": "0dfa4ca61327d0a47fcae8acb18ea86929481306584add447bc42f45e684121e"
+      },
+      "integration_targets": [
+        "asset-library",
+        "main-five-car-story",
+        "P24: 22-car opening, two cars per team"
+      ],
+      "verification": {
+        "scope": "Browser GLTF load, decoded textures, four named wheels for cars; see screenshots. Motion naturalness remains subject to user review.",
+        "evidence": "docs/evidence/P22/library-browser-loads.json"
+      }
+    },
+    {
+      "id": "redbull-rb22",
+      "uid": "0a3d24a58e0549d591a5a48c22eec383",
+      "source": "https://sketchfab.com/3d-models/2026-redbull-rb22-0a3d24a58e0549d591a5a48c22eec383",
+      "author": "Dave Love SketchFab / Tyler_Dave",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "integrated",
+      "downloaded": true,
+      "converted": true,
+      "verified": true,
+      "integrated": true,
+      "download": {
+        "date": "2026-10-08",
+        "path": "asset-downloads/redbull-rb22/2026-redbull-rb22.zip",
+        "original_filename": "2026-redbull-rb22.zip",
+        "bytes": 47009879,
+        "sha256": "099718026741f309cb277e90ecd3ff84bdae96f7ca29ddd0c465ad566efea683"
+      },
+      "archive_entries": [
+        {
+          "path": "source/untitled.glb",
+          "bytes": 37516152
+        },
+        {
+          "path": "textures/glass_da.png_11.png",
+          "bytes": 1467
+        },
+        {
+          "path": "textures/generic_main2_d.png_5.png",
+          "bytes": 2785508
+        },
+        {
+          "path": "textures/clearled.png_23.png",
+          "bytes": 936
+        },
+        {
+          "path": "textures/redbull_details_d.png_2.png",
+          "bytes": 1105018
+        },
+        {
+          "path": "textures/driver_color.png_19.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/rear_light_2_d.png_10.png",
+          "bytes": 126649
+        },
+        {
+          "path": "textures/redbull_wheel_d.png_14.png",
+          "bytes": 890425
+        },
+        {
+          "path": "textures/disc_d.png_13.png",
+          "bytes": 2291
+        },
+        {
+          "path": "textures/INT_carbon_fibre2.png_6.png",
+          "bytes": 5396
+        },
+        {
+          "path": "textures/gp21_cinture.png_18.png",
+          "bytes": 214352
+        },
+        {
+          "path": "textures/redbull_decal_da.png_12.png",
+          "bytes": 1199304
+        },
+        {
+          "path": "textures/redbull_driver_3.png_9.png",
+          "bytes": 18612
+        },
+        {
+          "path": "textures/kers_blue.png_21.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/redbull_steering_wheel_d.png_24.png",
+          "bytes": 27916
+        },
+        {
+          "path": "textures/ext_carbon_fiber_d.png_7.png",
+          "bytes": 5400
+        },
+        {
+          "path": "textures/redbull_steering_wheel_decals_da.png_25.png",
+          "bytes": 502755
+        },
+        {
+          "path": "textures/AC_silver.png_17.png",
+          "bytes": 71
+        },
+        {
+          "path": "textures/redbull_paint_d.png_8.png",
+          "bytes": 1097643
+        },
+        {
+          "path": "textures/carbon-fiber.png_0.png",
+          "bytes": 401001
+        },
+        {
+          "path": "textures/rb22_LCD.png_22.png",
+          "bytes": 411
+        },
+        {
+          "path": "textures/flat_nm.png_3.png",
+          "bytes": 83
+        },
+        {
+          "path": "textures/S.png_15.png",
+          "bytes": 1104863
+        },
+        {
+          "path": "textures/AC_black.png_20.png",
+          "bytes": 68
+        }
+      ],
+      "adaptation": {
+        "path": "assets/cars/2026/redbull-rb22-hires.glb",
+        "bytes": 25308668,
+        "sha256": "ba15224e8a542f58554d1826d998c58490563e611931c71d2565e9941c5893dd"
+      },
+      "integration_targets": [
+        "asset-library",
+        "main-five-car-story",
+        "P24: 22-car opening, two cars per team"
+      ],
+      "verification": {
+        "scope": "Browser GLTF load, decoded textures, four named wheels for cars; see screenshots. Motion naturalness remains subject to user review.",
+        "evidence": "docs/evidence/P22/library-browser-loads.json"
+      }
+    },
+    {
+      "id": "aston-martin-amr26",
+      "uid": "a50d1c7bc086455c9412470d93fc3fc7",
+      "source": "https://sketchfab.com/3d-models/2026-aston-martin-amr26-a50d1c7bc086455c9412470d93fc3fc7",
+      "author": "Dave Love SketchFab / Tyler_Dave",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "integrated",
+      "downloaded": true,
+      "converted": true,
+      "verified": true,
+      "integrated": true,
+      "download": {
+        "date": "2026-10-08",
+        "path": "asset-downloads/aston-martin-amr26/2026-aston-martin-amr26.zip",
+        "original_filename": "2026-aston-martin-amr26.zip",
+        "bytes": 59804249,
+        "sha256": "e433c6da35847c3aef7f8281167df057c0e0a2f8685f1c873e56a9065342c11b"
+      },
+      "archive_entries": [
+        {
+          "path": "source/f1_2026_amr26.glb",
+          "bytes": 39702500
+        },
+        {
+          "path": "textures/disc_d.dds_15.png",
+          "bytes": 118517
+        },
+        {
+          "path": "textures/gp21_cinture.dds_21.png",
+          "bytes": 214352
+        },
+        {
+          "path": "textures/rear_light_2_d.tif.dds_1.png",
+          "bytes": 126476
+        },
+        {
+          "path": "textures/carbon_fiber_nm_1.dds_4.png",
+          "bytes": 7233
+        },
+        {
+          "path": "textures/AC_silver.dds_19.png",
+          "bytes": 71
+        },
+        {
+          "path": "textures/glass_da.dds_13.png",
+          "bytes": 1421
+        },
+        {
+          "path": "textures/S.dds_18.png",
+          "bytes": 1104863
+        },
+        {
+          "path": "textures/force_india_wheel_d.tif_16.png",
+          "bytes": 1343893
+        },
+        {
+          "path": "textures/carbon_fiber_1.dds_5.png",
+          "bytes": 5024
+        },
+        {
+          "path": "textures/force_india_driver_14.tif_8.png",
+          "bytes": 68611
+        },
+        {
+          "path": "textures/driver_color.dds_22.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/force_india_paint_d.tif_11.png",
+          "bytes": 185531
+        },
+        {
+          "path": "textures/int_indicator_d.dds_24.png",
+          "bytes": 2361
+        },
+        {
+          "path": "textures/force_india_steering_wheel_decals_da.tif_26.png",
+          "bytes": 472653
+        },
+        {
+          "path": "textures/force_india_decal_da.tif_14.png",
+          "bytes": 939731
+        },
+        {
+          "path": "textures/gp21_cinture_NM.dds_20.png",
+          "bytes": 496845
+        },
+        {
+          "path": "textures/ext_carbon_fiber_d.dds_12.png",
+          "bytes": 5024
+        },
+        {
+          "path": "textures/force_india_details_d.tif_7.png",
+          "bytes": 1131688
+        },
+        {
+          "path": "textures/carbon_fiber_2.dds_3.png",
+          "bytes": 98927
+        },
+        {
+          "path": "textures/Normal.dds_17.png",
+          "bytes": 8360665
+        },
+        {
+          "path": "textures/kers_white_27.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/amr26_LCD_25.png",
+          "bytes": 3091
+        },
+        {
+          "path": "textures/generic_main2_d.tif.dds_10.png",
+          "bytes": 2788718
+        },
+        {
+          "path": "textures/force_india_steering_wheel_d.tif_23.png",
+          "bytes": 2539179
+        },
+        {
+          "path": "textures/rear_light_2_n.tif.dds_0.png",
+          "bytes": 82917
+        }
+      ],
+      "adaptation": {
+        "path": "assets/cars/2026/aston-martin-amr26-hires.glb",
+        "bytes": 28974192,
+        "sha256": "9648e564e47c58bd7249c8f065274049d60ca458ac37bced8f21583b1cd689cb"
+      },
+      "integration_targets": [
+        "asset-library",
+        "P24: 22-car opening, two cars per team"
+      ],
+      "verification": {
+        "scope": "Browser GLTF load, decoded textures, four named wheels for cars; see screenshots. Motion naturalness remains subject to user review.",
+        "evidence": "docs/evidence/P22/library-browser-loads.json"
+      }
+    },
+    {
+      "id": "williams-fw48",
+      "uid": "4efa51e6d64a4192a83418f1b715c671",
+      "source": "https://sketchfab.com/3d-models/2026-williams-fw48-4efa51e6d64a4192a83418f1b715c671",
+      "author": "Dave Love SketchFab / Tyler_Dave",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "integrated",
+      "downloaded": true,
+      "converted": true,
+      "verified": true,
+      "integrated": true,
+      "download": {
+        "date": "2026-10-08",
+        "path": "asset-downloads/williams-fw48/2026-williams-fw48.zip",
+        "original_filename": "2026-williams-fw48.zip",
+        "bytes": 31013691,
+        "sha256": "2119402113441166c833522cab70e00a95d21e4d349278871928c45effd730ae"
+      },
+      "archive_entries": [
+        {
+          "path": "source/f1 2026.glb",
+          "bytes": 19587344
+        },
+        {
+          "path": "textures/chassis2.png",
+          "bytes": 964634
+        },
+        {
+          "path": "textures/Image_20_4@channels=B.png",
+          "bytes": 76692
+        },
+        {
+          "path": "textures/Image_20_4@channels=G.png",
+          "bytes": 660
+        },
+        {
+          "path": "textures/Image_37_34.png",
+          "bytes": 71234
+        },
+        {
+          "path": "textures/Image_6_5.png",
+          "bytes": 1097724
+        },
+        {
+          "path": "textures/Image_15_8@channels=B.png",
+          "bytes": 56739
+        },
+        {
+          "path": "textures/Image_8_14.png",
+          "bytes": 5902
+        },
+        {
+          "path": "textures/Image_29_26.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/Image_22_23.png",
+          "bytes": 54548
+        },
+        {
+          "path": "textures/Image_36_33@channels=G.png",
+          "bytes": 37855
+        },
+        {
+          "path": "textures/chassis.png",
+          "bytes": 3135893
+        },
+        {
+          "path": "textures/Image_3_11@channels=G.png",
+          "bytes": 71
+        },
+        {
+          "path": "textures/Image_7_6@channels=G.png",
+          "bytes": 13222
+        },
+        {
+          "path": "textures/Image_34_31.png",
+          "bytes": 68
+        },
+        {
+          "path": "textures/Image_45_0.png",
+          "bytes": 235472
+        },
+        {
+          "path": "textures/Image_16_44.png",
+          "bytes": 417973
+        },
+        {
+          "path": "textures/Image_3_11@channels=B.png",
+          "bytes": 71
+        },
+        {
+          "path": "textures/Image_5_40.png",
+          "bytes": 142679
+        },
+        {
+          "path": "textures/Image_42_39@channels=B.png",
+          "bytes": 25169
+        },
+        {
+          "path": "textures/Image_46_1.png",
+          "bytes": 71
+        },
+        {
+          "path": "textures/Image_17_43.png",
+          "bytes": 636003
+        },
+        {
+          "path": "textures/Image_18_12.png",
+          "bytes": 251628
+        },
+        {
+          "path": "textures/Image_41_38.png",
+          "bytes": 57280
+        },
+        {
+          "path": "textures/Image_35_32.png",
+          "bytes": 79126
+        },
+        {
+          "path": "textures/Image_27_10@channels=G.png",
+          "bytes": 33420
+        },
+        {
+          "path": "textures/Image_9_15@channels=G.png",
+          "bytes": 660
+        },
+        {
+          "path": "textures/Image_15_8@channels=G.png",
+          "bytes": 63277
+        },
+        {
+          "path": "textures/Image_19_3.png",
+          "bytes": 246974
+        },
+        {
+          "path": "textures/Image_23_22.png",
+          "bytes": 111659
+        },
+        {
+          "path": "textures/decals.png",
+          "bytes": 185751
+        },
+        {
+          "path": "textures/Image_40_37@channels=B.png",
+          "bytes": 54780
+        },
+        {
+          "path": "textures/Image_1_2.png",
+          "bytes": 83
+        },
+        {
+          "path": "textures/Image_40_37@channels=G.png",
+          "bytes": 62242
+        },
+        {
+          "path": "textures/Image_30_27.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/Image_38_35@channels=B.png",
+          "bytes": 32653
+        },
+        {
+          "path": "textures/Image_24_17.png",
+          "bytes": 1714
+        },
+        {
+          "path": "textures/Image_4_41.png",
+          "bytes": 956396
+        },
+        {
+          "path": "textures/Image_33_30@channels=G.png",
+          "bytes": 46143
+        },
+        {
+          "path": "textures/Image_26_9.png",
+          "bytes": 42396
+        },
+        {
+          "path": "textures/Image_9_15@channels=B.png",
+          "bytes": 257428
+        },
+        {
+          "path": "textures/Image_28_25.png",
+          "bytes": 675
+        },
+        {
+          "path": "textures/Image_43_46.png",
+          "bytes": 1424
+        },
+        {
+          "path": "textures/Image_31_28.png",
+          "bytes": 56488
+        },
+        {
+          "path": "textures/Image_33_30@channels=B.png",
+          "bytes": 42576
+        },
+        {
+          "path": "textures/Image_14_7.png",
+          "bytes": 41146
+        },
+        {
+          "path": "textures/Image_39_36.png",
+          "bytes": 104342
+        },
+        {
+          "path": "textures/Image_27_10@channels=B.png",
+          "bytes": 27881
+        },
+        {
+          "path": "textures/Image_38_35@channels=G.png",
+          "bytes": 37747
+        },
+        {
+          "path": "textures/Image_2_42.png",
+          "bytes": 637307
+        },
+        {
+          "path": "textures/Image_7_6@channels=B.png",
+          "bytes": 169041
+        },
+        {
+          "path": "textures/Image_21_24.png",
+          "bytes": 66875
+        },
+        {
+          "path": "textures/Image_32_29.png",
+          "bytes": 82724
+        },
+        {
+          "path": "textures/Image_36_33@channels=B.png",
+          "bytes": 33392
+        },
+        {
+          "path": "textures/Image_42_39@channels=G.png",
+          "bytes": 29917
+        },
+        {
+          "path": "textures/Image_13_21.png",
+          "bytes": 630986
+        }
+      ],
+      "adaptation": {
+        "path": "assets/cars/2026/williams-fw48-hires.glb",
+        "bytes": 23621852,
+        "sha256": "bfec9f9c2f495b07f5a93047c4ebef6cdbe39a822364bace15b36ebc6e1944b2"
+      },
+      "integration_targets": [
+        "asset-library",
+        "P24: 22-car opening, two cars per team"
+      ],
+      "verification": {
+        "scope": "Browser GLTF load, decoded textures, four named wheels for cars; see screenshots. Motion naturalness remains subject to user review.",
+        "evidence": "docs/evidence/P22/library-browser-loads.json"
+      }
+    },
+    {
+      "id": "haas-vf26",
+      "uid": "1f41e03886724bc6acd16c92402989bc",
+      "source": "https://sketchfab.com/3d-models/2026-haas-vf-26-1f41e03886724bc6acd16c92402989bc",
+      "author": "Dave Love SketchFab / Tyler_Dave",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "integrated",
+      "downloaded": true,
+      "converted": true,
+      "verified": true,
+      "integrated": true,
+      "download": {
+        "date": "2026-10-08",
+        "path": "asset-downloads/haas-vf26/2026-haas-vf-26.zip",
+        "original_filename": "2026-haas-vf-26.zip",
+        "bytes": 34408129,
+        "sha256": "248a094df9d426fb743ba919b47c60f94c7b9729fabcb015cfd4306a053e99e1"
+      },
+      "archive_entries": [
+        {
+          "path": "source/fia_f1_2026_car.glb",
+          "bytes": 23850108
+        },
+        {
+          "path": "textures/gltf_embedded_37.png",
+          "bytes": 71234
+        },
+        {
+          "path": "textures/gltf_embedded_7@channels=G.png",
+          "bytes": 13222
+        },
+        {
+          "path": "textures/gltf_embedded_43.png",
+          "bytes": 1424
+        },
+        {
+          "path": "textures/gltf_embedded_17.png",
+          "bytes": 636003
+        },
+        {
+          "path": "textures/gltf_embedded_20@channels=B.png",
+          "bytes": 76692
+        },
+        {
+          "path": "textures/gltf_embedded_42@channels=G.png",
+          "bytes": 29917
+        },
+        {
+          "path": "textures/gltf_embedded_32.png",
+          "bytes": 82724
+        },
+        {
+          "path": "textures/gltf_embedded_27@channels=B.png",
+          "bytes": 27881
+        },
+        {
+          "path": "textures/gltf_embedded_22.png",
+          "bytes": 54548
+        },
+        {
+          "path": "textures/gltf_embedded_29.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/gltf_embedded_41.png",
+          "bytes": 57280
+        },
+        {
+          "path": "textures/gltf_embedded_3@channels=B.png",
+          "bytes": 71
+        },
+        {
+          "path": "textures/gltf_embedded_31.png",
+          "bytes": 56488
+        },
+        {
+          "path": "textures/gltf_embedded_40@channels=B.png",
+          "bytes": 54780
+        },
+        {
+          "path": "textures/gltf_embedded_33@channels=G.png",
+          "bytes": 46143
+        },
+        {
+          "path": "textures/gltf_embedded_1.png",
+          "bytes": 83
+        },
+        {
+          "path": "textures/gltf_embedded_16.png",
+          "bytes": 417973
+        },
+        {
+          "path": "textures/gltf_embedded_36@channels=G.png",
+          "bytes": 37855
+        },
+        {
+          "path": "textures/decals.png",
+          "bytes": 365751
+        },
+        {
+          "path": "textures/gltf_embedded_38@channels=B.png",
+          "bytes": 32653
+        },
+        {
+          "path": "textures/gltf_embedded_20@channels=G.png",
+          "bytes": 660
+        },
+        {
+          "path": "textures/gltf_embedded_9@channels=G.png",
+          "bytes": 660
+        },
+        {
+          "path": "textures/gltf_embedded_28.png",
+          "bytes": 675
+        },
+        {
+          "path": "textures/redbull_wheel_d.png",
+          "bytes": 2063833
+        },
+        {
+          "path": "textures/gltf_embedded_23.png",
+          "bytes": 111659
+        },
+        {
+          "path": "textures/gltf_embedded_21.png",
+          "bytes": 66875
+        },
+        {
+          "path": "textures/gltf_embedded_39.png",
+          "bytes": 104342
+        },
+        {
+          "path": "textures/gltf_embedded_6.png",
+          "bytes": 1097724
+        },
+        {
+          "path": "textures/gltf_embedded_34.png",
+          "bytes": 68
+        },
+        {
+          "path": "textures/gltf_embedded_26.png",
+          "bytes": 42396
+        },
+        {
+          "path": "textures/gltf_embedded_35.png",
+          "bytes": 79126
+        },
+        {
+          "path": "textures/gltf_embedded_45.png",
+          "bytes": 235472
+        },
+        {
+          "path": "textures/gltf_embedded_7@channels=B.png",
+          "bytes": 169041
+        },
+        {
+          "path": "textures/gltf_embedded_19.png",
+          "bytes": 246974
+        },
+        {
+          "path": "textures/gltf_embedded_24.png",
+          "bytes": 1714
+        },
+        {
+          "path": "textures/gltf_embedded_9@channels=B.png",
+          "bytes": 257428
+        },
+        {
+          "path": "textures/gltf_embedded_14.png",
+          "bytes": 41146
+        },
+        {
+          "path": "textures/gltf_embedded_5.png",
+          "bytes": 142679
+        },
+        {
+          "path": "textures/gltf_embedded_18.png",
+          "bytes": 251628
+        },
+        {
+          "path": "textures/gltf_embedded_42@channels=B.png",
+          "bytes": 25169
+        },
+        {
+          "path": "textures/chassis.png",
+          "bytes": 1138375
+        },
+        {
+          "path": "textures/gltf_embedded_15@channels=B.png",
+          "bytes": 56739
+        },
+        {
+          "path": "textures/gltf_embedded_3@channels=G.png",
+          "bytes": 71
+        },
+        {
+          "path": "textures/gltf_embedded_8.png",
+          "bytes": 5902
+        },
+        {
+          "path": "textures/gltf_embedded_33@channels=B.png",
+          "bytes": 42576
+        },
+        {
+          "path": "textures/gltf_embedded_13.png",
+          "bytes": 630986
+        },
+        {
+          "path": "textures/gltf_embedded_38@channels=G.png",
+          "bytes": 37747
+        },
+        {
+          "path": "textures/gltf_embedded_30.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/gltf_embedded_27@channels=G.png",
+          "bytes": 33420
+        },
+        {
+          "path": "textures/gltf_embedded_40@channels=G.png",
+          "bytes": 62242
+        },
+        {
+          "path": "textures/gltf_embedded_46.png",
+          "bytes": 71
+        },
+        {
+          "path": "textures/gltf_embedded_15@channels=G.png",
+          "bytes": 63277
+        },
+        {
+          "path": "textures/chassis2.png",
+          "bytes": 1443266
+        },
+        {
+          "path": "textures/gltf_embedded_36@channels=B.png",
+          "bytes": 33392
+        }
+      ],
+      "adaptation": {
+        "path": "assets/cars/2026/haas-vf26-hires.glb",
+        "bytes": 28829404,
+        "sha256": "a8e7426ebafffe8a424fd6f46ad8433cd159fe3e27c8799e91934262e983fab6"
+      },
+      "integration_targets": [
+        "asset-library",
+        "P24: 22-car opening, two cars per team"
+      ],
+      "verification": {
+        "scope": "Browser GLTF load, decoded textures, four named wheels for cars; see screenshots. Motion naturalness remains subject to user review.",
+        "evidence": "docs/evidence/P22/library-browser-loads.json"
+      }
+    },
+    {
+      "id": "audi-r26",
+      "uid": "32bf228264b047669b100b0f1b8769ac",
+      "source": "https://sketchfab.com/3d-models/2026-audi-r26-32bf228264b047669b100b0f1b8769ac",
+      "author": "Dave Love SketchFab / Tyler_Dave",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "integrated",
+      "downloaded": true,
+      "converted": true,
+      "verified": true,
+      "integrated": true,
+      "download": {
+        "date": "2026-10-08",
+        "path": "asset-downloads/audi-r26/2026-audi-r26.zip",
+        "original_filename": "2026-audi-r26.zip",
+        "bytes": 61976212,
+        "sha256": "15593eb0eeb33e52a2effb2dfe38f296018672658724f1ff2c5d68b0011a58ea"
+      },
+      "archive_entries": [
+        {
+          "path": "source/f1_2026_r26.glb",
+          "bytes": 41885212
+        },
+        {
+          "path": "textures/carbon_fiber_2_5.png",
+          "bytes": 98927
+        },
+        {
+          "path": "textures/driver_color.dds_34.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/rear_light_2_d.tif_1.png",
+          "bytes": 126476
+        },
+        {
+          "path": "textures/flat_nm.dds_9.png",
+          "bytes": 83
+        },
+        {
+          "path": "textures/glass_da.dds_3.png",
+          "bytes": 1421
+        },
+        {
+          "path": "textures/LCDC42_30.png",
+          "bytes": 4417
+        },
+        {
+          "path": "textures/LIGHTwhite_23.png",
+          "bytes": 83
+        },
+        {
+          "path": "textures/S.dds_16.png",
+          "bytes": 1104863
+        },
+        {
+          "path": "textures/kers_green_22.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/sauber_paint_d.tif_10.png",
+          "bytes": 90323
+        },
+        {
+          "path": "textures/Normal.dds_15.png",
+          "bytes": 8360665
+        },
+        {
+          "path": "textures/rev_lights_off_type2_29.png",
+          "bytes": 24723
+        },
+        {
+          "path": "textures/rear_light_2_n.tif_0.png",
+          "bytes": 82917
+        },
+        {
+          "path": "textures/sauber_driver_27.tif_6.png",
+          "bytes": 27139
+        },
+        {
+          "path": "textures/gp21_cinture_NM_32.png",
+          "bytes": 439329
+        },
+        {
+          "path": "textures/clearled.dds_25.png",
+          "bytes": 943
+        },
+        {
+          "path": "textures/sauber_decal_da.tif_17.png",
+          "bytes": 769285
+        },
+        {
+          "path": "textures/gp21_cinture.dds_33.png",
+          "bytes": 214352
+        },
+        {
+          "path": "textures/sauber_wheel_d.tif_13.png",
+          "bytes": 2207280
+        },
+        {
+          "path": "textures/int_indicator_d_26.png",
+          "bytes": 2361
+        },
+        {
+          "path": "textures/AC_silver.dds_18.png",
+          "bytes": 71
+        },
+        {
+          "path": "textures/sauber_steering_wheel_d.tif_28.png",
+          "bytes": 1521934
+        },
+        {
+          "path": "textures/kers_red_20.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/disc_d.dds_14.png",
+          "bytes": 2291
+        },
+        {
+          "path": "textures/chrome_ao_24.png",
+          "bytes": 565094
+        },
+        {
+          "path": "textures/carbon_fiber_nm_1_7.png",
+          "bytes": 7233
+        },
+        {
+          "path": "textures/carbon_fiber_1_8.png",
+          "bytes": 5024
+        },
+        {
+          "path": "textures/generic_main_d.tif_12.png",
+          "bytes": 2635970
+        },
+        {
+          "path": "textures/blank_s_19.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/sauber_details_d.tif_11.png",
+          "bytes": 1221054
+        },
+        {
+          "path": "textures/sauber_steering_wheel_decals_da.tif_31.png",
+          "bytes": 571786
+        },
+        {
+          "path": "textures/kers_yellow_21.png",
+          "bytes": 86
+        }
+      ],
+      "adaptation": {
+        "path": "assets/cars/2026/audi-r26-hires.glb",
+        "bytes": 28919896,
+        "sha256": "c87be3c91485070fee8385ae266411b8d95c62867788250247ee586c033f090a"
+      },
+      "integration_targets": [
+        "asset-library",
+        "P24: 22-car opening, two cars per team"
+      ],
+      "verification": {
+        "scope": "Browser GLTF load, decoded textures, four named wheels for cars; see screenshots. Motion naturalness remains subject to user review.",
+        "evidence": "docs/evidence/P22/library-browser-loads.json"
+      }
+    },
+    {
+      "id": "cadillac-mac26",
+      "uid": "95bcd37aa7c649779efc33b90b6c023e",
+      "source": "https://sketchfab.com/3d-models/2026-cadillac-mac-26-95bcd37aa7c649779efc33b90b6c023e",
+      "author": "Dave Love SketchFab / Tyler_Dave",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "integrated",
+      "downloaded": true,
+      "converted": true,
+      "verified": true,
+      "integrated": true,
+      "download": {
+        "date": "2026-10-08",
+        "path": "asset-downloads/cadillac-mac26/2026-cadillac-mac-26 (1).zip",
+        "original_filename": "2026-cadillac-mac-26 (1).zip",
+        "bytes": 54664974,
+        "sha256": "329516057d2fd6413a4d644fa9b45c1bafe4ec1e9f0535a77c6e403c99f452ea"
+      },
+      "archive_entries": [
+        {
+          "path": "source/f1_2026_mac26.glb",
+          "bytes": 41598564
+        },
+        {
+          "path": "textures/gm_cadillac_wheel_d.tif_14.png",
+          "bytes": 1137431
+        },
+        {
+          "path": "textures/gm_cadillac_details_d.tif_11.png",
+          "bytes": 825888
+        },
+        {
+          "path": "textures/disc_d.dds_15.png",
+          "bytes": 2291
+        },
+        {
+          "path": "textures/mirror_7.png",
+          "bytes": 4279
+        },
+        {
+          "path": "textures/S.dds_17.png",
+          "bytes": 1104863
+        },
+        {
+          "path": "textures/gp21_cinture.dds_28.png",
+          "bytes": 214352
+        },
+        {
+          "path": "textures/carbon_fiber_2.dds_9.png",
+          "bytes": 98927
+        },
+        {
+          "path": "textures/glass_da.dds_12.png",
+          "bytes": 1421
+        },
+        {
+          "path": "textures/driver_color.dds_29.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/gm_cadillac_driver_11.tif_10.png",
+          "bytes": 11037
+        },
+        {
+          "path": "textures/gm_cadillac_steering_wheel_d.tif_20.png",
+          "bytes": 609549
+        },
+        {
+          "path": "textures/AC_silver.dds_18.png",
+          "bytes": 71
+        },
+        {
+          "path": "textures/clearled.dds_26.png",
+          "bytes": 943
+        },
+        {
+          "path": "textures/gm_cadillac_paint_d.tif_5.png",
+          "bytes": 4667252
+        },
+        {
+          "path": "textures/LCDMAC26_22.png",
+          "bytes": 3449
+        },
+        {
+          "path": "textures/generic_main2_d.tif_13.png",
+          "bytes": 2788718
+        },
+        {
+          "path": "textures/int_indicator_d.dds_21.png",
+          "bytes": 2361
+        },
+        {
+          "path": "textures/kers_yellow_25.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/kers_green.DDS_24.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/blank_s_19.png",
+          "bytes": 86
+        },
+        {
+          "path": "textures/gp21_cinture_NM.dds_27.png",
+          "bytes": 439329
+        },
+        {
+          "path": "textures/flat_nm.dds_4.png",
+          "bytes": 83
+        },
+        {
+          "path": "textures/gm_cadillac_decal_da.tif_6.png",
+          "bytes": 650242
+        },
+        {
+          "path": "textures/carbon_fiber_1.dds_3.png",
+          "bytes": 5024
+        },
+        {
+          "path": "textures/gm_cadillac_steering_wheel_decals_da.tif_23.png",
+          "bytes": 376718
+        },
+        {
+          "path": "textures/rear_light_2_d.tif_1.png",
+          "bytes": 118010
+        }
+      ],
+      "adaptation": {
+        "path": "assets/cars/2026/cadillac-mac26-hires.glb",
+        "bytes": 27135416,
+        "sha256": "2adfe02f0079902e0b8e2e11f6ba4d97e9beae8085f433f6fb65a1332b35e46c"
+      },
+      "integration_targets": [
+        "asset-library",
+        "main-five-car-story",
+        "P24: 22-car opening, two cars per team"
+      ],
+      "verification": {
+        "scope": "Browser GLTF load, decoded textures, four named wheels for cars; see screenshots. Motion naturalness remains subject to user review.",
+        "evidence": "docs/evidence/P22/library-browser-loads.json"
+      }
+    },
+    {
+      "id": "monza-2020",
+      "uid": "25ed955115094de382935aa6d1a1e9c6",
+      "source": "https://sketchfab.com/3d-models/autodromo-nazionale-monza-circuit-2020-layout-25ed955115094de382935aa6d1a1e9c6",
+      "author": "Dave Love SketchFab / Tyler_Dave",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "integrated",
+      "downloaded": true,
+      "converted": true,
+      "verified": true,
+      "integrated": true,
+      "download": {
+        "date": "2026-10-08",
+        "path": "asset-downloads/monza-2020/autodromo-nazionale-monza-circuit-2020-layout.zip",
+        "original_filename": "autodromo-nazionale-monza-circuit-2020-layout.zip",
+        "bytes": 163596486,
+        "sha256": "29172e6809db4e9316094acf298bc0a74b1fdb933cec737e1c6810ee94e7bebf"
+      },
+      "archive_entries": [
+        {
+          "path": "source/untitled.glb",
+          "bytes": 92497680
+        },
+        {
+          "path": "textures/metals.png_20.png",
+          "bytes": 91555
+        },
+        {
+          "path": "textures/Flag_5.png_44.png",
+          "bytes": 31741
+        },
+        {
+          "path": "textures/walls-b.png_24@channels=A.png",
+          "bytes": 705
+        },
+        {
+          "path": "textures/ADV_add.png_25.png",
+          "bytes": 226801
+        },
+        {
+          "path": "textures/paddk.png",
+          "bytes": 243388
+        },
+        {
+          "path": "textures/Flag_6.png_43.png",
+          "bytes": 58720
+        },
+        {
+          "path": "textures/asph-old_misc_B.png_34.png",
+          "bytes": 323140
+        },
+        {
+          "path": "textures/concrete_detail4.png_22.png",
+          "bytes": 757885
+        },
+        {
+          "path": "textures/misc1.png",
+          "bytes": 3489013
+        },
+        {
+          "path": "textures/objects1.png_28.png",
+          "bytes": 176768
+        },
+        {
+          "path": "textures/grass-detail19.png",
+          "bytes": 9155963
+        },
+        {
+          "path": "textures/flat_nm.png_27.png",
+          "bytes": 83
+        },
+        {
+          "path": "textures/flag_8.png_40.png",
+          "bytes": 59063
+        },
+        {
+          "path": "textures/misc_alpha.png_29.png",
+          "bytes": 541634
+        },
+        {
+          "path": "textures/BBgrass4.png_31.png",
+          "bytes": 272924
+        },
+        {
+          "path": "textures/lights1.png_30.png",
+          "bytes": 60827
+        },
+        {
+          "path": "textures/flag_7.png_41.png",
+          "bytes": 62058
+        },
+        {
+          "path": "textures/gstands.png",
+          "bytes": 1388515
+        },
+        {
+          "path": "textures/Flag_1.png_47.png",
+          "bytes": 58025
+        },
+        {
+          "path": "textures/branch5.png_51.png",
+          "bytes": 157872
+        },
+        {
+          "path": "textures/box.png_7.png",
+          "bytes": 242403
+        },
+        {
+          "path": "textures/curb_NEW.png_35.png",
+          "bytes": 641037
+        },
+        {
+          "path": "textures/TreeLine01.png",
+          "bytes": 5184230
+        },
+        {
+          "path": "textures/bridge_shadow1.png_64.png",
+          "bytes": 1041
+        },
+        {
+          "path": "textures/tree_shadow.png_48.png",
+          "bytes": 39051
+        },
+        {
+          "path": "textures/Flag_4.png_45.png",
+          "bytes": 26614
+        },
+        {
+          "path": "textures/serraglio.png",
+          "bytes": 4694862
+        },
+        {
+          "path": "textures/Flag_3.png_46.png",
+          "bytes": 46428
+        },
+        {
+          "path": "textures/tree8C.png",
+          "bytes": 2824665
+        },
+        {
+          "path": "textures/top_B_(1).png",
+          "bytes": 6616547
+        },
+        {
+          "path": "textures/hedge2.png_53.png",
+          "bytes": 508457
+        },
+        {
+          "path": "textures/bridges.png_16.png",
+          "bytes": 112794
+        },
+        {
+          "path": "textures/tyres-detail1.png_13.png",
+          "bytes": 133625
+        },
+        {
+          "path": "textures/top2.png",
+          "bytes": 9341711
+        },
+        {
+          "path": "textures/groove.png_62.png",
+          "bytes": 355047
+        },
+        {
+          "path": "textures/walls2.png_15@channels=A.png",
+          "bytes": 590
+        },
+        {
+          "path": "textures/Vehicles_D.png_26.png",
+          "bytes": 271374
+        },
+        {
+          "path": "textures/fences2.png_55.png",
+          "bytes": 15651
+        },
+        {
+          "path": "textures/asph.png",
+          "bytes": 13347228
+        },
+        {
+          "path": "textures/bark.png_9.png",
+          "bytes": 302742
+        },
+        {
+          "path": "textures/fences1.png_54.png",
+          "bytes": 28837
+        },
+        {
+          "path": "textures/trap_detail.png_4.png",
+          "bytes": 927159
+        },
+        {
+          "path": "textures/Flag_2.png_42.png",
+          "bytes": 52935
+        },
+        {
+          "path": "textures/grass-brd3-F.png_60.png",
+          "bytes": 68757
+        },
+        {
+          "path": "textures/tyres-b.png_19@channels=A.png",
+          "bytes": 590
+        },
+        {
+          "path": "textures/asph-pitlane.png_37.png",
+          "bytes": 258129
+        },
+        {
+          "path": "textures/tyres_add2.png_58.png",
+          "bytes": 176277
+        },
+        {
+          "path": "textures/antennas.png_57.png",
+          "bytes": 164280
+        },
+        {
+          "path": "textures/glass.png_3.png",
+          "bytes": 910
+        },
+        {
+          "path": "textures/grilles.png_11.png",
+          "bytes": 23385
+        },
+        {
+          "path": "textures/brd2.png_59.png",
+          "bytes": 50476
+        },
+        {
+          "path": "textures/line.png_61.png",
+          "bytes": 18522
+        },
+        {
+          "path": "textures/tyres_add1.png_63.png",
+          "bytes": 197411
+        },
+        {
+          "path": "textures/trees2C.png",
+          "bytes": 7261221
+        }
+      ],
+      "adaptation": {
+        "path": "assets/tracks/monza-2020.glb",
+        "bytes": 91872460,
+        "sha256": "3e65cb92636af0d9638ee94c4d88022f0fc9bccfae55fcd566105ae3d4bd1258"
+      },
+      "integration_targets": [
+        "asset-library",
+        "main-scenery-remix"
+      ],
+      "verification": {
+        "scope": "Browser GLTF load, decoded textures, four named wheels for cars; see screenshots. Motion naturalness remains subject to user review.",
+        "evidence": "docs/evidence/P22/library-browser-loads.json"
+      }
+    },
+    {
+      "id": "spa-2022",
+      "uid": "ac681fbf548144498c130c3aa0adeb54",
+      "source": "https://sketchfab.com/3d-models/circuit-de-spa-francorchamps-2022-layout-ac681fbf548144498c130c3aa0adeb54",
+      "author": "Dave Love SketchFab / Tyler_Dave",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "integrated",
+      "downloaded": true,
+      "converted": true,
+      "verified": true,
+      "integrated": true,
+      "download": {
+        "date": "2026-10-08",
+        "path": "asset-downloads/spa-2022/circuit-de-spa-francorchamps-2022-layout.zip",
+        "original_filename": "circuit-de-spa-francorchamps-2022-layout.zip",
+        "bytes": 181076329,
+        "sha256": "feaeb0b45eb1bca00e558504fc101d879bd7449faaa45db19a2c7464a1e5ee0f"
+      },
+      "archive_entries": [
+        {
+          "path": "source/spa.glb",
+          "bytes": 83993000
+        },
+        {
+          "path": "textures/new_ao2.png_30@channels=A.png",
+          "bytes": 461
+        },
+        {
+          "path": "textures/grille-transp.png_105.png",
+          "bytes": 833
+        },
+        {
+          "path": "textures/metal_beam.png_101.png",
+          "bytes": 36911
+        },
+        {
+          "path": "textures/trap_detail.png_23.png",
+          "bytes": 244245
+        },
+        {
+          "path": "textures/ADV_add2.png_1.png",
+          "bytes": 38217
+        },
+        {
+          "path": "textures/tyres_add1.png_60.png",
+          "bytes": 55269
+        },
+        {
+          "path": "textures/flag_8.png_93.png",
+          "bytes": 17178
+        },
+        {
+          "path": "textures/stone-wall-diff.png_65.png",
+          "bytes": 98975
+        },
+        {
+          "path": "textures/box-door_detail.png_20.png",
+          "bytes": 103
+        },
+        {
+          "path": "textures/tyres_add2.png_59.png",
+          "bytes": 47772
+        },
+        {
+          "path": "textures/grass-detail19.png",
+          "bytes": 9155963
+        },
+        {
+          "path": "textures/trees2_C.png",
+          "bytes": 4849808
+        },
+        {
+          "path": "textures/digitalflag.png_61.png",
+          "bytes": 87245
+        },
+        {
+          "path": "textures/transp1.png_104.png",
+          "bytes": 29059
+        },
+        {
+          "path": "textures/parking.png",
+          "bytes": 1672063
+        },
+        {
+          "path": "textures/asph_new_dirty.png",
+          "bytes": 4644201
+        },
+        {
+          "path": "textures/doted_line.png_103.png",
+          "bytes": 2429
+        },
+        {
+          "path": "textures/NULL.png_66.png",
+          "bytes": 69
+        },
+        {
+          "path": "textures/grails1.png_41.png",
+          "bytes": 48005
+        },
+        {
+          "path": "textures/sand-C.png",
+          "bytes": 636059
+        },
+        {
+          "path": "textures/asph_patch_joint.png_98.png",
+          "bytes": 6460
+        },
+        {
+          "path": "textures/Alu_detail4.png_33.png",
+          "bytes": 2372
+        },
+        {
+          "path": "textures/flag_7.png_92.png",
+          "bytes": 19707
+        },
+        {
+          "path": "textures/barriers_updt.png_47.png",
+          "bytes": 17873
+        },
+        {
+          "path": "textures/diss2.png_100.png",
+          "bytes": 4018
+        },
+        {
+          "path": "textures/groove.png_58.png",
+          "bytes": 104043
+        },
+        {
+          "path": "textures/curbB.png_91.png",
+          "bytes": 63814
+        },
+        {
+          "path": "textures/stones_detail1.png_75.png",
+          "bytes": 212640
+        },
+        {
+          "path": "textures/Vehicles_D.png_80.png",
+          "bytes": 103545
+        },
+        {
+          "path": "textures/carpet_C.png_3.png",
+          "bytes": 46369
+        },
+        {
+          "path": "textures/aerial_constuction_quarry_normal.png_11.png",
+          "bytes": 78798
+        },
+        {
+          "path": "textures/misc.png_37@channels=A.png",
+          "bytes": 498
+        },
+        {
+          "path": "textures/reflector-detail.png_39.png",
+          "bytes": 2377
+        },
+        {
+          "path": "textures/fences1.png_79.png",
+          "bytes": 2050
+        },
+        {
+          "path": "textures/metals1.png_81.png",
+          "bytes": 40867
+        },
+        {
+          "path": "textures/box-door.png_18@channels=A.png",
+          "bytes": 613
+        },
+        {
+          "path": "textures/seat1.png_73.png",
+          "bytes": 15431
+        },
+        {
+          "path": "textures/asph_pitlane_old_C2.png",
+          "bytes": 4238666
+        },
+        {
+          "path": "textures/grass-side3_updt.png",
+          "bytes": 7220961
+        },
+        {
+          "path": "textures/road-tile-ext1.png_90.png",
+          "bytes": 146260
+        },
+        {
+          "path": "textures/groove3.png_57.png",
+          "bytes": 31113
+        },
+        {
+          "path": "textures/structures.png_102.png",
+          "bytes": 80669
+        },
+        {
+          "path": "textures/houses.png_72.png",
+          "bytes": 143938
+        },
+        {
+          "path": "textures/spa-start-lights.png_63.png",
+          "bytes": 24978
+        },
+        {
+          "path": "textures/jersey.png_53.png",
+          "bytes": 2359
+        },
+        {
+          "path": "textures/box-door2.png_43.png",
+          "bytes": 72890
+        },
+        {
+          "path": "textures/asph.png",
+          "bytes": 13090236
+        },
+        {
+          "path": "textures/spa-marshal-post-diff.png_62.png",
+          "bytes": 69871
+        },
+        {
+          "path": "textures/carpet_D.png_69.png",
+          "bytes": 45793
+        },
+        {
+          "path": "textures/walls1.png_54@channels=A.png",
+          "bytes": 160
+        },
+        {
+          "path": "textures/aerial_constuction_quarry_diffuse_dirty.png",
+          "bytes": 3086727
+        },
+        {
+          "path": "textures/grilles.png_49.png",
+          "bytes": 35067
+        },
+        {
+          "path": "textures/spa_100_display_banner.png_67.png",
+          "bytes": 7803
+        },
+        {
+          "path": "textures/trees2.png",
+          "bytes": 7072724
+        },
+        {
+          "path": "textures/sbancamento_B.png",
+          "bytes": 19196651
+        },
+        {
+          "path": "textures/hedge.png_77.png",
+          "bytes": 101877
+        },
+        {
+          "path": "textures/box1.png",
+          "bytes": 5408942
+        },
+        {
+          "path": "textures/curbs_new.png_51.png",
+          "bytes": 48479
+        },
+        {
+          "path": "textures/treesline_B.png_77.png",
+          "bytes": 337350
+        },
+        {
+          "path": "textures/steel_detail.png_29.png",
+          "bytes": 169503
+        },
+        {
+          "path": "textures/ext-top.png",
+          "bytes": 8576981
+        },
+        {
+          "path": "textures/grass-side1B_updt.png_5.png",
+          "bytes": 67408
+        },
+        {
+          "path": "textures/cone_2K_Albedo.png_68.png",
+          "bytes": 96280
+        },
+        {
+          "path": "textures/fence-2.png_106.png",
+          "bytes": 47795
+        },
+        {
+          "path": "textures/asph_pitlane_old_C2_red.png_82.png",
+          "bytes": 44869
+        },
+        {
+          "path": "textures/texts_updt.png",
+          "bytes": 1388480
+        },
+        {
+          "path": "textures/concrete_detail4.png_56.png",
+          "bytes": 162821
+        },
+        {
+          "path": "textures/carpet_B.png_85.png",
+          "bytes": 48099
+        },
+        {
+          "path": "textures/curb1.png_14.png",
+          "bytes": 15414
+        },
+        {
+          "path": "textures/raidillon-grandstand-diff.png_7.png",
+          "bytes": 56426
+        },
+        {
+          "path": "textures/ivy_wall.png_64.png",
+          "bytes": 93145
+        },
+        {
+          "path": "textures/fence-special.png_35.png",
+          "bytes": 31070
+        },
+        {
+          "path": "textures/trees1_NEW_2.png",
+          "bytes": 3121217
+        },
+        {
+          "path": "textures/wood-plank-detail2.png_76.png",
+          "bytes": 57282
+        },
+        {
+          "path": "textures/concrete-barrier-raw.png_9.png",
+          "bytes": 95722
+        },
+        {
+          "path": "textures/box1.png_31@channels=A.png",
+          "bytes": 34575
+        },
+        {
+          "path": "textures/concrete-barrier-red.png_10.png",
+          "bytes": 61039
+        },
+        {
+          "path": "textures/new_ao1.png_27@channels=A.png",
+          "bytes": 462
+        },
+        {
+          "path": "textures/objects1.png_78.png",
+          "bytes": 53915
+        }
+      ],
+      "adaptation": {
+        "path": "assets/tracks/spa-2022.glb",
+        "bytes": 85128004,
+        "sha256": "1de2c8a8358ed69817100e98c976c5c3cb9df2eda22bb186b6f2358511bd6f24"
+      },
+      "integration_targets": [
+        "asset-library"
+      ],
+      "verification": {
+        "scope": "Browser GLTF load, decoded textures, four named wheels for cars; see screenshots. Motion naturalness remains subject to user review.",
+        "evidence": "docs/evidence/P22/library-browser-loads.json"
+      }
+    },
+    {
+      "id": "alpine-a526",
+      "source": "https://sharemods.com/tlhq1t1n564n/2026_Alpine__AMR__Cadillac_by_fongu.7z.html",
+      "author": "Fongu",
+      "license": "Author permission confirmed by user on 2026-10-08 for conversion and use",
+      "status": "integrated",
+      "downloaded": true,
+      "converted": true,
+      "verified": true,
+      "integrated": true,
+      "download": {
+        "date": "2026-10-08",
+        "path": "asset-downloads/alpine-a526/2026_Alpine__AMR__Cadillac_by_fongu.7z",
+        "original_filename": "2026_Alpine__AMR__Cadillac_by_fongu.7z",
+        "bytes": 21842607,
+        "sha256": "51a93d7332ccb95d486f13a1178c813c48a48582143162f95595a6bfc155ebbd"
+      },
+      "permission_evidence": "User response in project chat; original author conditions preserved in downloaded PDF/RTF",
+      "adaptation": {
+        "path": "assets/cars/2026/alpine-a526-hires.glb",
+        "bytes": 21643860,
+        "sha256": "c6e39dc9f8ef568048acf62c5641f37ea411f725ef3020783323f2b444652466"
+      },
+      "integration_targets": [
+        "asset-library",
+        "P24: 22-car opening, two cars per team"
+      ],
+      "verification": {
+        "scope": "Browser GLTF load, decoded textures, four named wheels for cars; see screenshots. Motion naturalness remains subject to user review.",
+        "evidence": "docs/evidence/P22/library-browser-loads.json"
+      },
+      "user_permission_confirmation": {
+        "date": "2026-10-08",
+        "scope": "conversion and use",
+        "verbatim": "已获得两位作者的转换与使用许可",
+        "authors": "Fongu / Isaint"
+      }
+    },
+    {
+      "id": "racing-bulls-vcarb03",
+      "source": "https://www.mediafire.com/file/s6gdc6izm37haq5/F1-2026%2BRB%2BVCR03-Isaint.rar/file",
+      "author": "Isaint",
+      "license": "Author permission confirmed by user on 2026-10-08 for conversion and use",
+      "status": "integrated",
+      "downloaded": true,
+      "converted": true,
+      "verified": true,
+      "integrated": true,
+      "download": {
+        "date": "2026-10-08",
+        "path": "asset-downloads/racing-bulls-vcarb03/F1-2026 RB VCR03-Isaint.rar",
+        "original_filename": "F1-2026 RB VCR03-Isaint.rar",
+        "bytes": 25642738,
+        "sha256": "a3e8ffc4818c51b44d378f105246b8b108605f80d856948ecc5987acaf9079a6"
+      },
+      "permission_evidence": "User response in project chat; original author conditions preserved in downloaded PDF/RTF",
+      "adaptation": {
+        "path": "assets/cars/2026/racing-bulls-vcarb03-hires.glb",
+        "bytes": 11408064,
+        "sha256": "3ecbfbec3b794bf6698ca535bdafebbc421d51cca1d352f726b5cbc0f8d2ab7a"
+      },
+      "integration_targets": [
+        "asset-library",
+        "P24: 22-car opening, two cars per team"
+      ],
+      "verification": {
+        "scope": "Browser GLTF load, decoded textures, four named wheels for cars; see screenshots. Motion naturalness remains subject to user review.",
+        "evidence": "docs/evidence/P22/library-browser-loads.json"
+      },
+      "user_permission_confirmation": {
+        "date": "2026-10-08",
+        "scope": "conversion and use",
+        "verbatim": "已获得两位作者的转换与使用许可",
+        "authors": "Fongu / Isaint"
+      }
+    }
+  ]
+}

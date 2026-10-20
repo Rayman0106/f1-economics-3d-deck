@@ -1,0 +1,134 @@
+{
+  "source": "asset-downloads\\mclaren-mcl40\\extracted\\source\\f1_2026_mcl40.glb",
+  "original_triangles": 276870,
+  "adapted_triangles": 276870,
+  "wheels": {
+    "FL_Wheel": {
+      "wheelCenter": [
+        -1.665667264765557,
+        0.3550183584198408,
+        0.7752590179443359
+      ],
+      "wheelRadius": 0.3550183584198408,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "FR_Wheel": {
+      "wheelCenter": [
+        -1.6656672649257733,
+        0.35621081282872435,
+        -0.7755892872810364
+      ],
+      "wheelRadius": 0.35501835469455,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RL_Wheel": {
+      "wheelCenter": [
+        1.592410140188821,
+        0.3551531674134189,
+        0.7359219789505005
+      ],
+      "wheelRadius": 0.35419012859054827,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RR_Wheel": {
+      "wheelCenter": [
+        1.5924106761216614,
+        0.3589417322766914,
+        -0.7363010942935944
+      ],
+      "wheelRadius": 0.35418997585356143,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "assemblies": {
+    "Front_Wing": {
+      "triangles": 16446,
+      "wingPivot": [
+        -2.4308893817141755,
+        0.360031358942884,
+        0.0
+      ],
+      "bounds": [
+        [
+          -2.913914377309565,
+          0.16001971902460566,
+          -0.9053025245666504
+        ],
+        [
+          -1.9478643861187854,
+          0.5600429988611624,
+          0.9053025245666504
+        ]
+      ]
+    },
+    "Rear_Wing": {
+      "triangles": 3441,
+      "wingPivot": [
+        2.041476642905863,
+        0.8978673105547132,
+        0.0
+      ],
+      "bounds": [
+        [
+          1.7606421720061003,
+          0.7537203186981476,
+          -0.5765010118484497
+        ],
+        [
+          2.3223111138056254,
+          1.042014302411279,
+          0.5765010118484497
+        ]
+      ]
+    }
+  },
+  "texture_limit": 1024,
+  "transformation": "baked source transforms, Y rotation -90 degrees, ground alignment; no geometry simplification",
+  "material_alpha_corrections": [
+    {
+      "material": "mclaren_decals",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "glass.001",
+      "from": "OPAQUE",
+      "to": "BLEND",
+      "source_alpha_range": [
+        54,
+        168
+      ]
+    },
+    {
+      "material": "sw_decals.004",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    }
+  ],
+  "bytes": 17220264,
+  "sha256": "fdee275f0569c0e6a26bf6160a3e3b1ab41acdebcfb93dcc88d437ca47b28fb6"
+}

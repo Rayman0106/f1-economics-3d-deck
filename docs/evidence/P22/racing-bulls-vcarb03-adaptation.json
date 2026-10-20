@@ -1,0 +1,58 @@
+{
+  "source": "asset-downloads/racing-bulls-vcarb03/extracted/F1-2026 RB VCR03-Isaint/Shape/car_rb_car1_lod_0.gp4",
+  "scenes": [
+    {
+      "scene": 0,
+      "vertices": 0,
+      "triangles": 0,
+      "parts": 0
+    },
+    {
+      "scene": 1,
+      "vertices": 32865,
+      "triangles": 36499,
+      "parts": 35
+    },
+    {
+      "scene": 2,
+      "vertices": 48917,
+      "triangles": 61728,
+      "parts": 4
+    },
+    {
+      "author_io_status": 1,
+      "author_lock": false
+    }
+  ],
+  "source_bounds": [
+    [
+      -0.8882918357849121,
+      -0.5165963768959045,
+      -2.7888243198394775
+    ],
+    [
+      0.8895208239555359,
+      0.6257831454277039,
+      2.492419958114624
+    ]
+  ],
+  "spindle_reference": {
+    "front": [
+      0.8216313123703003,
+      -0.2027755081653595,
+      1.2786287069320679
+    ],
+    "rear": [
+      0.8506627082824707,
+      -0.17692241072654724,
+      -2.1009681224823
+    ]
+  },
+  "missing_auxiliary_maps": [],
+  "tyre_source": "redbull-rb22 CC BY 4.0; shared running gear aligned to GP4 suspension endpoints because GP4 package omits tyres",
+  "bytes": 8508924,
+  "sha256": "a4c2faae515315e0784d1b380e9185ffb411e7c537a850534c57a49e8637d07e",
+  "textures": "DDS decoded from original TEX; GP4 specular alpha does not become body transparency",
+  "uv_conversion": "Native GP4 UVs and DDS pixels retained",
+  "coordinate_conversion": "GP4 left handed to glTF right handed; front -X, up Y, left +Z; reflected lateral axis and reversed winding"
+}

@@ -1,0 +1,52 @@
+<style>{{LAUNCH_CSS}}</style>
+<div id="boot-progress" aria-label="演示加载">
+  <div class="launch-frame">
+    <header class="launch-header"><div class="launch-brand">F1 / ECONOMICS</div><span class="launch-edition">NEWS BRIEFING · 08 ACTS</span></header>
+    <main class="launch-content">
+      <p class="launch-kicker">PREPARING THE GRID</p>
+      <h1 class="launch-title">THE PRICE<br><em>OF A CRASH</em></h1>
+      <p class="launch-subtitle">一场事故，牵动一支车队的预算。</p>
+      <div class="launch-loading">
+        <div class="launch-progress-meta"><span id="boot-phase" role="status" aria-live="polite">正在读取演示…</span><span id="boot-number" aria-hidden="true">0%</span></div>
+        <div class="boot-track" role="progressbar" aria-label="演示准备进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+        <ol class="launch-steps" aria-hidden="true"><li class="is-active">赛车与赛道</li><li>镜头与画面</li><li>准备就绪</li></ol>
+        <p class="boot-note">准备完成后，由你开始演示。</p>
+      </div>
+    </main>
+    <footer class="launch-footer"><span>FORMULA 1 · ECONOMICS</span><span>离线演示 / 8 页</span></footer>
+  </div>
+</div>
+<div id="start-gate" class="start-gate" hidden role="dialog" aria-modal="true" aria-labelledby="launch-title" aria-describedby="launch-start-note">
+  <div class="launch-frame">
+    <header class="launch-header"><div class="launch-brand">F1 / ECONOMICS</div><span class="launch-edition">NEWS BRIEFING · 08 ACTS</span></header>
+    <main class="launch-content">
+      <p class="launch-ready-line">准备就绪</p>
+      <h1 id="launch-title" class="launch-title">THE PRICE<br><em>OF A CRASH</em></h1>
+      <p class="launch-subtitle">一场事故，牵动一支车队的预算。</p>
+      <div class="launch-actions"><button id="start-deck" class="launch-button" type="button" aria-label="Start 开始演示"><span class="launch-button-label">Start</span><span class="launch-button-arrow" aria-hidden="true"></span></button><span class="launch-key-hint"><kbd>Enter</kbd> 开始演示</span></div>
+    </main>
+    <footer class="launch-footer"><span id="launch-start-note">点击开始后进入全屏</span><div class="launch-sound"><button data-sound-toggle type="button" aria-pressed="true" aria-label="Mute sound (M)">Sound on</button><label>音量 <input data-sound-volume type="range" min="0" max="100" value="55" aria-label="Sound volume"></label><span>8 页 / 约 8 分钟</span></div></footer>
+  </div>
+</div>
+<script>
+window.F1Boot=(()=>{
+ const start=performance.now(),events=[],decoded=new Set(),parsed=new Set();let decodedBytes=0,percent=0,phase='读取演示文件…';
+ const bar=document.querySelector('#boot-progress .boot-track'),fill=bar.firstElementChild,label=document.getElementById('boot-phase'),number=document.getElementById('boot-number'),steps=[...document.querySelectorAll('#boot-progress .launch-steps li')];
+ let visiblePhase='';
+ function update(p,text){
+  percent=Math.max(percent,Math.min(100,p));phase=text;fill.style.width=percent+'%';bar.setAttribute('aria-valuenow',String(Math.floor(percent)));number.textContent=Math.floor(percent)+'%';
+  const step=percent<74?0:percent<96?1:2,message=percent>=100?'准备完成':step===0?'正在准备赛车与赛道…':step===1?'正在准备镜头与画面…':'即将准备完成…';
+  if(message!==visiblePhase){visiblePhase=message;label.textContent=message;}
+  steps.forEach((item,index)=>{item.classList.toggle('is-active',index===step&&percent<100);item.classList.toggle('is-complete',index<step||percent===100);});
+  events.push({ms:Math.round(performance.now()-start),percent,phase});
+ }
+ async function tick(){await new Promise(requestAnimationFrame);await new Promise(resolve=>setTimeout(resolve,0));}
+ return {update,tick,events,
+  decoded(key,bytes){if(!decoded.has(key)){decoded.add(key);decodedBytes+=bytes;}update(6+40*Math.min(1,decodedBytes/293097364)+24*parsed.size/13,'读取模型 '+decoded.size+'/13');},
+  parsed(key){parsed.add(key);update(6+40*Math.min(1,decodedBytes/293097364)+24*parsed.size/13,'准备模型 '+parsed.size+'/13');},
+  finish(){update(100,'准备完成');const overlay=document.getElementById('boot-progress');overlay.setAttribute('aria-hidden','true');overlay.classList.add('done');setTimeout(()=>overlay.hidden=true,480);},
+  fail(error){update(percent,'准备失败，请重新打开');label.textContent='暂时无法准备演示';document.querySelector('.boot-note').textContent='请关闭页面后重新打开。';console.error(error);},
+  state(){return{percent,phase,elapsedMs:Math.round(performance.now()-start),decoded:[...decoded],parsed:[...parsed],events};}
+ };
+})();
+</script>

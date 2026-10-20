@@ -1,0 +1,125 @@
+{
+  "source": "asset-downloads\\mercedes-w17\\extracted\\source\\f1_2026_w17.glb",
+  "original_triangles": 267698,
+  "adapted_triangles": 267698,
+  "wheels": {
+    "FL_Wheel": {
+      "wheelCenter": [
+        -1.6153447254742486,
+        0.3632812942252095,
+        0.7791414558887482
+      ],
+      "wheelRadius": 0.35424208046049444,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "FR_Wheel": {
+      "wheelCenter": [
+        -1.6153437718058103,
+        0.3633260107533792,
+        -0.7789269089698792
+      ],
+      "wheelRadius": 0.35424206742191255,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RL_Wheel": {
+      "wheelCenter": [
+        1.7848682603303367,
+        0.3541901583929308,
+        0.7365783452987671
+      ],
+      "wheelRadius": 0.35419008016169584,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RR_Wheel": {
+      "wheelCenter": [
+        1.7848671874465865,
+        0.35419023848655484,
+        -0.7365779876708984
+      ],
+      "wheelRadius": 0.35419023848655484,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "assemblies": {
+    "Front_Wing": {
+      "triangles": 2800,
+      "wingPivot": [
+        -2.4303942828571152,
+        0.32916555131213854,
+        0.0
+      ],
+      "bounds": [
+        [
+          -2.821162386582039,
+          0.18863818568474106,
+          -0.8082910180091858
+        ],
+        [
+          -2.039626179132192,
+          0.4696929169395361,
+          0.8082910180091858
+        ]
+      ]
+    },
+    "Rear_Wing": {
+      "triangles": 3740,
+      "wingPivot": [
+        2.2374431639618555,
+        0.8940191829361532,
+        0.0
+      ],
+      "bounds": [
+        [
+          1.9669801319477012,
+          0.7378594850567568,
+          -0.5769037008285522
+        ],
+        [
+          2.5079061959760103,
+          1.0501788808155497,
+          0.5769037008285522
+        ]
+      ]
+    }
+  },
+  "texture_limit": 1024,
+  "transformation": "baked source transforms, Y rotation -90 degrees, ground alignment; no geometry simplification",
+  "material_alpha_corrections": [
+    {
+      "material": "mercedes_decals.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "sw_decals.003",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    }
+  ],
+  "bytes": 17101448,
+  "sha256": "a7b4331a622fb5ad5b4c36335c8cddf38f8d4c33118080c8063a58b9e841e389"
+}

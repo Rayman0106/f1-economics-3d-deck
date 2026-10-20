@@ -1,0 +1,134 @@
+{
+  "source": "asset-downloads\\aston-martin-amr26\\extracted\\source\\f1_2026_amr26.glb",
+  "original_triangles": 271170,
+  "adapted_triangles": 271170,
+  "wheels": {
+    "FL_Wheel": {
+      "wheelCenter": [
+        -1.4788412479367095,
+        0.35728940817896854,
+        0.7772678434848785
+      ],
+      "wheelRadius": 0.3542418364539551,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "FR_Wheel": {
+      "wheelCenter": [
+        -1.47884172479311,
+        0.35743219484993083,
+        -0.7772873342037201
+      ],
+      "wheelRadius": 0.3542420413448769,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RL_Wheel": {
+      "wheelCenter": [
+        1.9199021843484214,
+        0.35419035024528683,
+        0.7363126873970032
+      ],
+      "wheelRadius": 0.35419035024528683,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RR_Wheel": {
+      "wheelCenter": [
+        1.9199012306739687,
+        0.35419040053657647,
+        -0.7363126873970032
+      ],
+      "wheelRadius": 0.35419018074454744,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "assemblies": {
+    "Front_Wing": {
+      "triangles": 13820,
+      "wingPivot": [
+        -2.2653263074972854,
+        0.3227631694857266,
+        0.0
+      ],
+      "bounds": [
+        [
+          -2.732266333526877,
+          0.1370418736139552,
+          -0.9021710157394409
+        ],
+        [
+          -1.7983862814676936,
+          0.5084844653574979,
+          0.9021710157394409
+        ]
+      ]
+    },
+    "Rear_Wing": {
+      "triangles": 8724,
+      "wingPivot": [
+        2.3760686638323074,
+        0.8730792264510945,
+        0.0
+      ],
+      "bounds": [
+        [
+          2.095459132995148,
+          0.6740054503938436,
+          -0.575252115726471
+        ],
+        [
+          2.656678194669467,
+          1.0721530025083452,
+          0.575252115726471
+        ]
+      ]
+    }
+  },
+  "texture_limit": 1024,
+  "transformation": "baked source transforms, Y rotation -90 degrees, ground alignment; no geometry simplification",
+  "material_alpha_corrections": [
+    {
+      "material": "glass.003",
+      "from": "OPAQUE",
+      "to": "BLEND",
+      "source_alpha_range": [
+        54,
+        168
+      ]
+    },
+    {
+      "material": "force_india_decals",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "force_india_sw_decals",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    }
+  ],
+  "bytes": 17670564,
+  "sha256": "7f8336b0fcebc6a1ef86282d7c4e683b0d14cbed492da20f99f805b39753cca1"
+}

@@ -1,0 +1,111 @@
+{
+  "path": "assets/cars/cadillac.glb",
+  "bytes": 19936208,
+  "sha256": "f5a63d7034a4be9b50367f96fc3e0984fc26685fcd654744ed26bb374f854628",
+  "type": "Cadillac-inspired concept; generic 2026 source",
+  "creator": "Qvist_designs",
+  "license": "CC BY 4.0",
+  "source": "https://sketchfab.com/3d-models/f1-2026-concept-polygon-model-ea3bde709b1e4dc9b0ec8557d106ed42",
+  "public_distribution": "https://github.com/filan214/F1---2026-Car-Details/blob/main/dist/models/qvist-2026-assemblies.glb",
+  "source_sha256": "bff9c92fe22e1c80c855e24e95b09eca62f579640fe63be200aff83769d059d3",
+  "changes": "Source surface preserved; clean display seams added to the fused mesh for illustrative disassembly; red and graphite materials assigned; uniform vertex colors removed. P13: reduced mesh density with 7mm position clusters, normalized to metres and wheelbase centre, wheel nodes and true pivots named, off-white/black Cadillac-inspired concept finish. Not MAC-26 geometry.",
+  "mesh": [
+    {
+      "part": "front-wing",
+      "input_triangles": 188424,
+      "output_triangles": 107409,
+      "max_vertex_deviation_m": 0.0053575366479551275
+    },
+    {
+      "part": "chassis",
+      "input_triangles": 91426,
+      "output_triangles": 67172,
+      "max_vertex_deviation_m": 0.005037009659261159
+    },
+    {
+      "part": "front-left-wheel",
+      "input_triangles": 62340,
+      "output_triangles": 54390,
+      "max_vertex_deviation_m": 0.004818242445756584
+    },
+    {
+      "part": "front-right-wheel",
+      "input_triangles": 62340,
+      "output_triangles": 54356,
+      "max_vertex_deviation_m": 0.004818242445756584
+    },
+    {
+      "part": "front-suspension",
+      "input_triangles": 86950,
+      "output_triangles": 47255,
+      "max_vertex_deviation_m": 0.004371371229255275
+    },
+    {
+      "part": "left-sidepod",
+      "input_triangles": 40574,
+      "output_triangles": 27954,
+      "max_vertex_deviation_m": 0.005233073035246364
+    },
+    {
+      "part": "right-sidepod",
+      "input_triangles": 40628,
+      "output_triangles": 27985,
+      "max_vertex_deviation_m": 0.005407596220088917
+    },
+    {
+      "part": "floor",
+      "input_triangles": 184399,
+      "output_triangles": 94022,
+      "max_vertex_deviation_m": 0.005616920367446708
+    },
+    {
+      "part": "halo",
+      "input_triangles": 10131,
+      "output_triangles": 9090,
+      "max_vertex_deviation_m": 0.004605206581759555
+    },
+    {
+      "part": "engine-cover",
+      "input_triangles": 36843,
+      "output_triangles": 32115,
+      "max_vertex_deviation_m": 0.005101474737416192
+    },
+    {
+      "part": "rear-suspension",
+      "input_triangles": 96233,
+      "output_triangles": 78209,
+      "max_vertex_deviation_m": 0.005634630523972301
+    },
+    {
+      "part": "rear-left-wheel",
+      "input_triangles": 75584,
+      "output_triangles": 66182,
+      "max_vertex_deviation_m": 0.0055380793373720144
+    },
+    {
+      "part": "rear-right-wheel",
+      "input_triangles": 75584,
+      "output_triangles": 66191,
+      "max_vertex_deviation_m": 0.0055380793373720144
+    },
+    {
+      "part": "rear-wing",
+      "input_triangles": 133698,
+      "output_triangles": 52676,
+      "max_vertex_deviation_m": 0.0042519025770889575
+    },
+    {
+      "part": "mirrors",
+      "input_triangles": 23272,
+      "output_triangles": 17736,
+      "max_vertex_deviation_m": 0.004385607624747928
+    },
+    {
+      "part": "exhaust",
+      "input_triangles": 8870,
+      "output_triangles": 5834,
+      "max_vertex_deviation_m": 0.004301003520920082
+    }
+  ],
+  "display_finish": "P21: original Qvist red and graphite concept-study colours applied at runtime; no official Cadillac livery claimed."
+}

@@ -1,0 +1,143 @@
+{
+  "source": "asset-downloads\\ferrari-sf26\\extracted\\source\\f1_2026_sf26.glb",
+  "original_triangles": 272041,
+  "adapted_triangles": 272041,
+  "wheels": {
+    "FL_Wheel": {
+      "wheelCenter": [
+        -1.521947752528257,
+        0.3635122048518392,
+        0.7994599640369415
+      ],
+      "wheelRadius": 0.3579577678495881,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "FR_Wheel": {
+      "wheelCenter": [
+        -1.5219477528740963,
+        0.3660860948778708,
+        -0.7996929883956909
+      ],
+      "wheelRadius": 0.3579575471261083,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RL_Wheel": {
+      "wheelCenter": [
+        2.011036741262776,
+        0.3575756107648206,
+        0.7631901502609253
+      ],
+      "wheelRadius": 0.3575756107648206,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RR_Wheel": {
+      "wheelCenter": [
+        2.0110362643160045,
+        0.3583909316343778,
+        -0.7631893455982208
+      ],
+      "wheelRadius": 0.35757568154534575,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "assemblies": {
+    "Front_Wing": {
+      "triangles": 10554,
+      "wingPivot": [
+        -2.299340904791862,
+        0.38040867373684567,
+        0.0
+      ],
+      "bounds": [
+        [
+          -2.7882734968920846,
+          0.18661423963701898,
+          -0.935935914516449
+        ],
+        [
+          -1.8104083126916388,
+          0.5742031078366724,
+          0.935935914516449
+        ]
+      ]
+    },
+    "Rear_Wing": {
+      "triangles": 10262,
+      "wingPivot": [
+        2.41494426233957,
+        0.8393281784215689,
+        0.0
+      ],
+      "bounds": [
+        [
+          2.12967125617979,
+          0.6498444942948435,
+          -0.6117792129516602
+        ],
+        [
+          2.70021726849935,
+          1.0288118625482945,
+          0.6117792129516602
+        ]
+      ]
+    }
+  },
+  "texture_limit": 1024,
+  "transformation": "baked source transforms, Y rotation -90 degrees, ground alignment; no geometry simplification",
+  "material_alpha_corrections": [
+    {
+      "material": "sf25_decals2",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "sf25_sw_decals",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "sf25_decals",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "glass",
+      "from": "OPAQUE",
+      "to": "BLEND",
+      "source_alpha_range": [
+        54,
+        168
+      ]
+    }
+  ],
+  "bytes": 16347572,
+  "sha256": "647225de482d268012b17158ac17f3627e1450625aeb57f2740c7bd4999aebc1"
+}

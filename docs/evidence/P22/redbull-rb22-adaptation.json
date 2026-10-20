@@ -1,0 +1,134 @@
+{
+  "source": "asset-downloads\\redbull-rb22\\extracted\\source\\untitled.glb",
+  "original_triangles": 281075,
+  "adapted_triangles": 281075,
+  "wheels": {
+    "FL_Wheel": {
+      "wheelCenter": [
+        -1.7014122092742696,
+        0.3542418031476568,
+        0.7751408219337463
+      ],
+      "wheelRadius": 0.3542418031476568,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "FR_Wheel": {
+      "wheelCenter": [
+        -1.7014122093011017,
+        0.35444153088552793,
+        -0.7751231491565704
+      ],
+      "wheelRadius": 0.3542419894121939,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RL_Wheel": {
+      "wheelCenter": [
+        1.7012672236227417,
+        0.35627989937199245,
+        0.7358283698558807
+      ],
+      "wheelRadius": 0.35419001146592766,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RR_Wheel": {
+      "wheelCenter": [
+        1.7012661507389901,
+        0.3562799990233917,
+        -0.7358285188674927
+      ],
+      "wheelRadius": 0.35419009062835594,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "assemblies": {
+    "Front_Wing": {
+      "triangles": 21655,
+      "wingPivot": [
+        -2.4532943743035185,
+        0.33317229648981117,
+        0.0
+      ],
+      "bounds": [
+        [
+          -2.9378444099906393,
+          0.13958172714452916,
+          -0.9272587895393372
+        ],
+        [
+          -1.9687443386163972,
+          0.5267628658350931,
+          0.9272587895393372
+        ]
+      ]
+    },
+    "Rear_Wing": {
+      "triangles": 11011,
+      "wingPivot": [
+        2.150027174690579,
+        0.8980214164712466,
+        1.1920928955078125e-07
+      ],
+      "bounds": [
+        [
+          1.8688951655753265,
+          0.7849697319805843,
+          -0.577612578868866
+        ],
+        [
+          2.431159183805831,
+          1.0110731009619087,
+          0.5776128172874451
+        ]
+      ]
+    }
+  },
+  "texture_limit": 1024,
+  "transformation": "baked source transforms, Y rotation -90 degrees, ground alignment; no geometry simplification",
+  "material_alpha_corrections": [
+    {
+      "material": "glass.005",
+      "from": "OPAQUE",
+      "to": "BLEND",
+      "source_alpha_range": [
+        54,
+        168
+      ]
+    },
+    {
+      "material": "redbull_decals.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "sw_decals.004",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    }
+  ],
+  "bytes": 16521284,
+  "sha256": "fab097c9ea44a9086e50ab71cf8e033db676761bd8829e1b3132b391c565c094"
+}

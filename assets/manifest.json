@@ -1,0 +1,82 @@
+{
+  "baseline": "P05",
+  "models": {
+    "ferrari": {
+      "path": "assets/cars/2026/ferrari-sf26-hires.glb",
+      "bytes": 25813056,
+      "sha256": "24d2923ca014351cb5f345b7b22d79b499835e6c76dec6b5c77ce34d8b369f8b",
+      "source_id": "ferrari-sf26"
+    },
+    "mclaren": {
+      "path": "assets/cars/2026/mclaren-mcl40-hires.glb",
+      "bytes": 25929244,
+      "sha256": "71cbcf6a4643fd95a0ad68bbc79344f13be96f96f1a3156f9353a01727ed252a",
+      "source_id": "mclaren-mcl40"
+    },
+    "mercedes": {
+      "path": "assets/cars/2026/mercedes-w17-hires.glb",
+      "bytes": 27319192,
+      "sha256": "0dfa4ca61327d0a47fcae8acb18ea86929481306584add447bc42f45e684121e",
+      "source_id": "mercedes-w17"
+    },
+    "redbull": {
+      "path": "assets/cars/2026/redbull-rb22-hires.glb",
+      "bytes": 25308668,
+      "sha256": "ba15224e8a542f58554d1826d998c58490563e611931c71d2565e9941c5893dd",
+      "source_id": "redbull-rb22"
+    },
+    "cadillac": {
+      "path": "assets/cars/2026/cadillac-mac26-hires.glb",
+      "bytes": 27135416,
+      "sha256": "2adfe02f0079902e0b8e2e11f6ba4d97e9beae8085f433f6fb65a1332b35e46c",
+      "source_id": "cadillac-mac26"
+    }
+  },
+  "baseline_html_sha256": "295637a315fc97d57398ce6e9b919f5a26a8e8dd95d5a03aa3c692932c4244b9",
+  "seed_sha256": "25b17797c9ec18b33fdf805fce4c875d505a856ea3af45398389063becf48e9d",
+  "scenery": {
+    "monza-scenery": {
+      "path": "assets/tracks/monza-story-scenery.glb",
+      "bytes": 16465072,
+      "sha256": "016c1e9748dec8f478d0609f3abc5f36509db797d05618ddbf0d562fd8845dff"
+    },
+    "start-gantry": {
+      "path": "assets/props/gemini-start-lights.glb",
+      "bytes": 1729448,
+      "sha256": "44768208d30ab1e79cd944e5d184945804194160714cae53d996180b7ffd6407",
+      "source": "User-provided Gemini start-light asset"
+    }
+  },
+  "grid": {
+    "aston": {
+      "path": "assets/cars/2026/aston-martin-amr26-hires.glb",
+      "bytes": 28974192,
+      "sha256": "9648e564e47c58bd7249c8f065274049d60ca458ac37bced8f21583b1cd689cb"
+    },
+    "williams": {
+      "path": "assets/cars/2026/williams-fw48-hires.glb",
+      "bytes": 23621852,
+      "sha256": "bfec9f9c2f495b07f5a93047c4ebef6cdbe39a822364bace15b36ebc6e1944b2"
+    },
+    "haas": {
+      "path": "assets/cars/2026/haas-vf26-hires.glb",
+      "bytes": 28829404,
+      "sha256": "a8e7426ebafffe8a424fd6f46ad8433cd159fe3e27c8799e91934262e983fab6"
+    },
+    "audi": {
+      "path": "assets/cars/2026/audi-r26-hires.glb",
+      "bytes": 28919896,
+      "sha256": "c87be3c91485070fee8385ae266411b8d95c62867788250247ee586c033f090a"
+    },
+    "alpine": {
+      "path": "assets/cars/2026/alpine-a526-hires.glb",
+      "bytes": 21643860,
+      "sha256": "c6e39dc9f8ef568048acf62c5641f37ea411f725ef3020783323f2b444652466"
+    },
+    "racingbulls": {
+      "path": "assets/cars/2026/racing-bulls-vcarb03-hires.glb",
+      "bytes": 11408064,
+      "sha256": "3ecbfbec3b794bf6698ca535bdafebbc421d51cca1d352f726b5cbc0f8d2ab7a"
+    }
+  }
+}

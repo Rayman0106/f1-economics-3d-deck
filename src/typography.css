@@ -1,0 +1,64 @@
+/* P42: original team fonts, elapsed glyph effects and conditional soft halos. */
+:root{--deck-font:Inter,CJK,sans-serif;--scene-ink:#eff3f4;--scene-muted:#b8c7d0;--scene-accent:#ffb45f;--sweep-glint:#f5f7fa}
+html,body,#stage,button,input,select,textarea{font-family:var(--deck-font)!important}
+#briefing *,#story-caption *,#race-status *,#entry-team-labels *,#cost-labels *,#budget-labels *,#regulation-morph *,#telemetry *,#slide-count,.start-gate *,#notes-dialog *{font-family:var(--deck-font)!important}
+.cover-content h1{font-weight:850;letter-spacing:-2.7px;font-size:108px;line-height:1.02}
+.slide-title{font-weight:800;letter-spacing:-1.6px;line-height:1.08}
+.conclusion-title{font-weight:800;line-height:1.04;letter-spacing:-1.9px}
+.masthead{font-weight:550;letter-spacing:1.6px}.masthead b{font-weight:750}
+.source-line{color:#a5b7c3}.photo-credit{font-weight:500}
+.budget-value strong,#race-status b,#cost-labels .cost-total,.slide-count{font-variant-numeric:tabular-nums}
+.type-title{position:relative;isolation:isolate;perspective:1000px}
+.conclusion-title.type-title{position:absolute}
+.type-base{display:block;transform-origin:left center;position:relative;z-index:1}
+.type-fx{display:block;position:absolute;inset:0;transform-origin:left center;pointer-events:none;opacity:0;z-index:2;font:inherit;line-height:inherit;letter-spacing:inherit}
+.type-word{display:inline-block;transform-origin:left bottom;backface-visibility:hidden}
+.type-char{display:inline-block;transform-origin:left center;backface-visibility:hidden}
+.type-ink,.type-particles{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none;opacity:0;overflow:visible}
+.type-fx .type-word{transform:none!important;opacity:1!important}
+.type-fx .type-char{transform:none!important;opacity:1!important}
+.type-fx em{color:inherit}
+.deck-static .type-title .type-base{opacity:1!important;transform:none!important;clip-path:none!important;filter:none!important}
+.deck-static .type-title .type-fx{opacity:0!important}
+.deck-static .type-title .type-word{opacity:1!important;transform:none!important}
+.deck-static .type-title .type-char{opacity:1!important;transform:none!important}
+.deck-static .type-ink,.deck-static .type-particles{opacity:0!important}
+
+#story-caption{max-width:750px;top:143px;isolation:isolate}
+#story-caption strong{color:var(--caption-ink,var(--scene-ink));text-shadow:none;font-weight:750;font-size:33px;line-height:1.17;letter-spacing:-.6px}
+#story-caption>span{color:var(--caption-muted,var(--scene-muted));text-shadow:none;font-size:16px;font-weight:550;letter-spacing:.7px;line-height:1.4}
+#race-status{color:var(--hud-ink,#eff3f4);text-shadow:none;isolation:isolate}
+#race-status .race-phase,#race-status p,#race-status small,#race-status em{color:var(--hud-muted,#c4d1dc)}
+#race-status b,#race-status .red-speed{color:var(--hud-ink,#eff3f4)}
+#cost-labels span{color:var(--scene-ink);text-shadow:none}
+#cost-labels .cost-total{color:var(--scene-accent)}
+#budget-labels small{color:var(--scene-muted)}
+#budget-labels b{color:var(--scene-ink)}
+#budget-labels>span:first-child b{color:var(--scene-accent)}
+body[data-type-backdrop="daylight"] #briefing .deck-slide :is(h1,h2,h3,p,b,small,span,blockquote){color:#152631;text-shadow:none}
+body[data-type-backdrop="daylight"] #briefing .deck-slide :is(em,.eyebrow,.competition-label,.feedback-index){color:#884200}
+body[data-type-backdrop="daylight"] #briefing .photo-credit{color:#f0f3f5}
+body[data-type-backdrop="daylight"] #story-caption>span{font-weight:650}
+#story-caption:before,#race-status:before{content:none!important;display:none!important}
+:is(#cost-labels,#budget-labels)>span{background:none!important;box-shadow:none!important}
+
+#inspection-type{position:absolute;left:0;top:0;z-index:19;pointer-events:none;width:558px;height:247px;opacity:0;isolation:isolate}
+#inspection-type:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#071019ed 0%,#0a1520e8 75%,#0a152000 100%);mask-image:linear-gradient(180deg,#000 0%,#000 76%,transparent 100%)}
+#inspection-type[hidden]{display:none!important}
+.inspection-wordmark{position:absolute;inset:57px 10px 22px 38px;visibility:hidden;opacity:0}
+.inspection-wordmark.active{visibility:visible;opacity:1}
+.inspection-row{margin:0 0 14px 103px;font:650 12px/1.2 var(--deck-font);letter-spacing:1.6px;color:#adc0ce}
+.inspection-name{position:relative;display:block;width:max-content;max-width:405px;margin:0 0 0 103px;font-size:44px;line-height:1.02;letter-spacing:0}
+.inspection-logo{position:absolute;left:0;top:17px;width:79px;height:90px;object-fit:contain;object-position:center;filter:drop-shadow(0 1px 4px #0008)}
+.inspection-wordmark[data-team="ferrari"] .inspection-logo{height:102px;top:13px}
+.inspection-name .type-base,.inspection-name .type-fx{font-family:inherit!important;line-height:inherit}
+.inspection-name .type-fx{color:#f2f6f8!important}
+.inspection-name+.inspection-name{margin-top:6px;font-size:19px}
+.inspection-wordmark[data-team="ferrari"] .inspection-name:nth-child(3){font-size:18px}
+.inspection-wordmark[data-team="ferrari"] .inspection-name+.inspection-name{font-size:44px;margin-top:5px}
+.inspection-wordmark[data-team="cadillac"] .inspection-name{font-size:46px}
+.inspection-wordmark[data-team="aston"] .inspection-name{font-size:37px}
+.inspection-wordmark[data-team="racingbulls"] .inspection-name{display:inline-block;font-size:34px;margin-top:0;margin-right:8px}
+.inspection-wordmark[data-team="racingbulls"] .inspection-name+.inspection-name{font-size:34px;margin-left:0;margin-right:0}
+.inspection-note{margin:12px 0 0 103px;color:#b9c9d5;font:550 11px/1.3 var(--deck-font);letter-spacing:.4px}
+@media(prefers-reduced-motion:reduce){.type-base,.type-word,.type-char{opacity:1!important;transform:none!important;clip-path:none!important;filter:none!important}.type-fx,.type-ink,.type-particles{opacity:0!important}}

@@ -1,0 +1,16 @@
+/index.html
+/preview.html
+/asset-library.html
+/.build/
+**/__pycache__/
+*.py[cod]
+tools/qa/*-results.json
+tools/qa/*-run.log
+.env
+.env.*
+!.env.example
+*.blend
+*.blend1
+*.fbx
+Thumbs.db
+.DS_Store

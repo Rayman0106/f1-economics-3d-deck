@@ -1,0 +1,134 @@
+{
+  "source": "asset-downloads\\cadillac-mac26\\extracted\\source\\f1_2026_mac26.glb",
+  "original_triangles": 259719,
+  "adapted_triangles": 259719,
+  "wheels": {
+    "FL_Wheel": {
+      "wheelCenter": [
+        -1.6041042422527063,
+        0.3638373395062689,
+        0.7726358771324158
+      ],
+      "wheelRadius": 0.35424179640707903,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "FR_Wheel": {
+      "wheelCenter": [
+        -1.6041042422692877,
+        0.36396068015939664,
+        -0.7724950909614563
+      ],
+      "wheelRadius": 0.3542417777806891,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RL_Wheel": {
+      "wheelCenter": [
+        1.7961486787439545,
+        0.35419022172261816,
+        0.7340132594108582
+      ],
+      "wheelRadius": 0.35419014349163946,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RR_Wheel": {
+      "wheelCenter": [
+        1.7961491555811988,
+        0.3541900932001496,
+        -0.7340133488178253
+      ],
+      "wheelRadius": 0.3541900932001496,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "assemblies": {
+    "Front_Wing": {
+      "triangles": 2854,
+      "wingPivot": [
+        -2.312999817242322,
+        0.311258971933756,
+        0.0
+      ],
+      "bounds": [
+        [
+          -2.6462212973742063,
+          0.181070310105849,
+          -0.8986063003540039
+        ],
+        [
+          -1.9797783371104374,
+          0.441447633761663,
+          0.8986063003540039
+        ]
+      ]
+    },
+    "Rear_Wing": {
+      "triangles": 3858,
+      "wingPivot": [
+        2.210419185351679,
+        0.9120875288542255,
+        0.0
+      ],
+      "bounds": [
+        [
+          1.97318413578636,
+          0.7758234699700908,
+          -0.5760002136230469
+        ],
+        [
+          2.447654234916998,
+          1.0483515877383602,
+          0.5760002136230469
+        ]
+      ]
+    }
+  },
+  "texture_limit": 1024,
+  "transformation": "baked source transforms, Y rotation -90 degrees, ground alignment; no geometry simplification",
+  "material_alpha_corrections": [
+    {
+      "material": "gm_cadillac_decals",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "glass.002",
+      "from": "OPAQUE",
+      "to": "BLEND",
+      "source_alpha_range": [
+        54,
+        168
+      ]
+    },
+    {
+      "material": "gm_cadillac_sw_decals",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    }
+  ],
+  "bytes": 16625892,
+  "sha256": "4047267fef83f364fe4e5cdc774fa30c447746af3e47690cf2e8628040bba9bc"
+}

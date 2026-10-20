@@ -1,0 +1,13 @@
+# Keep verified source/seed bytes identical across platforms.
+* -text
+*.glb binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ttf binary
+*.woff2 binary
+*.mp3 binary
+*.wav binary
+*.m4a binary
+*.pdf binary

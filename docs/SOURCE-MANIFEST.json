@@ -1,0 +1,538 @@
+{
+  ".gitattributes": {
+    "bytes": 229,
+    "sha256": "df290e8a526407f7a1367f5561e53500b95e23b4753c34e2c05753e04cb087db"
+  },
+  ".gitignore": {
+    "bytes": 209,
+    "sha256": "36f592f09976e393bb7819d9958901723da97e864b3ae9b2769bd535e3fa71d0"
+  },
+  "LICENSE": {
+    "bytes": 1105,
+    "sha256": "ed9cabc9d91aaadcfacd1812521b51ded9d6e6b941c97f5943373b5359bbe211"
+  },
+  "README.md": {
+    "bytes": 2528,
+    "sha256": "be41837efb86a770ec4bcd9735b37fc631d0ccf38b89c3b2b987b373d3316dea"
+  },
+  "THIRD_PARTY_NOTICES.md": {
+    "bytes": 1498,
+    "sha256": "d95ed9a14d4a8447b016a415a41593269082776b86239bc10170b51275eaf52e"
+  },
+  "assets/2026_ATTRIBUTION.md": {
+    "bytes": 5172,
+    "sha256": "aac62c98ff35239dc3b92abae68aed12d09a26d4829c31c63c78400c2944dda4"
+  },
+  "assets/CADILLAC_ATTRIBUTION.md": {
+    "bytes": 2008,
+    "sha256": "b033d5c09d8e82834db346f7e093438de121ce4e3920f3d9ebb50b640fbd785d"
+  },
+  "assets/asset-sources.json": {
+    "bytes": 64618,
+    "sha256": "ce15a10eaf8a37e53ce50451016d5fe9b56385b11821341689266af433744b64"
+  },
+  "assets/audio/SOURCES.md": {
+    "bytes": 2911,
+    "sha256": "447b6dbba22ce7d049765da6f63034a37c7b9a06b6f2f69a67cd08cf2d050b4e"
+  },
+  "assets/audio/lights.mp3": {
+    "bytes": 9164,
+    "sha256": "c64bfd1eca2a8d52910506f020fc416b3cbb08365faea8cc314272a16cff3d1a"
+  },
+  "assets/audio/manifest.json": {
+    "bytes": 2645,
+    "sha256": "e4b4a35a2b25bc722ce4731cd36933f107f67cbfb1e521cfc63a6e291c1f2587"
+  },
+  "assets/cadillac-source.json": {
+    "bytes": 3804,
+    "sha256": "6049d4630e64feeb6fbf5ba04865540e995fb24978de679e266958bf64a29f9c"
+  },
+  "assets/cars/2026/alpine-a526-hires.glb": {
+    "bytes": 21643860,
+    "sha256": "c6e39dc9f8ef568048acf62c5641f37ea411f725ef3020783323f2b444652466"
+  },
+  "assets/cars/2026/alpine-a526.glb": {
+    "bytes": 11089192,
+    "sha256": "b67f86bb9c327f56cfe18849e30f14f0180c9bdc6fdd7e1f3d3bcb845007da94"
+  },
+  "assets/cars/2026/aston-martin-amr26-hires.glb": {
+    "bytes": 28974192,
+    "sha256": "9648e564e47c58bd7249c8f065274049d60ca458ac37bced8f21583b1cd689cb"
+  },
+  "assets/cars/2026/aston-martin-amr26.glb": {
+    "bytes": 17670564,
+    "sha256": "7f8336b0fcebc6a1ef86282d7c4e683b0d14cbed492da20f99f805b39753cca1"
+  },
+  "assets/cars/2026/audi-r26-hires.glb": {
+    "bytes": 28919896,
+    "sha256": "c87be3c91485070fee8385ae266411b8d95c62867788250247ee586c033f090a"
+  },
+  "assets/cars/2026/audi-r26.glb": {
+    "bytes": 18015744,
+    "sha256": "9075e293d97ba87fa2a7472b2e99de2d86835fcbf08788e23819bae7084db8de"
+  },
+  "assets/cars/2026/cadillac-mac26-hires.glb": {
+    "bytes": 27135416,
+    "sha256": "2adfe02f0079902e0b8e2e11f6ba4d97e9beae8085f433f6fb65a1332b35e46c"
+  },
+  "assets/cars/2026/cadillac-mac26.glb": {
+    "bytes": 16625892,
+    "sha256": "4047267fef83f364fe4e5cdc774fa30c447746af3e47690cf2e8628040bba9bc"
+  },
+  "assets/cars/2026/ferrari-sf26-hires.glb": {
+    "bytes": 25813056,
+    "sha256": "24d2923ca014351cb5f345b7b22d79b499835e6c76dec6b5c77ce34d8b369f8b"
+  },
+  "assets/cars/2026/ferrari-sf26.glb": {
+    "bytes": 16347572,
+    "sha256": "647225de482d268012b17158ac17f3627e1450625aeb57f2740c7bd4999aebc1"
+  },
+  "assets/cars/2026/haas-vf26-hires.glb": {
+    "bytes": 28829404,
+    "sha256": "a8e7426ebafffe8a424fd6f46ad8433cd159fe3e27c8799e91934262e983fab6"
+  },
+  "assets/cars/2026/haas-vf26.glb": {
+    "bytes": 24573164,
+    "sha256": "bfc88737938fb5e9a2ac7e68055942d996b14932c1821f05a194d4e87ad84d98"
+  },
+  "assets/cars/2026/mclaren-mcl40-hires.glb": {
+    "bytes": 25929244,
+    "sha256": "71cbcf6a4643fd95a0ad68bbc79344f13be96f96f1a3156f9353a01727ed252a"
+  },
+  "assets/cars/2026/mclaren-mcl40.glb": {
+    "bytes": 17220264,
+    "sha256": "fdee275f0569c0e6a26bf6160a3e3b1ab41acdebcfb93dcc88d437ca47b28fb6"
+  },
+  "assets/cars/2026/mercedes-w17-hires.glb": {
+    "bytes": 27319192,
+    "sha256": "0dfa4ca61327d0a47fcae8acb18ea86929481306584add447bc42f45e684121e"
+  },
+  "assets/cars/2026/mercedes-w17.glb": {
+    "bytes": 17101448,
+    "sha256": "a7b4331a622fb5ad5b4c36335c8cddf38f8d4c33118080c8063a58b9e841e389"
+  },
+  "assets/cars/2026/racing-bulls-vcarb03-hires.glb": {
+    "bytes": 11408064,
+    "sha256": "3ecbfbec3b794bf6698ca535bdafebbc421d51cca1d352f726b5cbc0f8d2ab7a"
+  },
+  "assets/cars/2026/racing-bulls-vcarb03.glb": {
+    "bytes": 8508924,
+    "sha256": "a4c2faae515315e0784d1b380e9185ffb411e7c537a850534c57a49e8637d07e"
+  },
+  "assets/cars/2026/redbull-rb22-hires.glb": {
+    "bytes": 25308668,
+    "sha256": "ba15224e8a542f58554d1826d998c58490563e611931c71d2565e9941c5893dd"
+  },
+  "assets/cars/2026/redbull-rb22.glb": {
+    "bytes": 16521284,
+    "sha256": "fab097c9ea44a9086e50ab71cf8e033db676761bd8829e1b3132b391c565c094"
+  },
+  "assets/cars/2026/williams-fw48-hires.glb": {
+    "bytes": 23621852,
+    "sha256": "bfec9f9c2f495b07f5a93047c4ebef6cdbe39a822364bace15b36ebc6e1944b2"
+  },
+  "assets/cars/2026/williams-fw48.glb": {
+    "bytes": 21540976,
+    "sha256": "1e69192b01d45e93348068765ae23d1bbf1c4e6779a14b49fdd76e9626cc9882"
+  },
+  "assets/cars/cadillac.glb": {
+    "bytes": 19936208,
+    "sha256": "f5a63d7034a4be9b50367f96fc3e0984fc26685fcd654744ed26bb374f854628"
+  },
+  "assets/cars/ferrari.glb": {
+    "bytes": 5008548,
+    "sha256": "26c8238612b9f7790112e0ee5694b5fdfb55c97f94588afdc9674a70e790a274"
+  },
+  "assets/cars/mclaren.glb": {
+    "bytes": 4640688,
+    "sha256": "3d34761d56ffc160660b7e46141d6f507907f2ef5d239c71c4f39398c8bebe7d"
+  },
+  "assets/cars/mercedes.glb": {
+    "bytes": 5992672,
+    "sha256": "f720a05fef3f0be0f004b395fd4a57b82694ab71ddbf35769ad38520664de2b7"
+  },
+  "assets/cars/redbull.glb": {
+    "bytes": 6263496,
+    "sha256": "59ffbfe0475031801a59a7a05c6b88f8e0ba906e40e49209cab6165432ff4bec"
+  },
+  "assets/licenses/alpine-a526/2026 Alpine, Aston Martin and Cadillac by fongu.pdf": {
+    "bytes": 549523,
+    "sha256": "e797525b0ec4c698cbfb2bd380e647d1e4b7a4ae00a2b932661707edbc913cb1"
+  },
+  "assets/licenses/racing-bulls-vcarb03/Readme.rtf": {
+    "bytes": 12230006,
+    "sha256": "fdf44392c51110ab469be771dc14c9926e3dce4ec141cb18eb5025427654ff18"
+  },
+  "assets/manifest.json": {
+    "bytes": 3044,
+    "sha256": "6c4e6bf31405f4c26a4ee3e605c1f017d88f785167bc53360f90679a3bee0076"
+  },
+  "assets/props/gemini-start-lights.glb": {
+    "bytes": 1729448,
+    "sha256": "44768208d30ab1e79cd944e5d184945804194160714cae53d996180b7ffd6407"
+  },
+  "assets/tracks/monza-2020.glb": {
+    "bytes": 91872460,
+    "sha256": "3e65cb92636af0d9638ee94c4d88022f0fc9bccfae55fcd566105ae3d4bd1258"
+  },
+  "assets/tracks/monza-story-scenery.glb": {
+    "bytes": 16465072,
+    "sha256": "016c1e9748dec8f478d0609f3abc5f36509db797d05618ddbf0d562fd8845dff"
+  },
+  "assets/tracks/spa-2022.glb": {
+    "bytes": 85128004,
+    "sha256": "1de2c8a8358ed69817100e98c976c5c3cb9df2eda22bb186b6f2358511bd6f24"
+  },
+  "build.py": {
+    "bytes": 252,
+    "sha256": "02181fe8deddfdbfd7be737067fb55d1d42619daaecd4485772969285125d05d"
+  },
+  "docs/Engine-Synthesis-License.txt": {
+    "bytes": 1072,
+    "sha256": "cf97a170508fb9e3928c18431155d8235953b646dff4acda4ab503a2dd6f31bd"
+  },
+  "docs/Engine-Synthesis-References.md": {
+    "bytes": 4590,
+    "sha256": "d7f28a3653e0676e1f83a9b908ea7c84aa49e3d137e7c4a0286ba83c79a3ff3d"
+  },
+  "docs/Font-Licenses.txt": {
+    "bytes": 48551,
+    "sha256": "c0034ed0744224b52e3a81cd347bd61b85242e9af89f9d26318c115fdba715f3"
+  },
+  "docs/architecture.md": {
+    "bytes": 870,
+    "sha256": "21894d02ced2781e3da9ce3217cb089c4533cb60c551ff10f1b6fc6dd08960a6"
+  },
+  "docs/evidence/P22/alpine-a526-adaptation.json": {
+    "bytes": 1444,
+    "sha256": "fee4ff1399edebcc6a32d3f0f9680133df10c2b4fc1b0d6c5d33aa5c169aa080"
+  },
+  "docs/evidence/P22/aston-martin-amr26-adaptation.json": {
+    "bytes": 2846,
+    "sha256": "f2f94b1b02f954b913fa7aa00d2f01fb3002bed3a5d824b2fe5bedacb0658362"
+  },
+  "docs/evidence/P22/audi-r26-adaptation.json": {
+    "bytes": 2828,
+    "sha256": "b6b2f4bbaa7c1dbd41cf14348581b3fcfd9e21eb07c87e396c573e7ec64c8921"
+  },
+  "docs/evidence/P22/cadillac-mac26-adaptation.json": {
+    "bytes": 2838,
+    "sha256": "15629b5758305785642e97dc5ff850269c65f1a3ec49ab1b39c35f330104e367"
+  },
+  "docs/evidence/P22/ferrari-sf26-adaptation.json": {
+    "bytes": 2976,
+    "sha256": "2e7234128eb00a14d7f2352b92081f5c1cf0767f45dd5f60a810d2e4343fcc34"
+  },
+  "docs/evidence/P22/haas-vf26-adaptation.json": {
+    "bytes": 3593,
+    "sha256": "dd94fd93550faabe546f6282ac7b64ccea045df0a12c3b71182057505b1a152d"
+  },
+  "docs/evidence/P22/mclaren-mcl40-adaptation.json": {
+    "bytes": 2826,
+    "sha256": "789ad4d7ba5660c086dcc11b57f040c93961008eee8f544294eb31429fb16a7c"
+  },
+  "docs/evidence/P22/mercedes-w17-adaptation.json": {
+    "bytes": 2676,
+    "sha256": "612fc7ffd65c671dc7ae6f16957954b619bafd442a7c58df21c029439215f023"
+  },
+  "docs/evidence/P22/monza-2020-adaptation.json": {
+    "bytes": 3298,
+    "sha256": "c340ce2430e9b5e28b42fec561ae037fe17de8e419eb028ca505bffbf5528f2c"
+  },
+  "docs/evidence/P22/racing-bulls-vcarb03-adaptation.json": {
+    "bytes": 1549,
+    "sha256": "28d4e850e433bffa72e40820eb30a69a67308373a2574a31127870ecb5e13046"
+  },
+  "docs/evidence/P22/redbull-rb22-adaptation.json": {
+    "bytes": 2851,
+    "sha256": "c6cd2974c2a4522808b73a0290b2b44a547edb17ed43992b62bf3afe538ecc2f"
+  },
+  "docs/evidence/P22/spa-2022-adaptation.json": {
+    "bytes": 2330,
+    "sha256": "1d41c88aab0b440dc362cf46bcde7ecd8fe3d126773ca2b936b59a51475d5a11"
+  },
+  "docs/evidence/P22/williams-fw48-adaptation.json": {
+    "bytes": 3311,
+    "sha256": "44003b6b866912083a3b5baf6510a8215b57fa5e71896b79b10b252622dfe43f"
+  },
+  "docs/media/SOURCES.md": {
+    "bytes": 813,
+    "sha256": "10d0cb4678cf7ec3b49993839ba32775facfbb6fca2396afd24779d2d9135695"
+  },
+  "docs/media/budget.jpg": {
+    "bytes": 205913,
+    "sha256": "a1fc8aa1dcb5a005f2fe6ca8dbb04cf08e7e59c5c561c21c581d3476aa1aa267"
+  },
+  "docs/media/cover.jpg": {
+    "bytes": 177388,
+    "sha256": "48d66c64f25580cedd776983d34a3d126554e0fe3cbe4cd374d9be6631c3262b"
+  },
+  "docs/media/development.jpg": {
+    "bytes": 239145,
+    "sha256": "8ea56c44e08648942478e9343da31e300d87757167bef823e8ec0d935e4ee85b"
+  },
+  "docs/media/finale.jpg": {
+    "bytes": 267582,
+    "sha256": "c1897dc1b486c3f159eb70cac3267feaa90e259ca1e3691409c2aafa50ee1ff5"
+  },
+  "docs/media/grid.jpg": {
+    "bytes": 306209,
+    "sha256": "7a463e8faab4a44dd255bc8995e6cb60704092f1f1567655249cf1ecb33fa4f0"
+  },
+  "docs/media/manifest.json": {
+    "bytes": 3696,
+    "sha256": "cea93fabfd328b5a68a9eefb12d8530c5e7df829c9a95e37e29998f42b7d534b"
+  },
+  "docs/media/opening-preview.gif": {
+    "bytes": 4578057,
+    "sha256": "8617c4756b533b8de447b8050b7369a5b46e8ec022430c2486d4118b969027bd"
+  },
+  "docs/speaker/Speaker-Script.md": {
+    "bytes": 15554,
+    "sha256": "e6f958676fe2cf4379f09f07bf8345b41ff9ed809150067d77c8ab417f6b5f7b"
+  },
+  "project.json": {
+    "bytes": 98,
+    "sha256": "64df11d2d8749a403c0d218073e11b3581c1ef6a2ebce2a785cca938f9fb1813"
+  },
+  "seed/engine-shell.html": {
+    "bytes": 864473,
+    "sha256": "25b17797c9ec18b33fdf805fce4c875d505a856ea3af45398389063becf48e9d"
+  },
+  "src/baku-news-photo.webp": {
+    "bytes": 345594,
+    "sha256": "36c9f5d86e52e217c535ddd7b0c7102ef7881bec32b2b599138d3e0631814c8f"
+  },
+  "src/baku-photo-source.json": {
+    "bytes": 513,
+    "sha256": "c94f563cf70cefc02f8cf0eb0debd7c91a6aec84e044355be28061db6f80e41b"
+  },
+  "src/blur-v10.js": {
+    "bytes": 4712,
+    "sha256": "c3de1488016974778175d61964a79e3939a483d7f9b30b32ab70d03db2302408"
+  },
+  "src/boot-progress.html": {
+    "bytes": 4808,
+    "sha256": "44d3a5d44c87d54aa5adba7d47717780a39c26543d9f2ecd46ad92dfb9919a67"
+  },
+  "src/build.py": {
+    "bytes": 11878,
+    "sha256": "2640989c838d04abd972fc787b14f66fe95ad361d155d37a0364b9c1213954c9"
+  },
+  "src/cadillac-news-photo.webp": {
+    "bytes": 134262,
+    "sha256": "9bfe0ca338a19240c86140805cef969f22b3666b70feb33266700b292705d992"
+  },
+  "src/cadillac-photo-outline.json": {
+    "bytes": 37421,
+    "sha256": "440ea99a0a5ed5bd29756956170ee200e3aeba0d50969047fa7e56a2afcebef0"
+  },
+  "src/cadillac-photo-source.json": {
+    "bytes": 534,
+    "sha256": "94cc9ff07f1f839c2bb2632baa0060fa6224d6698346013fab3eba521c420c01"
+  },
+  "src/camera-v10.js": {
+    "bytes": 3597,
+    "sha256": "e45881339b4e92c3c0e01768aacae7218cdc2b6d562338da2c390706c48e6fc0"
+  },
+  "src/cinematic-engine.js": {
+    "bytes": 70082,
+    "sha256": "98e8bc0116a0a6ef0cfbeddb8341feef794da32707c64c4f8f57afe65a010897"
+  },
+  "src/complete-rear-wing.js": {
+    "bytes": 1515,
+    "sha256": "ee477097100198b5bca1723ade98930346fad9c86bdf545ae2f2ada395a5dc08"
+  },
+  "src/content.json": {
+    "bytes": 10760,
+    "sha256": "2a8672ba528b75937715670ad38beaae205bde6d679cea6925c79a2a877ffb17"
+  },
+  "src/deck-state.json": {
+    "bytes": 59,
+    "sha256": "2d32212713875535f0f7492f0bb89c4c05cd7ec7e6003a349ca72f6a8080689a"
+  },
+  "src/deck.css": {
+    "bytes": 19870,
+    "sha256": "a10aa90b329ab29089c20c7776c4c882eceea0a4643fd845cf4aea6b122cdbe4"
+  },
+  "src/deck.js": {
+    "bytes": 59552,
+    "sha256": "dd6b1abe81152e230069b3e5134a2d9291ca74bd8c6be69340bdf3d52445715d"
+  },
+  "src/engine-synth.js": {
+    "bytes": 10423,
+    "sha256": "50249b0f1b237f722450392ee215492b323d77466cb56734a4794775beb23533"
+  },
+  "src/environment-v10.js": {
+    "bytes": 22995,
+    "sha256": "ae8fd06ab06a2d7846430d08b920601acca13c4e722dcce80c40bb830f84d00a"
+  },
+  "src/extract-assets.py": {
+    "bytes": 1070,
+    "sha256": "6481de2171297562a6f2498d00cddf016835bb59fbc4583b9c96072b51dfa1b5"
+  },
+  "src/finish-stage.js": {
+    "bytes": 4370,
+    "sha256": "b8fa70d4df16f2cf8f282e75887a5d596bc98dcba07a03316182682428afa0eb"
+  },
+  "src/fonts/Archivo.woff": {
+    "bytes": 40764,
+    "sha256": "828f9ff5ff2f167cb1b2299c09ab74e8edb2a375b86b768d1ecc3e43206a0f95"
+  },
+  "src/fonts/Barlow.woff": {
+    "bytes": 51776,
+    "sha256": "46322a152a623379c18b28d6bbae10dc310c8c2f33b4d2f0d3f1386980e8d8a4"
+  },
+  "src/fonts/BarlowItalic.woff": {
+    "bytes": 54784,
+    "sha256": "76e7a654601ed080806a0753dce96a8f179958d8e3bdfb845053302fbe46b33a"
+  },
+  "src/fonts/Bodoni.woff": {
+    "bytes": 88524,
+    "sha256": "a95e7cf1b1821dda947d2c63a88f8c0faf13288e82b7b02bebfee15739fca6d1"
+  },
+  "src/fonts/CJK.woff": {
+    "bytes": 78232,
+    "sha256": "93640ee644a6330fe1d7566d169ee5e9a192f84f1365c4d0a06e65d0b4c01cd1"
+  },
+  "src/fonts/Inter.woff": {
+    "bytes": 305352,
+    "sha256": "6ad65b3df7866a46a7e939d6f372d3da824adbb7ebcbe6abe4e22eaf1469c2bc"
+  },
+  "src/fonts/Oxanium.woff": {
+    "bytes": 24316,
+    "sha256": "8f3d92399901915a46acc1ddc5a69f1bb7523310df65b0655cec638d0c3167a7"
+  },
+  "src/fonts/Sora.woff": {
+    "bytes": 60684,
+    "sha256": "27b12101f1e12fa643510e5a71f306bb0eb917b64d5edad94399cecbaa5c2490"
+  },
+  "src/fonts/Space.woff": {
+    "bytes": 63324,
+    "sha256": "fecd7afb844b91ffcf378f2af5b8ad3727161ba066485fd2edc46c11ec31ccd5"
+  },
+  "src/fonts/Syne.woff": {
+    "bytes": 75532,
+    "sha256": "16a8ae1205f8513420c5ebd0ababdd141cc45873a2294dc3cba8612c7d1db0d7"
+  },
+  "src/fonts/Unbounded.woff": {
+    "bytes": 385144,
+    "sha256": "cffb44bb82cc30afd8b3396bbdb10c8820fa589cbbb6b4b8e6cc903c96eb0431"
+  },
+  "src/gemini-start-gantry.js": {
+    "bytes": 4461,
+    "sha256": "de2640603a8ad4d0e4fd913a6e744694cc987fea0117e8b5313510cff6d0af5e"
+  },
+  "src/launch-screen.css": {
+    "bytes": 7745,
+    "sha256": "9678a7b64b7581dd28b658513792306690f032a2c0e773dd925a8bfb24c7d696"
+  },
+  "src/material-v10.js": {
+    "bytes": 3705,
+    "sha256": "4811dacb82a1e916ec5a5aba7e627f909d15f46de50dd4228c08929675eefdbb"
+  },
+  "src/opening-grid.js": {
+    "bytes": 16821,
+    "sha256": "aabde25d164af21f83c66974ece06c17318e34ba1c9f486ae9a26cb4bbf2350f"
+  },
+  "src/powertrain.js": {
+    "bytes": 5575,
+    "sha256": "a9c43a171b88435e47e9dbdf0972cf6afd8ebfc153aa3334892e73a892b3b843"
+  },
+  "src/research-stage.js": {
+    "bytes": 3464,
+    "sha256": "22fd8634f373b92ad5aa32766e8a0fb067c574adec2a177c444a7f450f7ef02f"
+  },
+  "src/slides.html": {
+    "bytes": 16189,
+    "sha256": "e7c3e8fbba69f4da4ef5dfa8d18823ad7cf0e70ed9ed6bf3e87466eebc2ba8c1"
+  },
+  "src/sound.js": {
+    "bytes": 12862,
+    "sha256": "29d1e579bfd51334c2433682f83d7e28025d334e4888ad953b16a9ac86341410"
+  },
+  "src/start-gantry.js": {
+    "bytes": 5330,
+    "sha256": "79d63ead3365d13ae11738f574d0dca2e703d5cd140253343ff4e500743cf604"
+  },
+  "src/story-route.js": {
+    "bytes": 3268,
+    "sha256": "000402e46df0894b0ec9b336d17509ab02dffd8f5d1ce7bb2ebadd96204a7fb3"
+  },
+  "src/story-scenes.js": {
+    "bytes": 34721,
+    "sha256": "dd414ce00ab7375d2433750f2f63447a641f2aeaf7a96966fb8aa77e01a9a1d5"
+  },
+  "src/track-v10.js": {
+    "bytes": 10942,
+    "sha256": "35d6f2fe368c5cbd5695e1807a4cb1f7fc5d37296d09c360518d18624a9e6c33"
+  },
+  "src/type-fonts.css": {
+    "bytes": 1264,
+    "sha256": "72388c36e5afa5b3e706673660c3d333b08703bff07e27a6ecab394350b3d05e"
+  },
+  "src/type-logos.json": {
+    "bytes": 519262,
+    "sha256": "4908c51cd90a00712e4d4f0b593e583ca83b7ba91fe32361ec37abdd54243c37"
+  },
+  "src/type-teams.json": {
+    "bytes": 3111,
+    "sha256": "072d77cfcafa75cab40152c86bd7620ac0fcd1581edf19fb13e74b6babe95c27"
+  },
+  "src/typography.css": {
+    "bytes": 5971,
+    "sha256": "f1cd348c4e7bf272ed559d7eba08190f50325078dd917c89c376ed34e6d5f2d4"
+  },
+  "src/typography.js": {
+    "bytes": 16367,
+    "sha256": "e29e79b39cbc320e69ba1e661a77ea254e57eb90ffa06d501b08892563b9ec7f"
+  },
+  "src/wheel-blur-v12.glsl": {
+    "bytes": 1629,
+    "sha256": "5d595cb3e997002d2b3da316872d6d09c24fd7dc1b5427b1950af5a8d43e9978"
+  },
+  "src/wheel-calibration.json": {
+    "bytes": 16777,
+    "sha256": "9a1c9a35f1f4c4692702e604ca4631cc4ca3e3cd0052c1e4d3b649f5d7823421"
+  },
+  "src/world-dissolve.js": {
+    "bytes": 3278,
+    "sha256": "e4ae56ba26372976cf2b58bba3d490e8ab0883ffb52acc0d97bc0db50b6c3c4f"
+  },
+  "tools/build.py": {
+    "bytes": 4354,
+    "sha256": "1e41a813ffb2e9a35066b7ce495aecf97e0bceed0c4972f224dd20d6af68d165"
+  },
+  "tools/build_library.py": {
+    "bytes": 3201,
+    "sha256": "bbc9cba5deb5f3f105bf54de231c57f07173e36fff460b1e08e6cebe3617dd5a"
+  },
+  "tools/check.py": {
+    "bytes": 4981,
+    "sha256": "c16fcf1b56e348289d0ce3875c77d6ea8a7670f5a4486237fc151aaa67b73cbe"
+  },
+  "tools/check_p42_syntax.cjs": {
+    "bytes": 612,
+    "sha256": "cd1b233d5bab02e3b73ad30cde299f3c7ebd1a5d4704f80c5ab7414256d352d0"
+  },
+  "tools/common.py": {
+    "bytes": 3986,
+    "sha256": "a17bdf02c0007dee817c92514eb467b597b86765b2819662ff5d445eaf72413d"
+  },
+  "tools/dev.py": {
+    "bytes": 4541,
+    "sha256": "e1c32329bed904e014c594ba5f4410ad5ffb4fbc8617081c1ba4d482e0d479a2"
+  },
+  "tools/export.py": {
+    "bytes": 2771,
+    "sha256": "4ccf63d92eeee33642f1d52b7a8e362cf4504222d86c40a46dfda1d4b42c99a0"
+  },
+  "tools/import_edits.py": {
+    "bytes": 4395,
+    "sha256": "80377602f133bb4763da4941c9216c87148c9afafc04e24f95346beb1d7f3865"
+  },
+  "tools/library-viewer.js": {
+    "bytes": 6177,
+    "sha256": "01037e5a86b75e4d67a14742696d015e5ea7fc8e0dbe127e1e37fe01a19ed5a7"
+  }
+}

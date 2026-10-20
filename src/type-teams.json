@@ -1,0 +1,166 @@
+{
+  "redbull": {
+    "name": "Red Bull Racing",
+    "font": "BarlowItalic",
+    "fontLabel": "Barlow Condensed Bold Italic",
+    "weight": 700,
+    "lines": [
+      "RED BULL",
+      "RACING"
+    ],
+    "colors": [
+      "#ffd03f",
+      "#f34a4e"
+    ],
+    "tone": "#ffd03f",
+    "logo": "redbullracing"
+  },
+  "mclaren": {
+    "name": "McLaren",
+    "font": "BarlowItalic",
+    "fontLabel": "Barlow Condensed Bold Italic",
+    "weight": 700,
+    "lines": [
+      "McLAREN"
+    ],
+    "colors": [
+      "#ff8a21"
+    ],
+    "tone": "#ff8a21",
+    "logo": "mclaren"
+  },
+  "ferrari": {
+    "name": "Ferrari",
+    "font": "Bodoni",
+    "fontLabel": "Bodoni Moda / 700",
+    "weight": 700,
+    "lines": [
+      "SCUDERIA",
+      "FERRARI"
+    ],
+    "colors": [
+      "#e7bf55",
+      "#f34a42"
+    ],
+    "tone": "#ef3d38",
+    "logo": "ferrari"
+  },
+  "mercedes": {
+    "name": "Mercedes",
+    "font": "Space",
+    "fontLabel": "Space Grotesk / 600",
+    "weight": 600,
+    "lines": [
+      "MERCEDES",
+      "AMG PETRONAS"
+    ],
+    "colors": [
+      "#b9e5e2",
+      "#56d8c6"
+    ],
+    "tone": "#56d8c6",
+    "logo": "mercedes"
+  },
+  "aston": {
+    "name": "Aston Martin",
+    "font": "Bodoni",
+    "fontLabel": "Bodoni Moda / 600",
+    "weight": 600,
+    "lines": [
+      "ASTON MARTIN"
+    ],
+    "colors": [
+      "#a0cfb6"
+    ],
+    "tone": "#91c6a6",
+    "logo": "astonmartin"
+  },
+  "williams": {
+    "name": "Williams",
+    "font": "Inter",
+    "fontLabel": "Inter Tight / 800",
+    "weight": 800,
+    "lines": [
+      "WILLIAMS"
+    ],
+    "colors": [
+      "#599bff"
+    ],
+    "tone": "#599bff",
+    "logo": "williams"
+  },
+  "haas": {
+    "name": "Haas",
+    "font": "Barlow",
+    "fontLabel": "Barlow Condensed / 700",
+    "weight": 700,
+    "lines": [
+      "HAAS"
+    ],
+    "colors": [
+      "#ed414b"
+    ],
+    "tone": "#ed414b",
+    "logo": "haasf1team"
+  },
+  "audi": {
+    "name": "Audi",
+    "font": "Space",
+    "fontLabel": "Space Grotesk / 650",
+    "weight": 650,
+    "lines": [
+      "AUDI",
+      "REVOLUT F1 TEAM"
+    ],
+    "colors": [
+      "#ff6244",
+      "#cad1dc"
+    ],
+    "tone": "#ff6244",
+    "logo": "audi"
+  },
+  "alpine": {
+    "name": "Alpine",
+    "font": "BarlowItalic",
+    "fontLabel": "Barlow Condensed Bold Italic",
+    "weight": 700,
+    "lines": [
+      "ALPINE"
+    ],
+    "colors": [
+      "#65b6ef"
+    ],
+    "tone": "#65b6ef",
+    "logo": "alpine"
+  },
+  "racingbulls": {
+    "name": "Racing Bulls",
+    "font": "Sora",
+    "fontLabel": "Sora / 800",
+    "weight": 800,
+    "lines": [
+      "RACING",
+      "BULLS"
+    ],
+    "colors": [
+      "#759dfc",
+      "#e7edff"
+    ],
+    "tone": "#759dfc",
+    "logo": "racingbulls"
+  },
+  "cadillac": {
+    "name": "Cadillac",
+    "font": "Bodoni",
+    "fontLabel": "Bodoni Moda / 600",
+    "weight": 600,
+    "lines": [
+      "CADILLAC"
+    ],
+    "colors": [
+      "#d8dde5"
+    ],
+    "tone": "#c9cdd6",
+    "logo": "cadillac"
+  }
+}

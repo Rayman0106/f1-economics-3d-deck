@@ -1,0 +1,134 @@
+{
+  "source": "asset-downloads\\audi-r26\\extracted\\source\\f1_2026_r26.glb",
+  "original_triangles": 265138,
+  "adapted_triangles": 265138,
+  "wheels": {
+    "FL_Wheel": {
+      "wheelCenter": [
+        -1.5800832089877916,
+        0.3572352019225193,
+        0.7779223620891571
+      ],
+      "wheelRadius": 0.35424195566318856,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "FR_Wheel": {
+      "wheelCenter": [
+        -1.5800813016409305,
+        0.35725030238904526,
+        -0.7777841985225677
+      ],
+      "wheelRadius": 0.3542418159647836,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RL_Wheel": {
+      "wheelCenter": [
+        1.7875842050728235,
+        0.3541902012336468,
+        0.733799934387207
+      ],
+      "wheelRadius": 0.3541901714313204,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RR_Wheel": {
+      "wheelCenter": [
+        1.7875842050728394,
+        0.35419009692550446,
+        -0.7337998747825623
+      ],
+      "wheelRadius": 0.35419009692550446,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "assemblies": {
+    "Front_Wing": {
+      "triangles": 10724,
+      "wingPivot": [
+        -2.363184866863185,
+        0.3704697417704832,
+        0.0
+      ],
+      "bounds": [
+        [
+          -2.8292583706513703,
+          0.17557030600953763,
+          -0.8986274003982544
+        ],
+        [
+          -1.8971113630749996,
+          0.5653691775314288,
+          0.8986274003982544
+        ]
+      ]
+    },
+    "Rear_Wing": {
+      "triangles": 8707,
+      "wingPivot": [
+        2.1858976408717536,
+        0.9340141796374415,
+        0.0
+      ],
+      "bounds": [
+        [
+          1.9536961564062925,
+          0.8214699336594892,
+          -0.5691112875938416
+        ],
+        [
+          2.4180991253372146,
+          1.046558425615394,
+          0.5691112875938416
+        ]
+      ]
+    }
+  },
+  "texture_limit": 1024,
+  "transformation": "baked source transforms, Y rotation -90 degrees, ground alignment; no geometry simplification",
+  "material_alpha_corrections": [
+    {
+      "material": "glass.011",
+      "from": "OPAQUE",
+      "to": "BLEND",
+      "source_alpha_range": [
+        54,
+        168
+      ]
+    },
+    {
+      "material": "sauber_decals.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "sw_decals.007",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    }
+  ],
+  "bytes": 18015744,
+  "sha256": "9075e293d97ba87fa2a7472b2e99de2d86835fcbf08788e23819bae7084db8de"
+}

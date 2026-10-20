@@ -1,0 +1,129 @@
+{
+  "source": "asset-downloads\\williams-fw48\\extracted\\source\\f1 2026.glb",
+  "original_triangles": 275868,
+  "adapted_triangles": 275868,
+  "wheels": {
+    "FL_Wheel": {
+      "wheelCenter": [
+        -1.6907543523992825,
+        0.3600046441449561,
+        0.8165225569159666
+      ],
+      "wheelRadius": 0.35757554642173844,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "FR_Wheel": {
+      "wheelCenter": [
+        -1.6907498846891635,
+        0.3600056646389084,
+        -0.8147538621786907
+      ],
+      "wheelRadius": 0.3575756058508651,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RL_Wheel": {
+      "wheelCenter": [
+        1.7144454630361126,
+        0.35757566562967213,
+        0.7724758982658386
+      ],
+      "wheelRadius": 0.35757545701478344,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RR_Wheel": {
+      "wheelCenter": [
+        1.7144498396469514,
+        0.3575756656310116,
+        -0.7724769115447998
+      ],
+      "wheelRadius": 0.3575756656310116,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "assemblies": {
+    "Front_Wing": {
+      "triangles": 20232,
+      "wingPivot": [
+        -2.4465646410032935,
+        0.2624612720782066,
+        -1.9944450069253605e-07
+      ],
+      "bounds": [
+        [
+          -2.8813696319277944,
+          0.0839570011431828,
+          -0.9695299440241774
+        ],
+        [
+          -2.011759650078793,
+          0.4409655430132303,
+          0.969529545135176
+        ]
+      ]
+    },
+    "Rear_Wing": {
+      "triangles": 3720,
+      "wingPivot": [
+        1.9856437339705462,
+        0.8761434753567221,
+        -7.152557479628285e-08
+      ],
+      "bounds": [
+        [
+          1.7848301773624407,
+          0.7794676240732927,
+          -0.5653715217913913
+        ],
+        [
+          2.1864572905786517,
+          0.9728193266401515,
+          0.5653713787402417
+        ]
+      ]
+    }
+  },
+  "texture_limit": 1024,
+  "transformation": "baked source transforms, Y rotation -90 degrees, ground alignment; no geometry simplification",
+  "material_alpha_corrections": [],
+  "packaged_livery_reconnections": [
+    {
+      "material": "chasis.002",
+      "file": "asset-downloads/williams-fw48/extracted/textures/chassis.png",
+      "sha256": "45e446f7562c268b36c6ae4020af10ddcc71228429b0147600567b0e40a8f909",
+      "flip_vertical_to_match_glb_uv": true,
+      "replaces_embedded_texture": 19
+    },
+    {
+      "material": "decal.002",
+      "file": "asset-downloads/williams-fw48/extracted/textures/decals.png",
+      "sha256": "ff9c361d9ca0cec248b0fad7403c48e1c32801787678c78d6dd04bf2bb92eeb5",
+      "flip_vertical_to_match_glb_uv": true,
+      "replaces_embedded_texture": 23
+    },
+    {
+      "material": "chassis2.002",
+      "file": "asset-downloads/williams-fw48/extracted/textures/chassis2.png",
+      "sha256": "0007c38e023648a8474f9d7ce417d0c1ee77eb969350779277447bc5e40cc8cb",
+      "flip_vertical_to_match_glb_uv": true,
+      "replaces_embedded_texture": 27
+    }
+  ],
+  "bytes": 21540976,
+  "sha256": "1e69192b01d45e93348068765ae23d1bbf1c4e6779a14b49fdd76e9626cc9882"
+}

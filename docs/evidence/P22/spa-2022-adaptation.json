@@ -1,0 +1,116 @@
+{
+  "source": "asset-downloads\\spa-2022\\extracted\\source\\spa.glb",
+  "triangles": 1188936,
+  "texture_limit": 1024,
+  "focus_bounds": [
+    [
+      -676.1654052734375,
+      -54.511861613944305,
+      -1023.7809610783343
+    ],
+    [
+      655.0228881835938,
+      58.84623645560961,
+      1117.5219525806194
+    ]
+  ],
+  "changes": "Baked source transforms, translated origin, resized author textures. Full track geometry preserved.",
+  "material_alpha_corrections": [
+    {
+      "material": "Glass-blend.001",
+      "from": "OPAQUE",
+      "to": "BLEND",
+      "source_alpha_range": [
+        54,
+        54
+      ]
+    },
+    {
+      "material": "Glass.001",
+      "from": "OPAQUE",
+      "to": "BLEND",
+      "source_alpha_range": [
+        54,
+        54
+      ]
+    },
+    {
+      "material": "fences.001",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "trees1_2022.001",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "trees2_2022.001",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "treesline.001",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "transp-alpha_test.001",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "grille-alpha_test.001",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "fence2_at.001",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "bushesB.001",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    }
+  ],
+  "grass_albedo_tints": [
+    "GRASS.001"
+  ],
+  "path": "assets\\tracks\\spa-2022.glb",
+  "bytes": 85128004,
+  "sha256": "1de2c8a8358ed69817100e98c976c5c3cb9df2eda22bb186b6f2358511bd6f24"
+}

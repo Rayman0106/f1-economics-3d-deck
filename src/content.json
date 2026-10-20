@@ -1,0 +1,105 @@
+{
+  "version": "P37",
+  "notes": [
+    {
+      "title": "1. The price of a crash",
+      "body": "At Baku, a crash ended the race for three drivers. But the consequences do not end with lost points. Replacing damaged parts also uses money. Today I want to ask why a rich team cannot simply keep spending until it has the fastest car. That takes us to Formula 1's cost cap, and the trade-off between competitive balance and freedom to innovate.",
+      "sources": [
+        {
+          "label": "Formula1.com: Baku collision, 26 September 2026",
+          "url": "https://www.formula1.com/en/latest/article/sorry-to-all-of-them-colapinto-apologises-for-azerbaijan-gp-crash-with-alpine-team-mate-gasly.3fcbjHOa8zF2lQacETFaw8"
+        }
+      ]
+    },
+    {
+      "title": "2. The Baku news",
+      "body": "Colapinto misjudged his braking as the race restarted, hit his team mate Gasly, and the collision also involved Norris. All three retired. Norris complained about losing parts, which gives us a useful link to economics. The reports here do not provide a verified repair invoice, so I will use a hypothetical example rather than claim the crash cost a particular amount.",
+      "sources": [
+        {
+          "label": "Formula1.com: race incident",
+          "url": "https://www.formula1.com/en/latest/article/sorry-to-all-of-them-colapinto-apologises-for-azerbaijan-gp-crash-with-alpine-team-mate-gasly.3fcbjHOa8zF2lQacETFaw8"
+        },
+        {
+          "label": "Reuters: Norris on the crash, 26 September 2026",
+          "url": "https://www.reuters.com/sports/formula1/f1-champion-norris-says-colapinto-should-get-race-ban-after-baku-crash-2026-09-26/"
+        }
+      ]
+    },
+    {
+      "title": "3. The budget choice",
+      "body": "Suppose a team has ten million dollars of unused cap headroom. If extra covered repairs use two million, only eight million remains for development in this simplified example. This is conditional: a team may have spare parts already recognised in its accounts, or enough unused headroom to avoid cutting development. We should not count the same component twice. The point is that a binding spending limit forces allocation decisions. Why impose that limit in the first place?",
+      "sources": [
+        {
+          "label": "FIA 2026 Financial Regulations, Section D, Issue 07: D4 to D6",
+          "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+        }
+      ]
+    },
+    {
+      "title": "4. Why limit spending?",
+      "body": "This is regulation: a rule that limits covered performance spending. It includes costs of developing, making, testing and racing the car, while driver pay and the three highest-paid staff are excluded. Teams still choose how to allocate their budget. One aim is to reduce the competitive advantage that comes purely from having more money, while supporting financial sustainability. But this does not guarantee equal performance. Engineering choices and efficiency still matter. The next question is what happens when financial advantage becomes self-reinforcing.",
+      "sources": [
+        {
+          "label": "FIA 2026 Financial Regulations, Section D, Issue 07: D1.2, D4, D5",
+          "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+        }
+      ]
+    },
+    {
+      "title": "5. Money can reinforce an advantage",
+      "body": "This diagram is our economic analysis of a possible feedback loop. The animation shows successive front-wing and rear-aero revisions followed by test passes. These are illustrative variants of the supplied community 2026 MCL40 asset, not an actual McLaren upgrade history. Without a spending limit, a team with more resources can fund more engineers, equipment and development projects. That can increase its chances of finding a performance advantage. Stronger results can then help attract sponsors and increase commercial value, providing resources to invest again. Follow the loop from resources to development, potential performance, commercial returns and reinvestment. The question mark matters: more spending does not guarantee success. Management, engineering choices and the efficiency of development can break the chain. Commercial returns also depend on factors beyond a single race result. The cost cap aims to reduce the advantage of money alone while retaining engineering competition. This mechanism explains the rationale; it is not evidence that the cap has equalised teams, or a measured forecast of a particular team's results.",
+      "sources": [
+        {
+          "label": "Formula1.com: What is the F1 cost cap and why has it gone up?, 10 April 2026 (context; the feedback loop is our analysis)",
+          "url": "https://www.formula1.com/en/latest/article/explained-what-is-the-f1-cost-cap-and-why-has-it-gone-up.2tYtDIe5SbE5utjThctBT3"
+        }
+      ]
+    },
+    {
+      "title": "6. A closer race. A healthier business.",
+      "body": "The financial regulations name competitive balance and the long-term financial sustainability of teams as objectives. A cap can reduce the advantage a team gets from having a larger budget. Closer competition may help sustain fan interest and the sport's commercial appeal. A spending limit may also reduce pressure to match every increase in a rival's budget, making planning easier. These are possible benefits, not proof that the cap has already equalised teams or increased revenue. They depend on the level of the cap and effective enforcement. Teams that spend below the limit do not automatically catch up. Existing facilities, accumulated engineering knowledge and management still affect results. The two-car sequence illustrates competitive racing. Its changing gap is choreography, not race telemetry or a measured effect of the cap. The cars use adapted community 2026 assets. The approach, braking, apex and exit speeds are illustrative; they are not race telemetry. The cars share the same road and follow individually integrated speed profiles on separate racing lines. McLaren brakes later, misses the apex and follows a wider turn; Red Bull brakes earlier and accelerates out sooner. The race pauses into the final explanatory composition, rather than making another exaggerated lane change.",
+      "sources": [
+        {
+          "label": "FIA 2026 Financial Regulations, Section D, Issue 07, D1.2.2: objectives",
+          "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+        },
+        {
+          "label": "Formula1.com: What is the F1 cost cap and why has it gone up?, 10 April 2026",
+          "url": "https://www.formula1.com/en/latest/article/explained-what-is-the-f1-cost-cap-and-why-has-it-gone-up.2tYtDIe5SbE5utjThctBT3"
+        }
+      ]
+    },
+    {
+      "title": "7. What does a new team face?",
+      "body": "Cadillac made its Formula 1 debut in 2026. On 24 September, Formula1.com reported appointments to strengthen its development, aerodynamics and simulation leadership, drawing on experience from rival teams. This illustrates a knowledge barrier: having money is different from having an experienced engineering organisation. Facilities, tools and working processes also take time to establish. The joint FIA and Formula 1 statement of 7 March 2025 confirmed entry approval following sporting, technical and commercial assessments. These are distinct requirements, rather than a barrier that disappears when a team can afford a car. Our economic interpretation is that a cap may reduce the financial resources needed to compete with established teams, while accumulated knowledge, facilities and entry requirements still matter. We cannot conclude that the cap caused Cadillac to join, or that it guarantees competitiveness. Do not assume all senior staff compensation is covered by the team cap: the three highest-paid staff are excluded under D5. The photograph depicts Cadillac's 2026 car; the animated Cadillac uses a clearly identified community concept asset. The remixed Monza starting area hosts a static illustrative inspection of the ten existing teams. Each team has two cars staggered fore and aft by six metres on fixed lanes, twelve metres between teams. The Cadillac concept pair arrives from outside the frame when the camera reaches the back. This grouping is illustrative, not an actual qualifying order. The primary Cadillac freezes into a contour and hands over to the traced news photograph. A cap may reduce financial entry barriers, but cannot remove knowledge, facilities or entry requirements.",
+      "sources": [
+        {
+          "label": "Formula1.com, 24 September 2026: Cadillac technical leadership appointments",
+          "url": "https://www.formula1.com/en/latest/article/cadillac-recruit-technical-leaders-from-red-bull-and-ferrari-as-part-of-long-term-development.5bNqxMySRCCuU69CY5Es7w"
+        },
+        {
+          "label": "FIA / Formula 1 joint statement, 7 March 2025: sporting, technical and commercial assessments",
+          "url": "https://corp.formula1.com/fia-and-formula-1-joint-statement-regarding-2026-eleventh-team-process/"
+        },
+        {
+          "label": "FIA 2026 Financial Regulations, Section D, Issue 07: D5 exclusions",
+          "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+        },
+        {
+          "label": "Prepared model attribution and redistribution, filan214",
+          "url": "https://github.com/filan214/F1---2026-Car-Details/blob/main/dist/models/ATTRIBUTION.md"
+        }
+      ]
+    },
+    {
+      "title": "8. Formula 1 should limit team spending",
+      "body": "The studio sequence features the supplied Cadillac, Alpine, Racing Bulls and Haas community models, then moves to McLaren, Ferrari, Mercedes and Red Bull. These are the presenter's chosen illustrative groups, not measured performance or an actual 2026 standings order. The conclusion is an economic judgment: Formula 1 should limit team spending to help reduce the advantage from money alone. A cap cannot erase knowledge, facilities and advantages already built by teams.",
+      "sources": [
+        {
+          "label": "FIA Financial Regulations, Issue 07, D1.2: competitive balance and financial sustainability objectives",
+          "url": "https://www.fia.com/system/files/documents/fia_2026_f1_regulations_-_section_d_financial_-_f1_teams_-_iss_07_-_2026-06-25.pdf"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+:root{--paper:#f1f0e8;--muted:#a8b5ba;--orange:#ff8708;--ink:#0b1118;--copy:0;--page-opacity:1}
+html,body{background:#070c12;color:var(--paper);font-family:Arial,'PingFang SC',sans-serif}
+#stage{overflow:clip;background:radial-gradient(ellipse at 70% 65%,#17232d 0,#0b1118 58%,#080d13 100%)}
+#stage:before,.hud,.corner,.gridline,#lead,#final,.dock,.credit,#message,.team-picker,.view-picker,#livery-caption,.livery-concept{display:none!important}
+#loading{z-index:40;color:var(--paper);background:#111923}
+body.deck-boot{background:#0b1118!important}body.deck-boot #stage{opacity:0}
+body.deck-boot #loading{visibility:hidden!important;transition:none!important}
+body.deck-boot-failed #stage{opacity:1}body.deck-boot-failed #loading{visibility:visible!important}
+#telemetry{z-index:9!important;right:80px!important;bottom:115px!important;top:auto!important;pointer-events:none}
+#phase-title{color:var(--orange)!important}#phase-detail{display:none}#speed-bar{background:var(--orange)!important}
+#progress{background:var(--orange)!important;z-index:30;height:3px}
+#scene{pointer-events:none;transition:none}
+.deck-static #scene,.deck-transitioning #scene{transform:var(--car-transform)!important;transform-origin:0 0!important}
+.deck-opening #scene{transform-origin:50% 50%!important}
+.deck-transitioning #scene{z-index:16!important}
+.deck-static #telemetry,.deck-transitioning #telemetry{display:none!important}
+.deck-static #progress,.deck-transitioning #progress{transform:scaleX(1)!important}
+#briefing{position:absolute;inset:0;z-index:8;pointer-events:none}
+.deck-slide{position:absolute;inset:0;padding:70px 80px 110px;opacity:0;visibility:hidden;transform:translate3d(0,32px,0);pointer-events:none}
+.deck-slide.active{opacity:1;visibility:visible;transform:translate3d(0,0,0);pointer-events:auto}
+.deck-transitioning .deck-slide.active{opacity:var(--page-opacity);transform:translate3d(0,var(--page-y),0);pointer-events:none}
+.slide-copy{opacity:0;transform:translate3d(0,22px,0)}
+.active .slide-copy{opacity:1;transform:none}.deck-opening .cover-content{opacity:var(--copy)}
+.eyebrow{font-size:19px;letter-spacing:3px;color:var(--orange);font-weight:700;margin:0 0 18px}
+.masthead{display:flex;justify-content:space-between;align-items:center;font-size:18px;letter-spacing:2px;color:var(--muted);padding-bottom:22px;border-bottom:1px solid #6e83934a}
+.masthead b{color:var(--paper)}.masthead .number{font-family:monospace;color:var(--orange)}
+.cover-content{position:absolute;left:80px;top:220px;width:785px}
+.cover-content h1{font-family:Impact,'Arial Narrow',Arial,sans-serif;font-size:133px;letter-spacing:-2px;line-height:.95;margin:20px 0 36px;font-weight:900}
+.cover-content h1 em{color:var(--orange);font-style:normal}.cover-question{font-size:29px;line-height:1.48;color:#d0d8dc;max-width:685px;margin:0}
+.cover-date{font:17px monospace;letter-spacing:2px;margin-top:30px;color:var(--muted)}
+.cover-content:before{content:'';position:absolute;top:6px;left:-80px;width:50px;height:4px;background:var(--orange)}
+.slide-title{font-size:65px;line-height:1.05;letter-spacing:-2px;margin:34px 0 26px;font-weight:800}
+.photo-wrap{position:relative;width:100%;height:330px;overflow:hidden;background:#1a2633}
+.news-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 65%}
+.photo-credit{position:absolute;bottom:0;left:0;padding:10px 16px;font-size:14px;letter-spacing:.5px;background:#0b1118c9;color:#e0e6ea;pointer-events:none}
+.photo-wrap:after{content:'Click to replace image';position:absolute;top:18px;right:18px;background:#0b1118cc;padding:12px 18px;color:var(--paper);font-size:18px;opacity:0;pointer-events:none}
+.deck-editing .photo-wrap:after{opacity:1}.deck-editing .photo-wrap{cursor:pointer;outline:2px dashed var(--orange);outline-offset:5px}
+.news-bottom{display:grid;grid-template-columns:625px 565px;gap:55px;margin-top:30px}
+.news-summary{font-size:25px;line-height:1.48;color:#cbd4da;margin:0}
+blockquote{font-size:36px;line-height:1.15;color:var(--paper);font-weight:700;margin:0;border-left:4px solid var(--orange);padding-left:28px}
+blockquote small{display:block;font-size:16px;font-weight:400;color:var(--muted);margin-top:15px;line-height:1.4}
+.budget-intro{font-size:28px;line-height:1.45;color:#cbd4da;max-width:1190px;margin:0}
+.budget-values{display:grid;grid-template-columns:1fr 1fr 1fr;gap:50px;margin:46px 0 28px}
+.budget-value{border-top:2px solid #76869555;padding-top:20px}
+.budget-value .label{color:var(--muted);font-size:20px;letter-spacing:1px}.budget-value strong{display:block;font-size:105px;letter-spacing:-6px;line-height:1.15;margin-top:10px}
+.budget-value.repair{color:var(--orange)}.budget-value.result{color:#d2e3ed}
+.budget-track{height:32px;display:flex;width:100%;gap:5px;margin:6px 0 22px}.budget-track .repair-segment{background:var(--orange);width:20%}.budget-track .development-segment{background:#bdd0dc;width:80%}
+.budget-takeaway{font-size:31px;line-height:1.35;margin:24px 0 15px;max-width:1100px}
+.budget-footnote{font-size:18px;line-height:1.5;color:var(--muted);max-width:1100px;margin:0}
+.source-line{position:absolute;bottom:82px;left:80px;max-width:1220px;color:#8296a4;font-size:15px;line-height:1.4}
+#story-caption{position:absolute;top:150px;left:80px;z-index:19;pointer-events:none;opacity:0}
+#story-caption strong{display:block;font-size:34px;letter-spacing:-.6px;color:var(--paper);text-shadow:0 2px 12px #0009}
+#story-caption span{display:block;margin-top:12px;font-size:17px;letter-spacing:1.2px;color:#d2dce1;text-shadow:0 1px 7px #000c}
+.deck-opening .masthead{color:#e3edf2;text-shadow:0 1px 7px #0009}
+#cost-labels,#cost-morph,#regulation-morph{position:absolute;inset:0;z-index:18;pointer-events:none}
+#cost-morph{width:1600px;height:900px;overflow:visible}
+#cost-labels span{position:absolute;display:block;white-space:nowrap;color:#fff0dc;font-size:31px;font-weight:800;letter-spacing:-1px;transform:translate(-50%,-100%);opacity:0;text-shadow:0 2px 10px #0008}
+#cost-morph path{fill:var(--orange);opacity:0}
+#photo-vector{position:absolute;inset:0;width:1600px;height:900px;z-index:17;pointer-events:none;opacity:0;overflow:visible}
+.photo-silhouette{fill:var(--orange)}.photo-outline{fill:none;stroke:#ffad4b;stroke-width:2.1;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+#budget-labels{position:absolute;inset:0;z-index:18;pointer-events:none}
+#budget-labels>span{position:absolute;transform:translate(-50%,-100%);opacity:0;text-align:center;white-space:nowrap}
+#budget-labels small{display:block;font:15px monospace;letter-spacing:2px;color:var(--muted);margin-bottom:8px}
+#budget-labels b{font-size:41px;letter-spacing:-2px;color:#d2e3ed}#budget-labels>span:first-child b{color:var(--orange)}
+.advantage-intro{font-size:28px;line-height:1.4;color:#cbd4da;margin:0}
+.feedback-loop{position:absolute;inset:0;width:1600px;height:900px;pointer-events:none;overflow:visible}
+.feedback-loop ellipse{fill:none;stroke:#718696;stroke-width:1;stroke-dasharray:3 10;opacity:.23}
+.feedback-arcs>path{fill:none;stroke:#ff8708;stroke-width:1.6;marker-end:url(#feedback-arrow)}
+#feedback-arrow path{fill:none;stroke:var(--orange);stroke-width:1.2}
+.feedback-pulse{fill:#ffd6a5;stroke:#ff8708;stroke-width:2}
+.feedback-node{position:absolute;width:290px;text-align:left}
+.feedback-index{font:15px monospace;letter-spacing:2px;color:var(--orange)}
+.feedback-node h3{font-size:30px;line-height:1.06;letter-spacing:-.6px;margin:10px 0}
+.feedback-node p{font-size:19px;line-height:1.4;color:var(--muted);margin:0}
+.feedback-node.resources{left:80px;top:418px;width:260px}.feedback-node.development{left:660px;top:309px;text-align:center;width:280px}
+.iteration-caption{position:absolute;left:490px;top:680px;width:620px;text-align:center;pointer-events:none}
+.iteration-caption strong{display:block;font:16px monospace;letter-spacing:2px;color:#ffb45f}
+.iteration-caption span{display:block;margin-top:8px;color:#a8b5ba;font-size:17px}
+#cost-labels span{font-size:25px;letter-spacing:-.5px}
+#cost-labels .cost-total{font:19px monospace;letter-spacing:1.5px;color:#ffd6a5}
+.feedback-node.performance{left:1235px;top:418px;width:285px}.feedback-node.returns{left:1120px;top:644px;width:300px}.feedback-node.reinvestment{left:200px;top:644px;width:285px}
+.advantage-caveat{position:absolute;left:80px;top:753px;font-size:20px;color:#cbd4da;margin:0}.advantage-caveat b{font:15px monospace;letter-spacing:1.4px;color:var(--orange)}
+.competition-slide .slide-title{max-width:1150px;margin-bottom:20px}
+.competition-intro{font-size:28px;color:#cbd4da;margin:0}
+.competition-benefit{position:absolute;left:80px;width:650px}
+.competition-benefit.balance{top:405px}.competition-benefit.stability{top:575px}
+.competition-label{font:16px monospace;letter-spacing:2px;color:var(--orange)}
+.competition-benefit h3{font-size:35px;letter-spacing:-.6px;line-height:1.12;margin:13px 0 12px}
+.competition-benefit p{font-size:24px;line-height:1.42;color:#cbd4da;margin:0;max-width:620px}
+.competition-scene-caption{position:absolute;left:810px;top:685px;width:710px;text-align:center;font:15px monospace;letter-spacing:1.7px;color:#ffb45f;margin:0;line-height:1.6}
+.competition-scene-caption span{font:20px Arial,'PingFang SC',sans-serif;letter-spacing:0;color:var(--muted)}
+.competition-conditions{position:absolute;left:80px;top:752px;max-width:1420px;font-size:20px;line-height:1.45;color:var(--muted);margin:0}
+#race-status{position:absolute;left:80px;top:650px;z-index:19;pointer-events:none;opacity:0;text-shadow:0 2px 12px #0009}
+#race-status .race-phase{font:15px monospace;letter-spacing:2px;color:var(--orange)}
+#race-status strong{display:flex;align-items:baseline;gap:16px;margin:7px 0 10px}#race-status b{font:italic 66px Georgia,serif;line-height:1;color:#f1f0e8}#race-status small{font:13px monospace;letter-spacing:2px;color:#d2dce1}
+.race-speed-track{width:200px;height:3px;background:#d2dce13b}.race-speed-track span{display:block;height:100%;background:var(--orange);transform-origin:left center}
+#race-status p{margin:9px 0 0;font:10px monospace;letter-spacing:1.2px;color:#c4d0d7}
+ .entry-slide .slide-title{font-size:60px;margin-bottom:20px;max-width:1080px}.entry-intro{font-size:25px;line-height:1.4;color:#cbd4da;margin:0;max-width:1010px}
+.entry-photo{position:absolute;left:1180px;top:130px;width:340px;height:191.25px}.entry-photo .news-photo{object-position:50% 50%}.entry-photo .photo-credit{font-size:10px;padding:8px}
+.entry-news-label{position:absolute;left:80px;top:298px;width:1000px}.entry-news-label>span{font:14px monospace;letter-spacing:1.5px;color:var(--orange)}
+.entry-news-label p{position:absolute;left:260px;top:-3px;max-width:720px;margin:0;font-size:18px;line-height:1.3;color:#cbd4da}.entry-news-label p br{display:none}
+.entry-barrier{position:absolute;width:430px;top:612px;padding-top:16px;border-top:1px solid #76869555}
+.entry-barrier.knowledge{left:80px}.entry-barrier.facilities{left:585px}.entry-barrier.approval{left:1090px}
+.entry-barrier>span{font:14px monospace;letter-spacing:1.6px;color:var(--orange)}
+.entry-barrier h3{margin:9px 0;font-size:29px;letter-spacing:-.5px;line-height:1.1}.entry-barrier p{margin:0;font-size:20px;line-height:1.3;color:#cbd4da;max-width:420px}
+.entry-incumbents{position:absolute;left:80px;top:575px;font:11px monospace;letter-spacing:1.2px;color:#ffb45f;margin:0;line-height:1.5}.entry-incumbents br{display:none}.entry-incumbents span{margin-left:22px;font:14px Arial,sans-serif;letter-spacing:0;color:var(--muted)}
+.entry-slide .source-line{bottom:78px;max-width:1420px;font-size:12px;margin:0}
+.entry-takeaway{position:absolute;left:80px;top:770px;font-size:23px;line-height:1.3;color:var(--paper);margin:0}.entry-takeaway br{display:none}
+#entry-vectors{position:absolute;inset:0;width:1600px;height:900px;z-index:18;pointer-events:none;opacity:0}#entry-vectors path{fill:none;stroke:#d2dce1;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round;opacity:.85}
+#entry-vectors [data-entry-outline='mclaren']{stroke:#ffad4b}#entry-vectors [data-entry-outline='redbull']{stroke:#9bb3c6}#entry-vectors [data-entry-outline='ferrari']{stroke:#e48381}#entry-vectors [data-entry-outline='mercedes']{stroke:#80cfc3}#entry-vectors [data-entry-outline='cadillac']{stroke:#e3dab8}
+#entry-team-labels{position:absolute;inset:0;z-index:19;pointer-events:none;opacity:0}#entry-team-labels span{position:absolute;transform:translateX(-50%);font:13px monospace;letter-spacing:1.3px;white-space:nowrap;color:#cbd4da}#entry-team-labels [data-entry-team='cadillac']{color:#e3dab8}.deck-editing #entry-team-labels span{pointer-events:auto}
+.regulation-intro{font-size:30px;color:#cbd4da;margin:0}
+.regulation-diagram{position:absolute;left:80px;top:310px;width:820px;height:190px}
+.regulation-spending-label{font-size:18px;letter-spacing:2px;color:var(--muted);margin:0}
+.regulation-track{position:absolute;top:70px;left:0;height:48px;width:820px;background:#273340}
+.regulation-track span{display:block;width:100%;height:100%;background:var(--orange)}
+.regulation-cap{position:absolute;left:820px;top:31px;height:150px;border-left:3px solid #f1f0e8}
+.regulation-cap b{position:absolute;right:16px;top:0;white-space:nowrap;font-size:19px;letter-spacing:1px;color:var(--paper)}
+.regulation-categories{position:absolute;top:139px;left:0;font-size:21px;color:#bdcbd3;margin:0}
+.regulation-purpose{position:absolute;left:80px;top:540px;max-width:810px}
+.regulation-purpose h3{font-size:49px;line-height:1.06;letter-spacing:-1px;margin:0 0 20px}
+.regulation-purpose p{font-size:26px;color:#cbd4da;margin:0}
+.regulation-exclusions{position:absolute;left:80px;top:710px;font-size:20px;line-height:1.6;color:#a8b5ba;margin:0}
+.regulation-exclusions span{color:#d1dde4}
+#regulation-morph span{position:absolute;opacity:0;transform-origin:0 0}
+#regulation-morph .reg-fill{background:var(--orange)}#regulation-morph .reg-rest{background:#bdd0dc}
+#regulation-morph .reg-ghost{background:repeating-linear-gradient(125deg,#ff870820 0 8px,#ff870808 8px 16px);border-right:1px dashed #ffad4b70}
+#regulation-morph .reg-limit{width:3px;height:150px;background:var(--paper)}
+#regulation-morph .reg-limit b{position:absolute;right:16px;top:0;font-size:19px;letter-spacing:1px;white-space:nowrap;color:var(--paper)}
+#deck-team{display:none}
+.briefing-footer{position:absolute;z-index:25;left:40px;right:40px;bottom:20px;height:43px;display:flex;align-items:center;justify-content:flex-end;gap:20px;color:var(--muted);font-size:15px}
+.footer-actions,.footer-navigation{display:flex;gap:10px;align-items:center}.briefing-footer button,.briefing-footer select{border:1px solid #596e7f75;border-radius:5px;background:#0e1721dc;color:#d1dce3;padding:9px 13px;font-size:14px}
+.briefing-footer :disabled{opacity:.4;cursor:default}
+.briefing-footer button:hover{background:#203140}.briefing-footer select{max-width:150px}.slide-count{font:15px monospace;letter-spacing:1px;min-width:90px;text-align:center}
+[data-copy][contenteditable='true']{outline:1px dashed #ff87088c;outline-offset:5px;cursor:text}.deck-editing #edit-deck{border-color:var(--orange);color:var(--orange)}
+.notes-dialog{border:1px solid #455b6c;border-radius:12px;padding:32px 42px;background:#101a24;color:var(--paper);width:min(900px,90vw);max-height:85vh;font-size:19px;line-height:1.65}
+.notes-dialog::backdrop{background:#03080dd9}.notes-dialog h2{margin:0 0 18px;font-size:29px}.notes-dialog a{color:#ffab4f}.notes-dialog button{float:right;background:#243645;color:var(--paper);border:0;border-radius:5px;padding:8px 14px}.notes-dialog .model-disclosure{font-size:15px;color:#95a9b7;border-top:1px solid #405769;padding-top:16px}
+@media(prefers-reduced-motion:reduce){.deck-slide,.slide-copy,#scene{transition:none!important;animation:none!important}}
+
+.race-pair{display:flex;gap:42px}#race-status .race-pair strong{display:grid;grid-template-columns:auto auto;column-gap:12px;row-gap:5px}#race-status .race-pair small{grid-column:1/3}#race-status .race-pair b{font-size:55px}#race-status em{font:12px monospace;color:#acbec9}#race-status .red-speed{color:#a1bccd}
+
+/* P16: the projected car hands off to the photograph itself. */
+.entry-photo{left:80px;top:360px;width:650px;height:365.625px}
+.entry-slide .slide-title{max-width:1450px}
+.entry-intro{max-width:1420px}
+.entry-barrier{left:825px!important;width:695px;padding-top:14px}
+.entry-barrier.knowledge{top:360px}.entry-barrier.facilities{top:482px}.entry-barrier.approval{top:604px}
+.entry-barrier p{max-width:660px}
+.entry-incumbents{left:80px;top:738px;font-size:11px;width:1420px}
+.entry-incumbents span{font-size:13px}
+#entry-vectors .entry-silhouette{stroke:none!important;fill:#e3dab8;opacity:0}
+.advantage-slide .source-line{bottom:74px;max-width:1420px;font-size:12px;line-height:1.35;margin:0}
+
+/* P21: the race remains in full daylight; narration sits over the 3D scene. */
+.deck-transitioning[data-transition-kind='competition'] #briefing,.deck-transitioning[data-transition-kind='entry'] #briefing{z-index:17}
+.competition-slide{background:linear-gradient(90deg,rgba(7,12,18,calc(var(--race-copy,1)*.92)) 0%,rgba(7,12,18,calc(var(--race-copy,1)*.84)) 40%,rgba(7,12,18,0) 65%)}
+
+/* P24: the cover lives in the same racetrack image as the opening. */
+.deck-opening #scene{transform:var(--car-transform)!important;transform-origin:0 0!important}
+.deck-slide[data-slide="0"] .cover-content{isolation:isolate}
+.cover-content:after{content:'';position:absolute;z-index:-1;inset:-50px -65px -45px -80px;background:linear-gradient(90deg,#071019f5 0%,#09121be8 73%,#0b121b00 100%);pointer-events:none}
+
+.deck-transitioning[data-transition-kind="overtake"] #briefing{z-index:17}
+
+.deck-static .masthead{color:#edf1f3;text-shadow:0 1px 6px #000c}
+
+/* P27: settled pages contain isolated subjects on the presentation backdrop. */
+.cover-content{left:80px;right:auto;top:220px;width:635px;display:block}
+.cover-content h1{font-size:112px;line-height:.97;margin:18px 0 30px;letter-spacing:-2px}
+.cover-content .eyebrow{font-size:18px;margin-bottom:15px}
+.cover-question{font-size:27px;line-height:1.45;max-width:615px}
+.cover-date{font-size:16px;margin-top:27px}
+.cover-content:after{display:none}
+.deck-opening .masthead{opacity:var(--copy)}
+.competition-slide{background:none}
+
+
+/* P37: one original photo shared by slides seven and eight. */
+.entry-photo-host{position:absolute;inset:0;pointer-events:none}
+.entry-photo-host .entry-photo{transform-origin:0 0;transform:none;opacity:0;visibility:hidden;transition:none}
+.deck-editing .entry-photo-host .entry-photo{pointer-events:auto}
+.conclusion-title{position:absolute;left:80px;top:175px;font-size:76px;line-height:1.02;letter-spacing:-2px;margin:0;font-weight:800;max-width:1440px}
+.conclusion-title em{font-style:normal;color:var(--orange)}
+.conclusion-reason{position:absolute;left:80px;top:358px;max-width:1440px;font-size:27px;line-height:1.35;margin:0;color:#e0e6e9}
+.conclusion-limitation{position:absolute;left:80px;top:751px;max-width:1440px;font-size:24px;line-height:1.35;margin:0;color:#a8b5ba}
+.conclusion-slide .source-line{bottom:77px;max-width:1440px;font-size:12px;margin:0}
+.source-line a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+
+/* P42: the conclusion copy is hidden before its scheduled reveal, including first paint. */
+.deck-transitioning[data-transition-kind="conclusion"][data-conclusion-copy="0"] .conclusion-slide .slide-copy{visibility:hidden!important}
+
+/* P42: larger, differently aimed cars wrap around a clear text area. */
+.conclusion-reason{top:343px;max-width:600px}
+.conclusion-limitation{top:790px;font-size:20px}
+.conclusion-slide .source-line{bottom:67px}

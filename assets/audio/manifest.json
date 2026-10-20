@@ -1,0 +1,53 @@
+{
+  "version": 6,
+  "clips": [
+    {
+      "key": "lights",
+      "file": "lights.mp3",
+      "mime": "audio/mpeg",
+      "seconds": 0.395,
+      "bytes": 9164,
+      "sha256": "c64bfd1eca2a8d52910506f020fc416b3cbb08365faea8cc314272a16cff3d1a"
+    }
+  ],
+  "sources": [
+    {
+      "key": "lights",
+      "url": "https://www.youtube.com/watch?v=UodRjBu36FI",
+      "title": "F1 Starting light sound",
+      "author": "Daniel2134",
+      "platformLicense": "Not specified in retrieved metadata",
+      "importedInputSHA256": "7c08a8462c204395fbf25fc8f8998f48ad364f94344e6e4472e62fd7dbf17a06",
+      "sampleRange": [
+        0.665,
+        1.06
+      ],
+      "changes": "First isolated cue, normalized and synchronized to each red lamp."
+    }
+  ],
+  "soundDesign": {
+    "allActors": true,
+    "staticSlides": "silent",
+    "start": "existing Start gesture",
+    "controls": "M / Sound toggle, volume on ready screen",
+    "engineRecordingsInRuntime": false,
+    "gearControl": "Observed Monza speed/RPM relationships; gear-dependent minimum holds, speed-linked shift points, short upshift transient. Only real braking allows downshifts. Cruise, reveal and freeze do not shift.",
+    "rpmVariation": "Independent stable car parameters, subtle per-combustion amplitude/timing variation; no sustained electric layer.",
+    "doppler": "Relative source/listener radial motion, smoothed, bounded.",
+    "backgroundMix": "Focused car leads; distant individual voices stay quieter.",
+    "reference": "OpenF1 2025 Monza qualifying, session 9908, driver 1, lap 17. Approx 3.7 Hz data; timing inspiration only, not exact team telemetry reconstruction.",
+    "downshift": "Braking-only rapid sequential downshifts; 75–87 ms minimum dwell, short audible rev-match load/gain accent with fast transient response. Road-RPM safety gate retained.",
+    "slowMotionHandoff": "Hold the last engine RPM/load and Doppler pitch; fade level by scene handoff time. Visual slowdown is not engine braking, and zero visual speed does not abruptly mute an existing fading voice."
+  },
+  "synthesis": {
+    "kind": "procedural-v6",
+    "cylinders": 6,
+    "strokeCycle": 4,
+    "source": "source/engine-synth.js",
+    "sha256": "50249b0f1b237f722450392ee215492b323d77466cb56734a4794775beb23533",
+    "sampleRecordings": false,
+    "electricWhineOscillator": false,
+    "render": "AudioWorklet, embedded data module for file origins; inline DSP compatibility if unavailable",
+    "acoustics": "Six mildly varying blowdown pulses, frequency-damped pipes, two-stage outlet lowpass and combustion-gated flow noise."
+  }
+}

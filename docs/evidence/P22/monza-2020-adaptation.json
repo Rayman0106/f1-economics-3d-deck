@@ -1,0 +1,170 @@
+{
+  "source": "asset-downloads\\monza-2020\\extracted\\source\\untitled.glb",
+  "triangles": 1194460,
+  "texture_limit": 1024,
+  "focus_bounds": [
+    [
+      -92.6986083984375,
+      -4.01946115447555,
+      -1443.012076073429
+    ],
+    [
+      1227.1419677734375,
+      9.839760131983923,
+      764.0183280947664
+    ]
+  ],
+  "changes": "Baked source transforms, translated origin, resized author textures. Full track geometry preserved.",
+  "material_alpha_corrections": [
+    {
+      "material": "glass_B.005",
+      "from": "OPAQUE",
+      "to": "BLEND",
+      "source_alpha_range": [
+        97,
+        255
+      ]
+    },
+    {
+      "material": "misc_alpha.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "bushes.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "tree_shadow.005",
+      "from": "OPAQUE",
+      "to": "BLEND",
+      "source_alpha_range": [
+        0,
+        8
+      ]
+    },
+    {
+      "material": "misc_alphatest.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "tree8.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "trees.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "branch5.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "metals-alpha.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "hedge.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "fences1.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "fences2.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "treesline.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "antennas.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "gstand-alpha.005",
+      "from": "OPAQUE",
+      "to": "MASK",
+      "source_alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "material": "shadow_serraglio.005",
+      "from": "OPAQUE",
+      "to": "BLEND",
+      "source_alpha_range": [
+        0,
+        151
+      ]
+    }
+  ],
+  "grass_albedo_tints": [
+    "grass-shader.005"
+  ],
+  "path": "assets\\tracks\\monza-2020.glb",
+  "bytes": 91872460,
+  "sha256": "3e65cb92636af0d9638ee94c4d88022f0fc9bccfae55fcd566105ae3d4bd1258"
+}

@@ -1,0 +1,136 @@
+{
+  "source": "asset-downloads\\haas-vf26\\extracted\\source\\fia_f1_2026_car.glb",
+  "original_triangles": 275868,
+  "adapted_triangles": 275868,
+  "wheels": {
+    "FL_Wheel": {
+      "wheelCenter": [
+        -1.6907546241282034,
+        0.36000469326818646,
+        0.816522527113495
+      ],
+      "wheelRadius": 0.3575755953788757,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "FR_Wheel": {
+      "wheelCenter": [
+        -1.690750000086044,
+        0.360005714792945,
+        -0.8147538323762191
+      ],
+      "wheelRadius": 0.3575755944032392,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RL_Wheel": {
+      "wheelCenter": [
+        1.7144456831083517,
+        0.3575757145867091,
+        0.7724758982658386
+      ],
+      "wheelRadius": 0.35757550597190857,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    },
+    "RR_Wheel": {
+      "wheelCenter": [
+        1.7144499570131302,
+        0.3575757145881653,
+        -0.7724769115447998
+      ],
+      "wheelRadius": 0.3575757145881653,
+      "wheelAxle": [
+        0,
+        0,
+        1
+      ]
+    }
+  },
+  "assemblies": {
+    "Front_Wing": {
+      "triangles": 20232,
+      "wingPivot": [
+        -2.4465648084876848,
+        0.2624612748622894,
+        -2.086162567138672e-07
+      ],
+      "bounds": [
+        [
+          -2.8813698291774417,
+          0.08395703136920923,
+          -0.9695299863815308
+        ],
+        [
+          -2.011759787797928,
+          0.4409655183553695,
+          0.9695295691490173
+        ]
+      ]
+    },
+    "Rear_Wing": {
+      "triangles": 3720,
+      "wingPivot": [
+        1.985643914602276,
+        0.8761435598134995,
+        -7.152557479628285e-08
+      ],
+      "bounds": [
+        [
+          1.7848302995405123,
+          0.7794677019119263,
+          -0.5653715217913913
+        ],
+        [
+          2.1864575296640396,
+          0.9728194177150726,
+          0.5653713787402417
+        ]
+      ]
+    }
+  },
+  "texture_limit": 1024,
+  "transformation": "baked source transforms, Y rotation -90 degrees, ground alignment; no geometry simplification",
+  "material_alpha_corrections": [],
+  "packaged_livery_reconnections": [
+    {
+      "material": "chasis",
+      "file": "asset-downloads/haas-vf26/extracted/textures/chassis.png",
+      "sha256": "4f7e1e17ce9801c9bd8910a878d17623f0a20cd7871b5d92973478493b44da07",
+      "flip_vertical_to_match_glb_uv": true,
+      "replaces_embedded_texture": 0
+    },
+    {
+      "material": "redbull_wheel_hub",
+      "file": "asset-downloads/haas-vf26/extracted/textures/redbull_wheel_d.png",
+      "sha256": "e2ca08eb54b7af8b20c724c4d77e8cd848c3488b5006c88c12838a374f71ac05",
+      "flip_vertical_to_match_glb_uv": true,
+      "replaces_embedded_texture": 2
+    },
+    {
+      "material": "chassis2",
+      "file": "asset-downloads/haas-vf26/extracted/textures/chassis2.png",
+      "sha256": "868e9e6b67c374719704a383794e911136b2564c39b3f8178e3854ea364825d4",
+      "flip_vertical_to_match_glb_uv": true,
+      "replaces_embedded_texture": 10
+    },
+    {
+      "material": "decal",
+      "file": "asset-downloads/haas-vf26/extracted/textures/decals.png",
+      "sha256": "549809c78c8ce37f1785d0f7a30c0581000b3304029d0c8e30ac55153f4d06c9",
+      "flip_vertical_to_match_glb_uv": true,
+      "replaces_embedded_texture": 25
+    }
+  ],
+  "bytes": 24573164,
+  "sha256": "bfc88737938fb5e9a2ac7e68055942d996b14932c1821f05a194d4e87ad84d98"
+}
