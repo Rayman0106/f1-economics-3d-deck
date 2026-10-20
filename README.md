@@ -49,3 +49,11 @@ The repository root contains entry points and project metadata. Old diagnostics,
 Application code is **MIT**. [Third-party notices](THIRD_PARTY_NOTICES.md) define the separate asset licences.
 
 All converted car GLBs are retained. Blender authoring files are excluded. Models, fonts and other credited media remain under their own terms.
+
+<!-- CINEMATIC-SKILL-START -->
+## Reusable design skill
+
+The design and implementation experience from this deck and its companion project is documented in [**Cinematic 3D Decks · Skill**](https://github.com/Rayman0106/build-cinematic-3d-decks). It includes model adaptation, narrative continuity, camera movement, semantic typography, preparation, reusable tools and an offline interactive lab.
+
+[Implementation lessons from this project](https://github.com/Rayman0106/build-cinematic-3d-decks/blob/main/references/f1-case-study.md)
+<!-- CINEMATIC-SKILL-END -->
