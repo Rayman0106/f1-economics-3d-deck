@@ -20,13 +20,12 @@ def project_archive(target):
     temporary = Path(temporary_name)
     try:
         with zipfile.ZipFile(temporary, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
-            for folder in ("source", "assets", "seed", "tools", "docs", "speaker"):
+            for folder in ("src", "assets", "seed", "tools", "docs", "speaker"):
                 for path in sorted((ROOT / folder).rglob("*")):
                     if path.is_file() and "__pycache__" not in path.parts and path.suffix != ".pyc":
                         archive.write(path, "f1-local-workflow/" + str(path.relative_to(ROOT)).replace("\\", "/"))
-            for name in ("README.md", "AGENTS.md", "CODEX_HANDOFF.md", "project.json", "start-local.bat", "start-local.sh", ".gitignore"):
+            for name in ("README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "project.json", "build.py", ".gitignore"):
                 archive.write(ROOT / name, "f1-local-workflow/" + name)
-            archive.write(ROOT/'asset-library.html','f1-local-workflow/asset-library.html')
             archive.write(ROOT/'index.html','f1-local-workflow/index.html')
         with zipfile.ZipFile(temporary) as archive:
             if archive.testzip() is not None:

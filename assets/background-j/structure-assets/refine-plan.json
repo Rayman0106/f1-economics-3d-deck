@@ -1,0 +1,510 @@
+{
+  "hiddenSources": {
+    "Imported_Monza_metals005_0_-1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_0_0": [
+      "*"
+    ],
+    "Imported_Monza_metals005_1_-1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_1_0": [
+      "*"
+    ],
+    "Imported_Monza_metals005_1_1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_1_3": [
+      "*"
+    ],
+    "Imported_Monza_metals005_1_4": [
+      "*"
+    ],
+    "Imported_Monza_metals005_2_-1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_2_0": [
+      "*"
+    ],
+    "Imported_Monza_metals005_2_3": [
+      "*"
+    ],
+    "Imported_Monza_metals005_2_4": [
+      "*"
+    ],
+    "Imported_Monza_metals005_3_-1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_3_0": [
+      "*"
+    ],
+    "Imported_Monza_metals005_4_-1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_4_0": [
+      "*"
+    ],
+    "Imported_Monza_metals005_4_3": [
+      "*"
+    ],
+    "Imported_Monza_metals005_4_4": [
+      "*"
+    ],
+    "Imported_Monza_metals005_5_-1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_5_0": [
+      "*"
+    ],
+    "Imported_Monza_metals005_5_3": [
+      "*"
+    ],
+    "Imported_Monza_metals005_5_4": [
+      "*"
+    ],
+    "Imported_Monza_metals005_6_-1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_6_0": [
+      "*"
+    ],
+    "Imported_Monza_metals005_7_-1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_7_0": [
+      "*"
+    ],
+    "Imported_Monza_metals005_8_-1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_8_0": [
+      "*"
+    ],
+    "Imported_Monza_metals005_8_3": [
+      "*"
+    ],
+    "Imported_Monza_metals005_8_4": [
+      "*"
+    ],
+    "Imported_Monza_metals005_9_-1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_9_0": [
+      "*"
+    ],
+    "Imported_Monza_metals005_9_1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_10_-1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_10_0": [
+      "*"
+    ],
+    "Imported_Monza_metals005_10_1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_11_-1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_11_0": [
+      "*"
+    ],
+    "Imported_Monza_metals005_11_1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_12_-1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_12_0": [
+      "*"
+    ],
+    "Imported_Monza_metals005_12_1": [
+      "*"
+    ],
+    "Imported_Monza_metals005_12_3": [
+      "*"
+    ],
+    "Imported_Monza_metals005_12_4": [
+      "*"
+    ],
+    "Imported_Monza_metals005_12_5": [
+      "*"
+    ],
+    "Imported_Monza_metals-alpha005_0_0": [
+      "*"
+    ],
+    "Imported_Monza_metals-alpha005_0_1": [
+      "*"
+    ],
+    "Imported_Monza_metals-alpha005_1_1": [
+      "*"
+    ],
+    "Imported_Monza_metals-alpha005_2_1": [
+      "*"
+    ],
+    "Imported_Monza_metals-alpha005_3_1": [
+      "*"
+    ],
+    "Imported_Monza_metals-alpha005_4_1": [
+      "*"
+    ],
+    "Imported_Monza_metals-alpha005_5_0": [
+      "*"
+    ],
+    "Imported_Monza_metals-alpha005_5_1": [
+      "*"
+    ],
+    "Imported_Monza_metals-alpha005_6_0": [
+      "*"
+    ],
+    "Imported_Monza_metals-alpha005_6_1": [
+      "*"
+    ],
+    "Imported_Monza_fences1005_0_0": [
+      "*"
+    ],
+    "Imported_Monza_fences1005_1_0": [
+      "*"
+    ],
+    "Imported_Monza_fences1005_2_0": [
+      "*"
+    ],
+    "Imported_Monza_fences1005_3_0": [
+      "*"
+    ],
+    "Imported_Monza_fences1005_4_0": [
+      "*"
+    ],
+    "Imported_Monza_fences1005_5_0": [
+      "*"
+    ],
+    "Imported_Monza_fences1005_6_0": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_0_-1": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_0_0": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_1_-1": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_1_0": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_2_-1": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_2_0": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_3_-1": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_3_0": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_4_-1": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_4_0": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_5_-1": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_5_0": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_6_-1": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_6_0": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_7_-1": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_7_0": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_8_-1": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_8_0": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_9_-1": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_9_0": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_10_-1": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_11_-1": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_11_0": [
+      "*"
+    ],
+    "Imported_Monza_fences2005_12_-1": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_0_1": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_1_-2": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_1_-1": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_2_-2": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_2_-1": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_2_4": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_3_-2": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_3_-1": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_4_-2": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_4_-1": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_4_4": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_5_-2": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_5_-1": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_6_-2": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_6_-1": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_6_0": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_7_-2": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_7_-1": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_7_0": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_8_-2": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_8_0": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_9_-2": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_9_-1": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_9_0": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_10_-2": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_10_-1": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_10_0": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_11_-2": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_11_-1": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_12_-2": [
+      "*"
+    ],
+    "Imported_Monza_gstand-alpha005_12_-1": [
+      "*"
+    ],
+    "Imported_Monza_interior_floor28_0_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor56_0_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor84_0_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_ceiling_0_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor28_1_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor56_1_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor84_1_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_ceiling_1_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor28_2_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor56_2_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor84_2_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_ceiling_2_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor28_3_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor56_3_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor84_3_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_ceiling_3_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor28_4_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor56_4_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor84_4_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_ceiling_4_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor28_5_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor56_5_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor84_5_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_ceiling_5_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor28_6_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor56_6_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_floor84_6_1": [
+      "opening"
+    ],
+    "Imported_Monza_interior_ceiling_6_1": [
+      "opening"
+    ],
+    "Imported_Monza_box_M005_1_1": [
+      "costs"
+    ],
+    "Imported_Monza_box_M005_3_1": [
+      "costs"
+    ],
+    "Imported_Monza_box_M005_5_1": [
+      "costs"
+    ]
+  },
+  "hiddenProcedural": {
+    "Fence_posts": [
+      "*"
+    ],
+    "Catch_fence_-1": [
+      "opening"
+    ],
+    "Catch_fence_1": [
+      "opening"
+    ],
+    "Grandstand_roof_trusses_and_handrails": [
+      "*"
+    ],
+    "Far_Grandstand_roof_trusses_and_handrails": [
+      "*"
+    ],
+    "Distant_hills": [
+      "*"
+    ],
+    "Lighting_poles": [
+      "*"
+    ],
+    "Lamp_heads": [
+      "*"
+    ],
+    "Wall_panel_joints": [
+      "*"
+    ]
+  },
+  "repairSources": [],
+  "hiddenPrefixes": {
+    "Imported_Monza_gstand-alpha": [
+      "*"
+    ],
+    "Imported_Monza_metals": [
+      "*"
+    ],
+    "Imported_Monza_fences": [
+      "*"
+    ],
+    "Imported_Monza_interior_floor": [
+      "opening"
+    ],
+    "Imported_Monza_interior_ceiling": [
+      "opening"
+    ],
+    "Imported_Monza_gstand": [
+      "*"
+    ],
+    "Imported_Monza_glass_B005_7_-2": [
+      "*"
+    ],
+    "Imported_Monza_glass_B005_8_-2": [
+      "*"
+    ],
+    "Imported_Monza_misc1": [
+      "*"
+    ],
+    "Imported_Monza_antennas": [
+      "*"
+    ],
+    "Imported_Monza_serraglio": [
+      "*"
+    ]
+  }
+}

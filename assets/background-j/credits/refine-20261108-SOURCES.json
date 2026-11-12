@@ -1,0 +1,11 @@
+{
+  "sharedResources": ["../../f1-background-review-20261108/assets/SOURCES.json", "../../f1-background-detail-20261108/assets/SOURCES.json"],
+  "files": [{
+    "file": "concrete-height.jpg",
+    "source": "https://polyhaven.com/a/concrete_wall_008",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_wall_008/concrete_wall_008_disp_1k.jpg",
+    "license": "CC0",
+    "physicalWidthMetres": 2.71,
+    "bytes": 235646
+  }]
+}

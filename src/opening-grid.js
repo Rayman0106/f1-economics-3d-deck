@@ -36,16 +36,7 @@ function createOpeningGrid(THREE,renderer,scene,controllerFactory,Loader,readAss
       const controller=controllerFactory({THREE,loader:new Loader(),parent:group,renderer,readAsset:()=>readAsset(key)});
       const loaded=await controller.apply('mclaren');window.F1Boot?.parsed(key);templates[key]={group,car:loaded.car,wheels:loaded.wheels,controller};await window.F1Boot?.tick();
     }
-    // Prepare unique geometry once, and yield between meshes while the loader is visible.
-    const levels=new WeakMap();let count=0;
-    for(const source of Object.values(templates)){
-      const meshes=[];source.car.traverse(m=>{if(m.isMesh)meshes.push(m);});
-      for(const mesh of meshes){if(!levels.has(mesh.geometry)){
-        const wheel=/Wheel/.test(mesh.parent?.name||'')||/sidewall|tread|hub|disc/.test(Array.isArray(mesh.material)?mesh.material[0].name:mesh.material.name);
-        levels.set(mesh.geometry,{full:mesh.geometry,mid:simplified(mesh.geometry,wheel?.035:.065),far:simplified(mesh.geometry,wheel?.055:.11)});
-        if(++count%3===0)await window.F1Boot?.tick();
-      }}
-    }
+    const levels=await window.F1ParallelK.prepareLods(THREE,Object.values(templates));
     order.forEach((key,index)=>{
       const source=templates[key];let entry;
       if(index<2)entry={...source,index,key,primary:true,meshes:[],lod:0};
@@ -94,6 +85,7 @@ function createOpeningGrid(THREE,renderer,scene,controllerFactory,Loader,readAss
   function selectLod(entry,position,force=false){
     if(entry.primary)return;const d=entry.group.position.distanceTo(position)*Math.tan(scene.userData.openingCamera.fov*Math.PI/360)/Math.tan(44*Math.PI/360);let level=d>85?2:d>30?1:0;
     if(!force&&entry.lod>=0){if(entry.lod===0&&d<34)level=0;if(entry.lod===1&&d>27&&d<94)level=1;if(entry.lod===2&&d>77)level=2;}
+    if(window.F1ParallelK.forcedLod!==null)level=window.F1ParallelK.forcedLod;
     if(level===entry.lod)return;entry.lod=level;const key=['full','mid','far'][level];for(const item of entry.meshes)item.mesh.geometry=item[key];
   }
   function frame(seconds){
@@ -155,5 +147,6 @@ function createOpeningGrid(THREE,renderer,scene,controllerFactory,Loader,readAss
   }
   async function warmup(){for(const t of[0,1,2,3,4,5,6,7,8,9,10.5,11,13,15,16.6,17,19,21,23,24.5,26,27,28.2,29]){frame(t);renderer.render(scene,scene.userData.openingCamera);await window.F1Boot?.tick();}}
   function inspectionState(){if(!inspectionLast)return null;const camera=scene.userData.openingCamera;return{rows:inspectionLast.rows,mates:inspectionLast.active.map(entry=>{const b=new THREE.Box3().setFromObject(entry.car),points=[];for(const x of[b.min.x,b.max.x])for(const y of[b.min.y,b.max.y])for(const z of[b.min.z,b.max.z]){const v=new THREE.Vector3(x,y,z).project(camera);points.push({x:(v.x+1)*800,y:(1-v.y)*450,z:v.z});}return{team:entry.key,position:entry.group.position.toArray(),box:{x:Math.min(...points.map(p=>p.x)),y:Math.min(...points.map(p=>p.y)),right:Math.max(...points.map(p=>p.x)),bottom:Math.max(...points.map(p=>p.y)),front:points.every(p=>p.z>-1&&p.z<1)}};})};}
+  window.F1PerformanceJ.registerGrid(cars);
   return{inspectionState,duration,prepare,prepareSignals,configure,frame,follow,distance,actorDistance,state,storyTemplates:()=>Object.fromEntries(['aston','williams','haas','audi','alpine','racingbulls'].map(key=>[key,templates[key]])),backgroundGroups:()=>cars.filter(e=>!e.primary&&e.group.visible).map(e=>e.group),openingWorldGroups:()=>cars.filter(e=>!(e.primary&&e.key==='redbull')).map(e=>e.group),summary:()=>last,warmup,hide(){for(const entry of cars)if(!entry.primary)entry.group.visible=false;},showAll(){for(const entry of cars)entry.group.visible=true;}};
 }

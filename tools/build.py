@@ -1,74 +1,92 @@
-"""Compile editable source and local GLBs into one portable index.html."""
+"""Build Final J from editable modules and immutable local assets.
+
+Python standard library only; no historical workspace or network is required.
+Large GLBs are base64-encoded in chunks, not concatenated in memory.
+"""
+import argparse
 import base64
 import json
+from pathlib import Path
 import re
-import subprocess
-import sys
+import tempfile
+import os
+from common import ROOT, build_lock, read_json
 
-from common import ROOT, SOURCE, WORK, atomic_text, build_lock, check_models, digest, read_json, script_json, validate_state
+INCLUDE = re.compile(r'@@F1_INCLUDE:([^@]+)@@')
+MODEL = re.compile(r'<script\b([^>]*\bdata-src="/model/([^"]+)\.glb"[^>]*)>\s*</script>')
 
 
-def build():
+def assemble(check=False):
+    html = (ROOT/'seed/final-j-shell.html').read_bytes().decode('utf8')
+    def include(match):
+        path = (ROOT/match[1]).resolve()
+        if not path.is_relative_to(ROOT.resolve()):
+            raise ValueError('Source include leaves the project')
+        return path.read_bytes().decode('utf8')
+    html = INCLUDE.sub(include, html)
+    for placeholder, name in [('{{TYPE_TEAMS_JSON}}','type-teams.json'),
+                              ('{{TYPE_LOGOS_JSON}}','type-logos.json'),
+                              ('{{CONTENT_JSON}}','content.json')]:
+        html = html.replace(placeholder, (ROOT/'src'/name).read_bytes().decode('utf8'))
+    resources = read_json(ROOT/'assets/background-j/resources.json')
+    table = {}
+    for uri, record in resources.items():
+        path = ROOT/record['path']
+        if path.stat().st_size != record['bytes']:
+            raise ValueError('Background resource size differs: '+uri)
+        value = 'CHECK_ONLY' if check else base64.b64encode(path.read_bytes()).decode('ascii')
+        table[uri] = 'data:'+record['mime']+';base64,'+value
+    html = html.replace('@@F1_BACKGROUND_TABLE@@', json.dumps(table,separators=(',',':')))
+    if INCLUDE.search(html) or '@@F1_' in html or '{{TYPE_' in html or '{{CONTENT_JSON}}' in html:
+        raise ValueError('Unresolved build input')
+    manifest = read_json(ROOT/'assets/manifest.json')
+    models = {key: ROOT/record['path'] for section in ('models','scenery','grid')
+              for key,record in manifest[section].items()}
+    if {m[2] for m in MODEL.finditer(html)} != set(models):
+        raise ValueError('Embedded model slots differ from manifest')
+    if 'F1ReviewMode=true' in html or '/live-j.js' in html or '/perf-hooks.js' in html:
+        raise ValueError('Development preview leaked into release')
+    return html,models,resources
+
+
+def build(output=None):
     with build_lock():
-        return compile_project()
+        html,models,resources = assemble()
+        target = Path(output).resolve() if output else ROOT/'index.html'
+        target.parent.mkdir(parents=True,exist_ok=True)
+        temporary = None
+        try:
+            with tempfile.NamedTemporaryFile(mode='w',encoding='utf8',newline='',
+                                             dir=target.parent,delete=False) as stream:
+                temporary = Path(stream.name)
+                position = 0
+                for match in MODEL.finditer(html):
+                    stream.write(html[position:match.start()])
+                    stream.write('<script'+re.sub(r'\s+data-src="[^"]+"','',match[1])+'>')
+                    with models[match[2]].open('rb') as model:
+                        while block := model.read(3*1024*1024):
+                            stream.write(base64.b64encode(block).decode('ascii'))
+                    stream.write('</script>')
+                    position = match.end()
+                stream.write(html[position:])
+            os.replace(temporary,target)
+        finally:
+            if temporary:
+                temporary.unlink(missing_ok=True)
+        report = {'version':'Final-J','file':str(target),'bytes':target.stat().st_size,
+                  'models':len(models),'backgroundResources':len(resources),'targetFps':60,
+                  'defaultLook':'broadcast','developmentControls':False}
+        (ROOT/'.build/last-build.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8')
+        return report
 
 
-def compile_project():
-    manifest = check_models()
-    from build_library import build as build_asset_library
-    build_asset_library()
-    project = read_json(ROOT / "project.json")
-    version, name = project["version"], project["name"]
-    if not re.fullmatch(r"[A-Za-z0-9_-]+", name + "-" + version):
-        raise ValueError("Project name and version must use ASCII letters, numbers, underscores or hyphens")
-    state = validate_state(read_json(SOURCE / "deck-state.json"))
-    if state["text"]:
-        raise ValueError("Import text into slides.html using tools/import_edits.py; text overrides would hide source edits.")
-    shell = (ROOT / "seed/engine-shell.html").read_text(encoding="utf-8")
-    if digest(shell.encode()) != manifest["seed_sha256"]:
-        raise ValueError("Native engine shell changed; review that change and update its fingerprint explicitly.")
-    for team, record in manifest["models"].items():
-        token = "__F1_ASSET_" + team.upper() + "__"
-        if team == 'cadillac' and token not in shell:
-            embedded = base64.b64encode((ROOT / record["path"]).read_bytes()).decode("ascii")
-            shell = shell.replace('</body>', '<script id="asset-cadillac" type="application/octet-stream">' + embedded + '</script>\n</body>', 1)
-            continue
-        if shell.count(token) != 1:
-            raise ValueError("Invalid model placeholder: " + team)
-        shell = shell.replace(token, base64.b64encode((ROOT / record["path"]).read_bytes()).decode("ascii"))
-    for asset_name,record in {**manifest.get('scenery',{}),**manifest.get('grid',{})}.items():
-        embedded=base64.b64encode((ROOT/record['path']).read_bytes()).decode('ascii')
-        shell=shell.replace('</body>','<script id="asset-'+asset_name+'" type="application/octet-stream">'+embedded+'</script>\n</body>',1)
-    WORK.mkdir(exist_ok=True)
-    base = WORK / "assembled-base.html"
-    output = WORK / "index-next.html"
-    base.write_text(shell, encoding="utf-8")
-    run = subprocess.run([sys.executable, "-X", "utf8", str(SOURCE / "build.py"), "--base", str(base), "--output", str(output)], cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
-    if run.returncode:
-        raise RuntimeError(run.stderr.strip() or run.stdout.strip())
-    html = output.read_text(encoding="utf-8").replace("四队 F1 赛车三维动画", "2026 F1 社区赛车模型三维动画")
-    _, pattern = script_json(html, "deck-data")
-    payload = json.dumps(state, separators=(",", ":"), ensure_ascii=False).replace("<", "\\u003c")
-    html = re.sub(pattern, lambda m: m[1] + payload + m[3], html, count=1, flags=re.S)
-    if version != manifest["baseline"]:
-        html = re.sub(r"<title>[^<]*</title>", "<title>F1 Economics / " + version + "</title>", html, count=1)
-        html = re.sub(r'(<meta name="apex-version" content=")[^"]*(")', lambda m: m[1] + "briefing-" + version.lower() + "-local" + m[2], html, count=1)
-        html = re.sub(r"(window\.F1Briefing=Object\.freeze\(\{version:')[^']*(')", lambda m: m[1] + version + "-local-workflow" + m[2], html, count=1)
-        html = re.sub(r"(link\.download=')[^']*(')", lambda m: m[1] + name + "-" + version + ".html" + m[2], html, count=1)
-    check_models(html)
-    # Only replace the visible entry after a successful, verified build.
-    atomic_text(ROOT / "index.html", html)
-    result = {"file": "index.html", "version": version, "bytes": len(html.encode("utf-8")), "sha256": digest(html.encode("utf-8")), "models": len(manifest["models"])}
-    atomic_text(WORK / "last-build.json", json.dumps(result, indent=2) + "\n")
-    # These verified intermediates are reproducible; keep only the live output.
-    base.unlink(missing_ok=True)
-    output.unlink(missing_ok=True)
-    return result
-
-
-if __name__ == "__main__":
-    try:
-        print(json.dumps(build()))
-    except Exception as error:
-        print("Build failed: " + str(error), file=sys.stderr)
-        sys.exit(1)
+if __name__ == '__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output',type=Path)
+    parser.add_argument('--check',action='store_true',help='validate sources without exporting large HTML')
+    args=parser.parse_args()
+    if args.check:
+        _,models,resources=assemble(check=True)
+        print(json.dumps({'status':'pass','models':len(models),'backgroundResources':len(resources)}))
+    else:
+        print(json.dumps(build(args.output)))

@@ -1,4 +1,3 @@
-/* Detailed, batched circuit. The original route and distance units are retained. */
 function g0(THREE,renderer) {
   const group=new THREE.Group();group.name='APEX_CIRCUIT_V10';
   const start=-700,end=_u+950,step=.75,turnStart=20+as(3),turnEnd=20+as(4.8);
@@ -99,8 +98,12 @@ function g0(THREE,renderer) {
   for(let station=start;station<turnStart-100;station+=12)dashPositions.push({position:lane(station,-3.95,-.386),heading:heading(station),scale:[5.5,1,1]});
   instances('Pit_entry_dashes',new THREE.BoxGeometry(1,.009,.095),paint,dashPositions);
   group.traverse(object=>{if(object.material)for(const mat of Array.isArray(object.material)?object.material:[object.material]){if(!materials.has(mat))materials.set(mat,mat.opacity);mat.forceSinglePass=true;}object.updateMatrix();object.matrixAutoUpdate=false;});
+  window.F1Background.registerTrack(THREE,renderer,group);
   let alpha=-1;
   return{group,racingLine,distance:racingLine.getLength(),lane,heading,turnStart,turnEnd,raceMetres:_u,
     fade(value){if(value===alpha)return;alpha=value;for(const[mat,original]of materials)mat.opacity=original;},
     dispose(){group.traverse(object=>object.geometry?.dispose());for(const mat of materials.keys())mat.dispose();textures.forEach(map=>map.dispose());}};
 }
+
+/* One scene pass plus a directional background filter. Cached whole-car bounds
+   protect the rear wing as well as the nose without an extra car render pass. */

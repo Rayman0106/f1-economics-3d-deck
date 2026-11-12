@@ -14,7 +14,7 @@ from build import build
 
 
 def signature():
-    paths = list(SOURCE.rglob("*")) + list((ROOT / "assets").rglob("*.glb")) + [ROOT / "project.json", ROOT / "assets/manifest.json", ROOT / "seed/engine-shell.html"]
+    paths = list(SOURCE.rglob("*")) + list((ROOT / "assets").rglob("*")) + [ROOT / "project.json", ROOT / "seed/final-j-shell.html"]
     return tuple((str(path), path.stat().st_mtime_ns, path.stat().st_size) for path in sorted(paths) if path.is_file() and "__pycache__" not in path.parts and path.suffix != ".pyc")
 
 

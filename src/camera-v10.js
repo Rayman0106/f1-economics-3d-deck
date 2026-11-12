@@ -67,3 +67,5 @@ function m0(THREE, racingLine, travelled) {
     return {position, target, up: new THREE.Vector3(0, 1, 0), fov};
   };
 }
+
+/* Detailed, batched circuit. The original route and distance units are retained. */

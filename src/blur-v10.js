@@ -1,5 +1,3 @@
-/* One scene pass plus a directional background filter. Cached whole-car bounds
-   protect the rear wing as well as the nose without an extra car render pass. */
 function b0(THREE,renderer,scene,camera,poseAt,duration){
   const supported=renderer.extensions.has('EXT_color_buffer_float');
   const target=new THREE.WebGLRenderTarget(1280,720,{type:supported?THREE.HalfFloatType:THREE.UnsignedByteType,depthBuffer:true,samples:0});

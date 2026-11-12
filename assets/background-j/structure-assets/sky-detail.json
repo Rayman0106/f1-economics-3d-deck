@@ -1,0 +1,20 @@
+{
+  "source": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky",
+  "original": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/16k%2B/kloofendal_48d_partly_cloudy_puresky_16k.hdr",
+  "authors": [
+    "Greg Zaal",
+    "Jarod Guest"
+  ],
+  "license": "CC0-1.0",
+  "nativeWidth": 16384,
+  "rows": 1911,
+  "gutter": 8,
+  "atlasHeight": 3854,
+  "vLow": 0.4666748046875,
+  "vHigh": 0.699951171875,
+  "captureAlignment": 0.9834,
+  "assetBytes": {
+    "venue-sky-base.jpg": 653757,
+    "venue-sky-atlas.jpg": 3515474
+  }
+}

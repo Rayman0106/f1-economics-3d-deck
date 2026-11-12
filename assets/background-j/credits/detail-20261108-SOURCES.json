@@ -1,0 +1,154 @@
+{
+  "treeVersion": "1.1.0",
+  "treeTextureCommit": "dcf309bd86bd521083d9c70f01f2de45fdc7c457",
+  "concretePhysicalWidthMetres": 2.71,
+  "files": [
+    {
+      "file": "EZ-TREE-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/LICENSE",
+      "license": "MIT",
+      "source": "Daniel Greenheck",
+      "bytes": 1073
+    },
+    {
+      "file": "TREE-TEXTURE-LICENSE.md",
+      "url": "https://raw.githubusercontent.com/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/app/public/textures/LICENSE.md",
+      "license": "MIT / CC0",
+      "source": "EZ-Tree attribution",
+      "bytes": 1378
+    },
+    {
+      "file": "../vendor/ez-tree/tree.js",
+      "url": "https://raw.githubusercontent.com/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/lib/tree.js",
+      "license": "MIT",
+      "source": "EZ-Tree pinned source",
+      "bytes": 40609
+    },
+    {
+      "file": "../vendor/ez-tree/options.js",
+      "url": "https://raw.githubusercontent.com/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/lib/options.js",
+      "license": "MIT",
+      "source": "EZ-Tree pinned source",
+      "bytes": 5186
+    },
+    {
+      "file": "../vendor/ez-tree/branch.js",
+      "url": "https://raw.githubusercontent.com/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/lib/branch.js",
+      "license": "MIT",
+      "source": "EZ-Tree pinned source",
+      "bytes": 787
+    },
+    {
+      "file": "../vendor/ez-tree/rng.js",
+      "url": "https://raw.githubusercontent.com/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/lib/rng.js",
+      "license": "MIT",
+      "source": "EZ-Tree pinned source",
+      "bytes": 586
+    },
+    {
+      "file": "../vendor/ez-tree/enums.js",
+      "url": "https://raw.githubusercontent.com/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/lib/enums.js",
+      "license": "MIT",
+      "source": "EZ-Tree pinned source",
+      "bytes": 151
+    },
+    {
+      "file": "../vendor/ez-tree/trellis.js",
+      "url": "https://raw.githubusercontent.com/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/lib/trellis.js",
+      "license": "MIT",
+      "source": "EZ-Tree pinned source",
+      "bytes": 3805
+    },
+    {
+      "file": "../vendor/ez-tree/presets/oak_medium.json",
+      "url": "https://raw.githubusercontent.com/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/lib/presets/oak_medium.json",
+      "license": "MIT",
+      "source": "EZ-Tree pinned source",
+      "bytes": 1421
+    },
+    {
+      "file": "../vendor/ez-tree/presets/ash_medium.json",
+      "url": "https://raw.githubusercontent.com/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/lib/presets/ash_medium.json",
+      "license": "MIT",
+      "source": "EZ-Tree pinned source",
+      "bytes": 1414
+    },
+    {
+      "file": "../vendor/ez-tree/presets/pine_medium.json",
+      "url": "https://raw.githubusercontent.com/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/lib/presets/pine_medium.json",
+      "license": "MIT",
+      "source": "EZ-Tree pinned source",
+      "bytes": 1408
+    },
+    {
+      "file": "../vendor/ez-tree/presets/bush_1.json",
+      "url": "https://raw.githubusercontent.com/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/lib/presets/bush_1.json",
+      "license": "MIT",
+      "source": "EZ-Tree pinned source",
+      "bytes": 1500
+    },
+    {
+      "file": "leaves-oak.png",
+      "url": "https://media.githubusercontent.com/media/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/app/public/textures/leaves/oak.png",
+      "license": "MIT",
+      "source": "EZ-Tree leaf texture",
+      "bytes": 238115
+    },
+    {
+      "file": "leaves-ash.png",
+      "url": "https://media.githubusercontent.com/media/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/app/public/textures/leaves/ash.png",
+      "license": "MIT",
+      "source": "EZ-Tree leaf texture",
+      "bytes": 181423
+    },
+    {
+      "file": "leaves-pine.png",
+      "url": "https://media.githubusercontent.com/media/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/app/public/textures/leaves/pine.png",
+      "license": "MIT",
+      "source": "EZ-Tree leaf texture",
+      "bytes": 303684
+    },
+    {
+      "file": "bark-color.jpg",
+      "url": "https://media.githubusercontent.com/media/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/app/public/textures/bark/Bark001_1K-JPG/Bark001_1K-JPG_Color.jpg",
+      "license": "CC0",
+      "source": "ambientCG Bark001",
+      "bytes": 831490
+    },
+    {
+      "file": "bark-normal.jpg",
+      "url": "https://media.githubusercontent.com/media/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/app/public/textures/bark/Bark001_1K-JPG/Bark001_1K-JPG_NormalGL.jpg",
+      "license": "CC0",
+      "source": "ambientCG Bark001",
+      "bytes": 1270807
+    },
+    {
+      "file": "bark-rough.jpg",
+      "url": "https://media.githubusercontent.com/media/dgreenheck/ez-tree/dcf309bd86bd521083d9c70f01f2de45fdc7c457/src/app/public/textures/bark/Bark001_1K-JPG/Bark001_1K-JPG_Roughness.jpg",
+      "license": "CC0",
+      "source": "ambientCG Bark001",
+      "bytes": 397062
+    },
+    {
+      "file": "concrete-color.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_wall_008/concrete_wall_008_diff_2k.jpg",
+      "license": "CC0",
+      "source": "Poly Haven Concrete Wall 008",
+      "bytes": 2666189
+    },
+    {
+      "file": "concrete-normal.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_wall_008/concrete_wall_008_nor_gl_1k.jpg",
+      "license": "CC0",
+      "source": "Poly Haven Concrete Wall 008",
+      "bytes": 511519
+    },
+    {
+      "file": "concrete-rough.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_wall_008/concrete_wall_008_rough_1k.jpg",
+      "license": "CC0",
+      "source": "Poly Haven Concrete Wall 008",
+      "bytes": 322313
+    }
+  ]
+}

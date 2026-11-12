@@ -47,4 +47,5 @@ function f1FixMetalMaterials(THREE,root,renderer){
       material.needsUpdate=true;
     }
   });
+  window.F1LightStudy.upgradeCar(THREE,root);
 }

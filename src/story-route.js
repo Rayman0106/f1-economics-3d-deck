@@ -21,6 +21,8 @@ async function createStoryRouteVariant(THREE,track,roots){
   root.updateMatrixWorld(true);const copy=root.clone(true);copy.name=index?'Monza_right_route_scenery':'Monza_right_route_road';
   const originals=[],clones=[];root.traverse(o=>{if(o.isMesh)originals.push(o);});copy.traverse(o=>{if(o.isMesh)clones.push(o);});
   for(const [index,source] of originals.entries()){
+   // The park supplies its own coordinates for both route layouts.
+   if(source.userData.f1Park)continue;
    const mesh=clones[index],inverse=source.matrixWorld.clone().invert();
    if(source.isInstancedMesh){
     mesh.instanceMatrix=source.instanceMatrix.clone();const instance=new THREE.Matrix4();

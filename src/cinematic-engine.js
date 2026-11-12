@@ -12,8 +12,9 @@ window.F1Cinematic = (() => {
   l.color.setHex(0xf2ede0);l.intensity=.15;
   i.children.forEach(light=>{if(light.isAmbientLight)light.intensity=.28;});
   a.shadow.mapSize.set(2048,2048);a.shadow.normalBias=.025;a.shadow.bias=-.00015;a.shadow.radius=2;n.shadowMap.autoUpdate=false;
+  window.F1LightStudy.setup(xa,n,i,r,[a,o,c,l]);
   const sunDirection=new xa.Vector3(.62,0,.78).normalize();
-  function lightRig(focus){
+  function lightRig(focus,trackAlpha){
     // A fixed daylight direction. The shadow is drawn with this same frame's
     // car and light transforms, rather than a throttled, stale shadow matrix.
     a.position.copy(focus).addScaledVector(sunDirection,7);a.position.y=6.5;
@@ -21,6 +22,7 @@ window.F1Cinematic = (() => {
     c.position.set(focus.x-sunDirection.z*5,2.9,focus.z+sunDirection.x*5);
     l.position.copy(focus).addScaledVector(sunDirection,2);l.position.y=1.4;
     for(const light of[a,o,c,l]){light.target.position.copy(focus).setY(0);light.target.updateMatrixWorld();}
+    window.F1Background.frameLighting(trackAlpha,a);window.F1LightStudy.frame(trackAlpha,a);
     window.__F1Lighting={direction:sunDirection.toArray(),synchronizedShadows:true};
   }
   const rival = new xa.Group();
@@ -215,8 +217,15 @@ window.F1Cinematic = (() => {
   const hiddenFurniture=[],instanceFurniture=[],vegetationBounds=[],furnitureBounds=[],furnitureMasks=new Map();J.updateMatrixWorld(true);
   function matrixAttribute(matrices){const values=new Float32Array(matrices.length*16);matrices.forEach((matrix,index)=>matrix.toArray(values,index*16));return new xa.InstancedBufferAttribute(values,16);}
   const registerFurniture=(object,knownSide=null,corridor=Infinity)=>{
+    // Road shoulders are continuous pavement, never foreground furniture.
+    if(object.name==='Bevelled_kerbs')return;
     // Ground is y=-.4. Low walls still hide tyres and the front wing.
     if(!object.isMesh||new xa.Box3().setFromObject(object).max.y<-.35)return;
+    if(object.userData.f1SceneryBlock){
+      const box=new xa.Box3().setFromObject(object),point=box.getCenter(new xa.Vector3()),side=knownSide??trackSide(point),world=object.matrixWorld.clone();
+      hiddenFurniture.push({object,side:Math.sign(side),originalVisible:object.visible});
+      furnitureBounds.push({object,index:null,right:!!object.userData.f1RightRoute,box,world,inverse:world.clone().invert(),local:box.clone().applyMatrix4(world.clone().invert())});return;
+    }
     if(object.isInstancedMesh){
       const originals=[],storyMatrices=[],oppositeMatrices=[],wideStoryMatrices=[],wideOppositeMatrices=[];
       for(let index=0;index<object.count;index++){
@@ -323,20 +332,19 @@ window.F1Cinematic = (() => {
       for(const kind of kinds)for(let t=kind==='advantage'?9.6:0;t<=(kind==='opening'?gridOpening.duration:story.durations[kind])+.01;t+=.05){const p=kind==='opening'?(gridOpening.frame(t),gridOpening.summary()):story[kind](t);if(p.track>.02)rays.push(...subjectRays(p));}
       const blocked=new Set(),hit=new xa.Vector3();
       const buildingCells=new Set(),wholeStands=new Set();
-      for(const [index,entry] of furnitureBounds.entries()){
-        const protectedStructure=architectural(entry);
-        for(const sample of rays){if(furnitureBlocks(sample,entry,hit)){
-          blocked.add(entry);
-          const stand=entry.object.name.match(/^(Far_)?(?:Grandstand_|Spectator_)/);
-          if(stand)wholeStands.add(!!entry.right+':'+(stand[1]||''));
-          const cell=entry.object.name.match(/_(-?\d+)_(-?\d+)_tile(-?\d+)$/);
-          if(protectedStructure&&cell)buildingCells.add(!!entry.right+':'+cell[0]);
-          break;
-        }}if(index%60===0)await window.F1Boot?.tick();
+      const blockedIndices=await window.F1ParallelK.prepareMask(name,rays,furnitureBounds);
+      for(const index of blockedIndices){
+        const entry=furnitureBounds[index];blocked.add(entry);
+        const stand=entry.object.name.match(/^(Far_)?(?:Grandstand_|Spectator_)/);
+        if(stand)wholeStands.add(!!entry.right+':'+(stand[1]||''));
+        const cell=entry.object.name.match(/_(-?\d+)_(-?\d+)_tile(-?\d+)$/);
+        if(architectural(entry)&&cell)buildingCells.add(!!entry.right+':'+cell[0]);
       }
       // Clear complete modular stand sections, never a floor alone underneath
       // a retained roof or seated crowd. Far-side architecture remains intact.
       for(const entry of furnitureBounds){const name=entry.object.name,cell=name.match(/_(-?\d+)_(-?\d+)_tile(-?\d+)$/),stand=name.match(/^(Far_)?(?:Grandstand_|Spectator_)/);if((stand&&wholeStands.has(!!entry.right+':'+(stand[1]||'')))||(cell&&buildingCells.has(!!entry.right+':'+cell[0])&&/^Imported_Monza_(?:gstand|roof|crowd|antennas)/.test(name)))blocked.add(entry);}
+      const blockedAssemblies=new Set([...blocked].filter(e=>e.object.userData.f1SceneryAssembly).map(e=>!!e.right+':'+e.object.userData.f1SceneryAssembly));
+      for(const entry of furnitureBounds)if(entry.object.userData.f1SceneryAssembly&&blockedAssemblies.has(!!entry.right+':'+entry.object.userData.f1SceneryAssembly))blocked.add(entry);
       const blockedTrees=new Set([...blocked].filter(e=>e.index!==null&&e.object.userData.treeIds?.[e.index]!==undefined&&e.object.userData.treeIds[e.index]!==null).map(e=>!!e.right+':'+e.object.userData.treeIds[e.index]));
       for(const entry of furnitureBounds){const treeId=entry.index===null?null:entry.object.userData.treeIds?.[entry.index];if(treeId!==null&&treeId!==undefined&&blockedTrees.has(!!entry.right+':'+treeId))blocked.add(entry);}
       const matrices=new Map();for(const owner of instanceFurniture)matrices.set(owner,owner.originals.map(matrix=>matrix.clone()));
@@ -384,7 +392,7 @@ window.F1Cinematic = (() => {
   const sceneryRoot=i.getObjectByName('Circuit_scenery'),distantHills=i.getObjectByName('Distant_hills');
   let circuitFrameActive=false,circuitFrameKey='';
   function frameCircuit(pose){
-    const active=!!pose?.circuitFrame,key=JSON.stringify(pose?.circuitFrame||null);if(key===circuitFrameKey)return;circuitFrameActive=active;circuitFrameKey=key;
+    const active=!!pose?.circuitFrame,key=JSON.stringify(pose?.circuitFrame||null);if(key===circuitFrameKey)return;window.F1PerformanceJ.invalidateStatic();circuitFrameActive=active;circuitFrameKey=key;
     const origin=pose?.circuitFrame?.origin||[0,0,0],heading=pose?.circuitFrame?.heading||0;
     J.position.fromArray(origin);J.rotation.y=heading;J.updateMatrix();
     if(rightRoute)for(const root of[rightRoute.road,rightRoute.scenery]){root.position.fromArray(origin);root.rotation.y=heading;root.updateMatrix();}
@@ -472,15 +480,31 @@ window.F1Cinematic = (() => {
     if(!playing)return;if(!playbackStarted)playbackStarted=now;
     if(previousTick&&playbackTrace.length<15000)playbackTrace.push({ms:now-playbackStarted,delta:now-previousTick});previousTick=now;
   }
-  function pixelRatio(){return Math.min(2,Math.max(1.5,window.devicePixelRatio||1));}
+  function pixelRatio(){return Math.min(2,Math.max(1.5,window.devicePixelRatio||1))*(window.F1Perf?.options.scale||1);}
+  const warmBuffer=new xa.Vector2();
+  async function warmViewport(redraw){
+    const ratio=pixelRatio();if(Math.abs(n.getPixelRatio()-ratio)>.001)n.setPixelRatio(ratio);
+    const gl=n.getContext();
+    if(warmBuffer.x===gl.drawingBufferWidth&&warmBuffer.y===gl.drawingBufferHeight)return;
+    if(redraw)redraw();
+    else{
+      for(const t of[0,4.3,16.6,18.9,23,27.3,28.2,0]){
+        renderGridOpening(t);await window.F1Boot?.tick();
+      }
+      reset();
+    }
+    gl.finish();n.getDrawingBufferSize(warmBuffer);
+    await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+    return true;
+  }
   function frameRendering(focus){
     const ratio=pixelRatio();if(Math.abs(n.getPixelRatio()-ratio)>.001)n.setPixelRatio(ratio);
     window.__F1MotionFocus=focus;
     n.shadowMap.needsUpdate=true;
   }
-  function renderGridOpening(seconds){if(currentScene!=="opening"){reset();currentScene="opening";}frameCircuit(null);gridOpening.frame(seconds);const opening=gridOpening.summary();frameSubjectFurniture(opening);if(rightRoute){rightRoute.road.visible=false;rightRoute.scenery.visible=false;}J.visible=opening.track>0;T.visible=false;Y.fade(1);environment.update(opening.track,r);lightRig(h.position);frameRendering(h.position.toArray());worldDissolve.render(opening.track,gridOpening.openingWorldGroups());last={...opening,worldActors:['mclaren'],displayActors:opening.track===0?['redbull']:['redbull','mclaren','grid']};return last;}
+  function renderGridOpening(seconds){window.F1StructureLayer?.frame('opening');if(currentScene!=="opening"){reset();currentScene="opening";}frameCircuit(null);gridOpening.frame(seconds);const opening=gridOpening.summary();window.F1SurfaceJ.setOpening(opening);frameSubjectFurniture(opening);window.F1RefineLayer?.postFrame();window.F1GroundLayer?.postFrame();if(rightRoute){rightRoute.road.visible=false;rightRoute.scenery.visible=false;}J.visible=opening.track>0;T.visible=false;Y.fade(1);environment.update(opening.track,r);lightRig(h.position,opening.track);frameRendering(h.position.toArray());worldDissolve.render(opening.track,gridOpening.openingWorldGroups());last={...opening,worldActors:['mclaren'],displayActors:opening.track===0?['redbull']:['redbull','mclaren','grid']};return last;}
   async function warmup(story){
-    window.F1Boot?.update(76,"准备镜头与遮挡");await window.F1Boot?.tick();frameCircuit(null);frameFurniture(false);gridOpening.configure(story);window.F1Boot?.update(77,"布置蒙扎连接弯道");rightRoute=await createStoryRouteVariant(xa,Y,[J,environment.group]);i.add(rightRoute.road,rightRoute.scenery);worldRoots.push(rightRoute.road,rightRoute.scenery);registerRouteFurniture(rightRoute);window.F1Boot?.update(79,"预计算镜头遮挡");await prepareFurnitureMasks(story);
+    window.F1Boot?.update(76,"准备镜头与遮挡");await window.F1Boot?.tick();frameCircuit(null);frameFurniture(false);gridOpening.configure(story);window.F1Boot?.update(77,"布置蒙扎连接弯道");rightRoute=await createStoryRouteVariant(xa,Y,[J,environment.group]);await window.F1ParkLayer.bindRoute(rightRoute);window.F1LightStudy.refreshScene();i.add(rightRoute.road,rightRoute.scenery);worldRoots.push(rightRoute.road,rightRoute.scenery);registerRouteFurniture(rightRoute);window.F1Boot?.update(79,"预计算镜头遮挡");window.F1PerformanceJ.freezeStatic();await prepareFurnitureMasks(story);
     window.APEXTransition.seek(8.4);openingRedbullAngles=u.map(wheel=>gridOpening.distance(gridOpening.duration)/wheel.radius);
     skidSegments=180;
     for(const side of[-1,1]){
@@ -523,7 +547,21 @@ window.F1Cinematic = (() => {
     for(const kind of['conclusion'])for(const t of[0,.6,1.2,2.4,4,6,10,14,18,20.5,23,story.durations[kind]]){render(story[kind](t));await window.F1Boot?.tick();}
     // Drain texture uploads and first shader draws during the loading screen.
     // Never use finish/readback in the playback loop.
-    n.getContext().finish();await new Promise(requestAnimationFrame);reset();
+    // Warm the trackside environment and its F comparison at the review cuts.
+    window.F1LightStudy.setEnabled(false);window.F1Background.setLook('H');renderGridOpening(11.5);render(story.competition(6.5));await window.F1Boot?.tick();
+    window.F1LightStudy.setEnabled(true);window.F1Background.setLook('H');const materialMode=window.F1MaterialJ.mode;window.F1MaterialJ.setMode('complete');
+    render(story.costs(5.56));await window.F1LightStudy.bakeReflections(worldRoots);
+    render(story.entry(15));window.F1Boot?.update(90,'准备场地 HDR 反射与材质');
+    await window.F1MaterialJ.prepare(worldRoots);window.F1MaterialJ.setMode(materialMode);
+    window.F1Background.setLook('H');renderGridOpening(0);renderGridOpening(11.5);renderGridOpening(22.31);render(story.costs(7.8));render(story.competition(6.5));render(story.entry(15));await window.F1Boot?.tick();
+    renderGridOpening(0);window.F1Boot?.update(94,'缓存静态场景与赛车投影');await window.F1PerformanceJ.prepare();
+    for(const optimized of[false,true]){
+      window.F1PerformanceJ.setEnabled(optimized);
+      for(const t of[0,4,11.5,17,20,23,26.5]){renderGridOpening(t);await window.F1Boot?.tick();}
+      render(story.costs(5.56));render(story.competition(12.15));render(story.entry(15));await window.F1Boot?.tick();
+    }
+    window.F1Boot?.update(95,'上传全部赛车 LOD 与投影');await window.F1PerformanceJ.warmVariants(renderGridOpening);
+    n.getContext().finish();n.getDrawingBufferSize(warmBuffer);await new Promise(requestAnimationFrame);reset();
   }
   function captureBaseAngles(){
     for(const[key,wheels]of Object.entries(actorWheels()))baseAngles[key]=wheels.map(wheel=>wheel.rolling.rotation.z);
@@ -570,7 +608,8 @@ window.F1Cinematic = (() => {
     });
   }
   function render(pose,previousCamera=null,dry=false) {
-    te();E=null;currentScene=pose.scene;frameCircuit(pose);frameSubjectFurniture(pose);researchStage.frame(pose);finishStage.frame(pose);
+    window.F1SurfaceJ.setShot(pose.scene,pose.lightFocus);
+    window.F1StructureLayer?.frame(pose.scene);te();E=null;currentScene=pose.scene;frameCircuit(pose);frameSubjectFurniture(pose);window.F1RefineLayer?.postFrame();window.F1GroundLayer?.postFrame();researchStage.frame(pose);finishStage.frame(pose);
     applyActor('redbull',h,d,u,pose.redbull,pose.seconds);
     applyActor('mclaren',rival,mc,mc.wheels,pose.mclaren,pose.seconds);frameUpgrade(pose);
     for(const[key,entry]of Object.entries(extraCars)){
@@ -589,7 +628,7 @@ window.F1Cinematic = (() => {
     if(pose.camera.principal){r.projectionMatrix.elements[8]=-(pose.camera.principal[0]-800)/800;r.projectionMatrix.elements[9]=(pose.camera.principal[1]-450)/450;r.projectionMatrixInverse.copy(r.projectionMatrix).invert();}
     environment.update(pose.track,r);environment.group.visible=pose.track>0&&!right;if(rightRoute)rightRoute.scenery.visible=pose.track>0&&right;
     const focus=vec(pose.lightFocus||pose.camera.target);
-    lightRig(focus);
+    lightRig(focus,pose.track);
     columns.visible=!!pose.trail&&pose.trail.opacity>0;
     if(pose.trail){
       const trail=pose.trail,shape=trail.shape,thickness=trail.height,depth=trail.depth;
@@ -724,15 +763,16 @@ window.F1Cinematic = (() => {
     for(const[key,car]of Object.entries(actors)){const seen=new Set(),values=[];car?.traverse(mesh=>{if(!mesh.isMesh)return;for(const mat of Array.isArray(mesh.material)?mesh.material:[mesh.material])for(const[slot,map]of Object.entries(mat))if(map?.isTexture&&!seen.has(map)){seen.add(map);const image=map.image||map.source?.data;values.push({material:mat.name,slot,width:image?.width,height:image?.height,anisotropy:map.anisotropy,minFilter:map.minFilter,magFilter:map.magFilter,generateMipmaps:map.generateMipmaps,colorSpace:map.colorSpace});}});textures[key]=values;}
     const size=n.getDrawingBufferSize(new xa.Vector2());return{textures,width:size.x,height:size.y,pixelRatio:n.getPixelRatio(),maxAnisotropy:n.capabilities.getMaxAnisotropy(),lodPolicy:'UV-seam-preserving; focal-length-aware'};
   }
-  return Object.freeze({prepare,warmup,reset,render,textureState,
+  return Object.freeze({prepare,warmup,warmViewport,reset,render,textureState,
     renderGridOpening,
     appearanceState(){return{fogDensity:i.fog.density,fogColor:i.fog.color.getHexString(),farTraffic:gridOpening.backgroundGroups().map(group=>group.name)};},
     routeState(){return [J,environment.group,rightRoute?.road,rightRoute?.scenery].filter(Boolean).map(root=>({name:root.name,visible:root.visible,position:root.position.toArray(),scale:root.scale.toArray(),meshes:root.children.filter(o=>o.isMesh).slice(0,9).map(o=>({name:o.name,visible:o.visible,box:new xa.Box3().setFromObject(o),vertices:o.geometry.attributes.position?.count}))}));},openingDuration:31,playbackMetrics(){return {frames:playbackTrace.slice(),drawCalls:n.info.render.calls,triangles:n.info.render.triangles,pixelRatio:n.getPixelRatio()};},gridInspectionState(){return gridOpening.inspectionState();},gridState(){return gridOpening.state();},worldState(){return window.__F1WorldDissolve;},rearWingPartition(){return window.__F1RearWingPartition;},configureBudget,captureSilhouette,sampleBackdrop,makeWheelTables,captureBaseAngles,setPlayback,sampleFrame,pixelRatio,verifyWorldDissolve,inspectCorridor,sceneryState,surfaceState,
     frameOpening(seconds,moving){
       frameCircuit(null);
       frameFurniture(moving&&seconds>=2.8&&seconds<6.65);
-      environment.update(moving?1-z((seconds/8.4-.72)/.06):0,r);i.fog.density=daylightFog;
-      lightRig(h.position);
+      const trackAlpha=moving?1-z((seconds/8.4-.72)/.06):0;
+      environment.update(trackAlpha,r);i.fog.density=daylightFog;
+      lightRig(h.position,trackAlpha);
       frameRendering(h.position.toArray());
     },
     get ready(){return prepared;},getState(){return last;},

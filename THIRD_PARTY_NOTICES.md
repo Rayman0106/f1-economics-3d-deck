@@ -12,3 +12,17 @@ Third-party libraries, models, photos, fonts, logos and recordings retain their 
 - The starting-light recording is a user-provided project sound, credited in [audio sources](assets/audio/SOURCES.md); the root MIT license does not grant an independent stock-audio license.
 
 Unused historic V6 recording inputs and private development logs are excluded. The active engine sound is procedural code.
+
+## Final J background inputs
+
+- Asphalt, base grass, concrete, bark and the HDR daylight sky use the credited
+  CC0 inputs in [background source records](assets/background-j/credits/).
+  The sky image atlas is derived from the credited Poly Haven HDR source.
+- Meadow textures use ambientCG Grass004 (CC0); modelled grass uses Poly Haven
+  `grass_bermuda_01` by Rico Cilliers (CC0). Source URLs and modifications are
+  retained beside the resources and in the embedded background credits.
+- Tree geometry was generated using Daniel Greenheck's EZ-Tree, MIT, with its
+  separately credited MIT/CC0 texture inputs. Both notices are retained in the
+  [background credits](assets/background-j/credits/).
+- The bundled HDR loader and LightProbeGenerator derive from Three.js r186, MIT.
+  J does not add a path-tracing library or relicense the existing cars.

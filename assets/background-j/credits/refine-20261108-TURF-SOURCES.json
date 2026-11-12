@@ -1,0 +1,42 @@
+{
+  "sourcePage": "https://ambientcg.com/view?id=Grass004",
+  "licensePage": "https://docs.ambientcg.com/license/",
+  "files": [
+    {
+      "file": "turf-color.jpg",
+      "source": "https://ambientcg.com/get?file=Grass004_2K-JPG.zip",
+      "license": "CC0-1.0",
+      "asset": "ambientCG Grass004",
+      "physicalWidthMetres": 1.4,
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "bytes": 2379642
+    },
+    {
+      "file": "turf-normal.jpg",
+      "source": "https://ambientcg.com/get?file=Grass004_2K-JPG.zip",
+      "license": "CC0-1.0",
+      "asset": "ambientCG Grass004",
+      "physicalWidthMetres": 1.4,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 762342
+    },
+    {
+      "file": "turf-rough.jpg",
+      "source": "https://ambientcg.com/get?file=Grass004_2K-JPG.zip",
+      "license": "CC0-1.0",
+      "asset": "ambientCG Grass004",
+      "physicalWidthMetres": 1.4,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "bytes": 595431
+    }
+  ]
+}

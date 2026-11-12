@@ -233,6 +233,7 @@ function createF1Environment(THREE,renderer,scene,track,loader,readAsset){
     const environment=generator.fromEquirectangular(skyMap);scene.environment=environment.texture;scene.environmentIntensity=.80;generator.dispose();
     // Restore the mapping used by the visible dome; the PMREM already owns a copy.
     skyMap.mapping=THREE.UVMapping;
+    await window.F1Background.prepare(THREE,renderer,scene,group,sky,hemi,track);
   }
   return{group,sky,update,prepare};
 }

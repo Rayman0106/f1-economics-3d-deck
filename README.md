@@ -2,6 +2,8 @@
 
 Eight-slide economics presentation with a 22-car Monza start, continuous 3D transitions, editable HTML typography and procedural V6 audio.
 
+**Current production release: Final J (12 November 2026).** The accepted story and choreography now use the refined Monza scenery, daylight/HDR materials, stable opening shadows, parallel preparation and a 60 fps target. [Download the offline HTML](https://github.com/Rayman0106/f1-economics-3d-deck/releases/latest) · [What's changed, source map and measured limits](docs/FINAL-J.md).
+
 <!-- PROJECT-PREVIEW-START -->
 ## See it in action
 
@@ -17,7 +19,7 @@ Eight-slide economics presentation with a 22-car Monza start, continuous 3D tran
 | **Development and competitive advantage** | **The final four-car composition** |
 | ![McLaren in the economic feedback loop](docs/media/development.jpg) | ![Conclusion with Mercedes, Red Bull, McLaren and Ferrari](docs/media/finale.jpg) |
 
-Visual excerpts from the saved final-deck recording. [Preview sources and timings](docs/media/SOURCES.md).
+Historical October excerpts, before the J scenery/material update; the choreography is retained. [Preview sources and timings](docs/media/SOURCES.md).
 <!-- PROJECT-PREVIEW-END -->
 
 ## Run or rebuild
@@ -35,6 +37,7 @@ Ready-made presentation and visual previews: [Releases](https://github.com/Rayma
 
 ```text
 src/       Narrative, camera, scene, materials, typography and audio
+src/j/     Production lighting, scenery, shadow, preparation and frame-pacing modules
 assets/    GLB models and credited project inputs
 seed/      Preserved engine shell
 tools/     Build, verification, editing and local development
@@ -42,7 +45,7 @@ docs/      Preview gallery, licences and speaker script
 build.py   Build entry point
 ```
 
-The repository root contains entry points and project metadata. Old diagnostics, revision logs and redundant development captures are retained in the private original archive rather than mixed into this file list.
+The root build uses `seed/final-j-shell.html` and repository-relative resources; no older workspace is required. See [Final J](docs/FINAL-J.md) for current versus legacy source entry points. Old development captures stay out of this file list.
 
 ## Licence and assets
 

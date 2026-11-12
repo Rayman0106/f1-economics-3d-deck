@@ -1,0 +1,64 @@
+[
+  {
+    "file": "asphalt-color.jpg",
+    "asset": "clean_asphalt",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/clean_asphalt/clean_asphalt_diff_2k.jpg",
+    "source": "https://polyhaven.com/a/clean_asphalt",
+    "license": "CC0",
+    "resolution": "2k",
+    "expectedBytes": 3314999
+  },
+  {
+    "file": "asphalt-normal.jpg",
+    "asset": "clean_asphalt",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/clean_asphalt/clean_asphalt_nor_gl_1k.jpg",
+    "source": "https://polyhaven.com/a/clean_asphalt",
+    "license": "CC0",
+    "resolution": "1k",
+    "expectedBytes": 776360
+  },
+  {
+    "file": "asphalt-rough.jpg",
+    "asset": "clean_asphalt",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/clean_asphalt/clean_asphalt_rough_1k.jpg",
+    "source": "https://polyhaven.com/a/clean_asphalt",
+    "license": "CC0",
+    "resolution": "1k",
+    "expectedBytes": 641634
+  },
+  {
+    "file": "grass-color.jpg",
+    "asset": "leafy_grass",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/leafy_grass/leafy_grass_diff_2k.jpg",
+    "source": "https://polyhaven.com/a/leafy_grass",
+    "license": "CC0",
+    "resolution": "2k",
+    "expectedBytes": 4766204
+  },
+  {
+    "file": "grass-normal.jpg",
+    "asset": "leafy_grass",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leafy_grass/leafy_grass_nor_gl_1k.jpg",
+    "source": "https://polyhaven.com/a/leafy_grass",
+    "license": "CC0",
+    "resolution": "1k",
+    "expectedBytes": 1466049
+  },
+  {
+    "file": "grass-rough.jpg",
+    "asset": "leafy_grass",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leafy_grass/leafy_grass_rough_1k.jpg",
+    "source": "https://polyhaven.com/a/leafy_grass",
+    "license": "CC0",
+    "resolution": "1k",
+    "expectedBytes": 511385
+  },
+  {
+    "file": "daylight.hdr",
+    "asset": "kloofendal_48d_partly_cloudy_puresky",
+    "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/kloofendal_48d_partly_cloudy_puresky_1k.hdr",
+    "source": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky",
+    "license": "CC0",
+    "expectedBytes": 1435119
+  }
+]

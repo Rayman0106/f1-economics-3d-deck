@@ -319,16 +319,16 @@
     setCarLayout(identityLayout);scene.style.opacity=String(pose.canvas);activate(pose.seconds<.8?6:7);
   }
   function transitionFrame(seconds){
-    if(!transition)return;const phase=transition;phase.seconds=Math.max(0,Math.min(phase.duration,seconds));phase.progress=phase.seconds/phase.duration;
+    if(!transition)return;window.F1SmoothK?.enter(transition.kind,seconds);const phase=transition;window.F1LiveJ?.enter(phase.kind,phase.playing&&!phase.reverse);phase.seconds=Math.max(0,Math.min(phase.duration,seconds));phase.progress=phase.seconds/phase.duration;
     const time=phase.reverse?phase.duration-phase.seconds:phase.seconds,pose=story[phase.kind](time),previous=story[phase.kind](Math.max(0,time-.012)).camera;
     const state=window.F1Cinematic.render(pose,previous);for(let i=0;i<pages.length;i++)if(i!==phase.from&&i!==phase.to)pageOpacity(i,0);if(phase.kind==='overtake')overtakeFrame(pose,state);else if(phase.kind==='costs')costsFrame(pose,state);else if(phase.kind==='regulation')regulationFrame(pose,state);else if(phase.kind==='advantage')advantageFrame(pose,state);else if(phase.kind==='competition')competitionFrame(pose,state);else if(phase.kind==='entry')entryFrame(pose,state);else conclusionFrame(pose);
     window.F1Typography.frame(phase.kind,pose);
-    window.F1Sound?.frame(pose,phase.playing&&!phase.reverse);
+    window.F1Sound?.frame(pose,phase.playing&&!phase.reverse);window.F1SmoothK?.leave();window.F1LiveJ?.leave();
     if(phase.progress===1){const next=pendingTarget;showSlideInstant(phase.to,true);pendingTarget=next;document.dispatchEvent(new CustomEvent('f1-slide-settled',{detail:{index:slide}}));}
   }
   function runTransition(from,to){
     const adjacent=from+(to>from?1:-1);pendingTarget=to!==adjacent?to:null;beginTransition(from,adjacent);transition.playing=true;window.F1Cinematic.setPlayback(true);transitionFrame(0);
-    const started=performance.now();const tick=now=>{window.F1Cinematic.sampleFrame(now);transitionFrame((now-started)/1000);if(transition)monitor=requestAnimationFrame(tick);else{const next=pendingTarget;pendingTarget=null;if(next!==null&&next!==slide)runTransition(slide,next);}};monitor=requestAnimationFrame(tick);
+    const started=performance.now(),permit=window.F1PlaybackJ.makeClock(started);const tick=now=>{if(!permit(now,now-started>=(transition?.duration||Infinity)*1000)){monitor=requestAnimationFrame(tick);return;}window.F1Cinematic.sampleFrame(now);transitionFrame((now-started)/1000);if(transition)monitor=requestAnimationFrame(tick);else{const next=pendingTarget;pendingTarget=null;if(next!==null&&next!==slide)runTransition(slide,next);}};monitor=requestAnimationFrame(tick);
   }
   function goToSlide(index,options={}){
     if(!ready||awaitingStart||!Number.isFinite(index))return;const target=targetIndex(index);
@@ -344,15 +344,22 @@
   function openingFrame(seconds,playing=false){
     if(!opening){transition=null;pendingTarget=null;activate(0);resetPages();hideOverlays();opening=true;busy(true);window.__F1TransitionPose=null;
       document.body.classList.remove('deck-static','deck-transitioning');document.body.classList.add('deck-opening');scene.style.opacity='1';setCarLayout(identityLayout);$('#telemetry').style.display='none';}
-    openingSeconds=seconds;const state=window.F1Cinematic.renderGridOpening(seconds);rootStyle.setProperty('--copy',String(state.copy));window.F1Typography.opening(seconds,state);
-    window.F1Sound?.frame(state,playing);
+    window.F1LiveJ?.enter('opening',playing);window.F1SmoothK?.enter('opening',seconds);openingSeconds=seconds;const state=window.F1Cinematic.renderGridOpening(seconds);rootStyle.setProperty('--copy',String(state.copy));window.F1Typography.opening(seconds,state);
+    window.F1Sound?.frame(state,playing);window.F1SmoothK?.leave();window.F1LiveJ?.leave();
   }
   function seekOpening(seconds){
     if(!ready||awaitingStart||!Number.isFinite(seconds))return;stopMotion();window.F1Cinematic.reset();openingFrame(Math.max(0,Math.min(window.F1Cinematic.openingDuration,seconds)));if(seconds>=window.F1Cinematic.openingDuration)showSlideInstant(0);
   }
+  function sampleOpening(seconds){
+    if(!ready||awaitingStart||!Number.isFinite(seconds))return;
+    // Preview playback uses the same ongoing shot between consecutive samples.
+    if(monitor||!opening)stopMotion();
+    openingFrame(Math.max(0,Math.min(window.F1Cinematic.openingDuration,seconds)));
+    if(seconds>=window.F1Cinematic.openingDuration)showSlideInstant(0);
+  }
   function replayOpening(){
     if(!ready||awaitingStart)return;if(reducedMotion.matches){showSlideInstant(0);return;}stopMotion();window.F1Cinematic.reset();window.F1Cinematic.setPlayback(true);openingFrame(0,true);const started=performance.now();
-    const tick=now=>{window.F1Cinematic.sampleFrame(now);const seconds=Math.min(window.F1Cinematic.openingDuration,(now-started)/1000);openingFrame(seconds,true);if(seconds>=window.F1Cinematic.openingDuration){showSlideInstant(0);return;}monitor=requestAnimationFrame(tick);};monitor=requestAnimationFrame(tick);
+    const permit=window.F1PlaybackJ.makeClock(started);const tick=now=>{const seconds=Math.min(window.F1Cinematic.openingDuration,(now-started)/1000);if(!permit(now,seconds>=window.F1Cinematic.openingDuration)){monitor=requestAnimationFrame(tick);return;}window.F1Cinematic.sampleFrame(now);openingFrame(seconds,true);if(seconds>=window.F1Cinematic.openingDuration){showSlideInstant(0);return;}monitor=requestAnimationFrame(tick);};monitor=requestAnimationFrame(tick);
   }
   function refresh(){if(!ready)return;if(awaitingStart){window.F1Cinematic.renderGridOpening(0);return;}cachedBudget=null;budgetRect();if(editing)calibratePhoto();if(transition)transitionFrame(transition.seconds);else if(!opening)showSlideInstant(slide);}
   function showNotes(){
@@ -374,12 +381,13 @@
     // Unlock recorded audio inside the same user gesture as fullscreen.
     void window.F1Sound?.unlock();
     // Request within the original click/keyboard gesture, before yielding.
-    try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen?.({navigationUI:'hide'});}
+    try{if(!window.F1ReviewMode&&!document.fullscreenElement)await document.documentElement.requestFullscreen?.({navigationUI:'hide'});}
     catch(error){console.info('Fullscreen is unavailable in this browser; playing in the current window.',error.name);}
     // Settle the viewport and renderer before starting the animation clock.
     await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+    await window.F1Cinematic.warmViewport();
     awaitingStart=false;starting=false;const gate=$('#start-gate');gate.classList.add('is-leaving');if(reducedMotion.matches)gate.hidden=true;else setTimeout(()=>gate.hidden=true,320);document.body.classList.remove('deck-await-start');
-    if(reducedMotion.matches)showSlideInstant(0);else replayOpening();
+    if(reducedMotion.matches)showSlideInstant(0);else if(window.F1ReviewMode&&window.parent!==window)openingFrame(0);else replayOpening();
   }
   $('#start-deck').onclick=startDeck;
   $('#close-notes').onclick=()=>$('#notes-dialog').close();
@@ -397,7 +405,7 @@
   $('#stage').addEventListener('touchstart',event=>{if(editing||event.target.closest('button,input,select'))return;touchStart=[event.changedTouches[0].clientX,event.changedTouches[0].clientY];},{passive:true});
   $('#stage').addEventListener('touchend',event=>{if(!touchStart)return;const point=event.changedTouches[0],dx=point.clientX-touchStart[0],dy=point.clientY-touchStart[1];touchStart=null;if(Math.abs(dx)>70&&Math.abs(dy)<50)goToSlide(logicalIndex()+(dx<0?1:-1));},{passive:true});
   document.addEventListener('fullscreenchange',refresh);window.addEventListener('resize',refresh);window.addEventListener('beforeunload',event=>{if(dirty){event.preventDefault();event.returnValue='';}});
-  window.F1Briefing=Object.freeze({version:'Final-P42',slideCount:pages.length,durations:story.durations,goToSlide,transitionTo:goToSlide,replayOpening,seekOpening,seekTransition,showNotes,refresh,
+  window.F1Briefing=Object.freeze({version:'Final-J',slideCount:pages.length,durations:story.durations,goToSlide,transitionTo:goToSlide,replayOpening,seekOpening,sampleOpening,seekTransition,showNotes,refresh,
     getState(){return{slide,editing,opening,openingSeconds,ready,awaitingStart,transitioning:!!transition,transition:transition?{...transition}:null,pendingTarget,animation:window.APEXTransition?.getState(),cinematic:window.F1Cinematic?.getState(),photoLayout};}});
   async function waitReady(){
     if(!window.APEXTransition||$('#scene').dataset.wheels!=='4'||!$('#loading').classList.contains('loaded')){requestAnimationFrame(waitReady);return;}
@@ -407,7 +415,7 @@
       window.F1Boot?.update(8,'读取赛车与赛道');await window.F1Boot?.tick();await window.F1Cinematic.prepare();window.F1Boot?.update(74,'配准新闻照片');await window.F1Boot?.tick();story.setup(window.F1Cinematic.openingEnd(),window.F1Cinematic.circuit(),window.F1Cinematic.wheelInfo());
       const metrics=budgetRect();window.F1Cinematic.configureBudget({width:budget.offsetWidth,repairWidth:metrics.width,height:metrics.height,gap:parseFloat(getComputedStyle(budget).columnGap)||0});
       calibratePhoto();calibrateEntryPhoto();costReference=window.F1Cinematic.render(story.costs(9.8),null,true);
-      await window.F1Cinematic.warmup(story);await window.F1Typography.prepareBackdrops(story);window.F1Boot?.update(96,'完成照片与轮廓配准');await window.F1Boot?.tick();preparePhotoVector();prepareEntryVectors();await window.F1Sound?.prepare();$('#loading').classList.add('loaded');ready=true;
+      await window.F1Cinematic.warmup(story);await window.F1Typography.prepareBackdrops(story);window.F1Boot?.update(96,'完成照片与轮廓配准');await window.F1Boot?.tick();preparePhotoVector();prepareEntryVectors();await window.F1Sound?.prepare();await window.F1ParallelK.release();$('#loading').classList.add('loaded');ready=true;
       stopMotion();window.F1Cinematic.reset();openingFrame(0);opening=false;awaitingStart=true;document.body.classList.add('deck-await-start');$('#start-gate').hidden=false;for(const id of['previous-slide','next-slide'])$('#'+id).disabled=true;$('#start-deck').focus();
       // Reveal the first complete frame after the visible preparation stages.
       requestAnimationFrame(()=>{document.body.classList.remove('deck-boot');window.F1Boot?.finish();});

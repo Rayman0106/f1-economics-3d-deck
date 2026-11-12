@@ -1,0 +1,182 @@
+{
+  "/look-assets/asphalt-color.jpg": {
+    "path": "assets/background-j/look-assets/asphalt-color.jpg",
+    "mime": "image/jpeg",
+    "bytes": 3314999
+  },
+  "/look-assets/asphalt-normal.jpg": {
+    "path": "assets/background-j/look-assets/asphalt-normal.jpg",
+    "mime": "image/jpeg",
+    "bytes": 776360
+  },
+  "/look-assets/asphalt-rough.jpg": {
+    "path": "assets/background-j/look-assets/asphalt-rough.jpg",
+    "mime": "image/jpeg",
+    "bytes": 641634
+  },
+  "/look-assets/grass-color.jpg": {
+    "path": "assets/background-j/look-assets/grass-color.jpg",
+    "mime": "image/jpeg",
+    "bytes": 4766204
+  },
+  "/look-assets/grass-normal.jpg": {
+    "path": "assets/background-j/look-assets/grass-normal.jpg",
+    "mime": "image/jpeg",
+    "bytes": 1466049
+  },
+  "/look-assets/grass-rough.jpg": {
+    "path": "assets/background-j/look-assets/grass-rough.jpg",
+    "mime": "image/jpeg",
+    "bytes": 511385
+  },
+  "/look-assets/daylight.hdr": {
+    "path": "assets/background-j/look-assets/daylight.hdr",
+    "mime": "application/octet-stream",
+    "bytes": 1435119
+  },
+  "/detail-assets/concrete-color.jpg": {
+    "path": "assets/background-j/detail-assets/concrete-color.jpg",
+    "mime": "image/jpeg",
+    "bytes": 2666189
+  },
+  "/detail-assets/concrete-normal.jpg": {
+    "path": "assets/background-j/detail-assets/concrete-normal.jpg",
+    "mime": "image/jpeg",
+    "bytes": 511519
+  },
+  "/detail-assets/concrete-rough.jpg": {
+    "path": "assets/background-j/detail-assets/concrete-rough.jpg",
+    "mime": "image/jpeg",
+    "bytes": 322313
+  },
+  "/detail-assets/bark-color.jpg": {
+    "path": "assets/background-j/detail-assets/bark-color.jpg",
+    "mime": "image/jpeg",
+    "bytes": 831490
+  },
+  "/detail-assets/bark-normal.jpg": {
+    "path": "assets/background-j/detail-assets/bark-normal.jpg",
+    "mime": "image/jpeg",
+    "bytes": 1270807
+  },
+  "/detail-assets/bark-rough.jpg": {
+    "path": "assets/background-j/detail-assets/bark-rough.jpg",
+    "mime": "image/jpeg",
+    "bytes": 397062
+  },
+  "/detail-assets/leaves-oak.png": {
+    "path": "assets/background-j/detail-assets/leaves-oak.png",
+    "mime": "image/png",
+    "bytes": 238115
+  },
+  "/detail-assets/leaves-ash.png": {
+    "path": "assets/background-j/detail-assets/leaves-ash.png",
+    "mime": "image/png",
+    "bytes": 181423
+  },
+  "/detail-assets/leaves-pine.png": {
+    "path": "assets/background-j/detail-assets/leaves-pine.png",
+    "mime": "image/png",
+    "bytes": 303684
+  },
+  "/detail-assets/trees.json": {
+    "path": "assets/background-j/detail-assets/trees.json",
+    "mime": "application/json",
+    "bytes": 7052
+  },
+  "/detail-assets/trees.bin": {
+    "path": "assets/background-j/detail-assets/trees.bin",
+    "mime": "application/octet-stream",
+    "bytes": 2604928
+  },
+  "/structure-assets/concrete-height.jpg": {
+    "path": "assets/background-j/structure-assets/concrete-height.jpg",
+    "mime": "image/jpeg",
+    "bytes": 235646
+  },
+  "/structure-assets/architecture-plan.json": {
+    "path": "assets/background-j/structure-assets/architecture-plan.json",
+    "mime": "application/json",
+    "bytes": 1542
+  },
+  "/structure-assets/visual-rules.json": {
+    "path": "assets/background-j/structure-assets/visual-rules.json",
+    "mime": "application/json",
+    "bytes": 142
+  },
+  "/structure-assets/refine-plan.json": {
+    "path": "assets/background-j/structure-assets/refine-plan.json",
+    "mime": "application/json",
+    "bytes": 10431
+  },
+  "/structure-assets/turf-color.jpg": {
+    "path": "assets/background-j/structure-assets/turf-color.jpg",
+    "mime": "image/jpeg",
+    "bytes": 2379642
+  },
+  "/structure-assets/turf-normal.jpg": {
+    "path": "assets/background-j/structure-assets/turf-normal.jpg",
+    "mime": "image/jpeg",
+    "bytes": 762342
+  },
+  "/structure-assets/turf-rough.jpg": {
+    "path": "assets/background-j/structure-assets/turf-rough.jpg",
+    "mime": "image/jpeg",
+    "bytes": 595431
+  },
+  "/structure-assets/grass-tufts.gltf": {
+    "path": "assets/background-j/structure-assets/grass-tufts.gltf",
+    "mime": "application/octet-stream",
+    "bytes": 32912
+  },
+  "/structure-assets/grass-tufts.bin": {
+    "path": "assets/background-j/structure-assets/grass-tufts.bin",
+    "mime": "application/octet-stream",
+    "bytes": 32260
+  },
+  "/structure-assets/grass-blades-color.jpg": {
+    "path": "assets/background-j/structure-assets/grass-blades-color.jpg",
+    "mime": "image/jpeg",
+    "bytes": 494673
+  },
+  "/structure-assets/grass-blades-alpha.png": {
+    "path": "assets/background-j/structure-assets/grass-blades-alpha.png",
+    "mime": "image/png",
+    "bytes": 118124
+  },
+  "/structure-assets/grass-blades-normal.jpg": {
+    "path": "assets/background-j/structure-assets/grass-blades-normal.jpg",
+    "mime": "image/jpeg",
+    "bytes": 709845
+  },
+  "/structure-assets/ground-palette.json": {
+    "path": "assets/background-j/structure-assets/ground-palette.json",
+    "mime": "application/json",
+    "bytes": 83
+  },
+  "/structure-assets/meadow-close-plan.json": {
+    "path": "assets/background-j/structure-assets/meadow-close-plan.json",
+    "mime": "application/json",
+    "bytes": 48382
+  },
+  "/structure-assets/venue-sky-base.jpg": {
+    "path": "assets/background-j/structure-assets/venue-sky-base.jpg",
+    "mime": "image/jpeg",
+    "bytes": 653757
+  },
+  "/structure-assets/venue-sky-atlas.jpg": {
+    "path": "assets/background-j/structure-assets/venue-sky-atlas.jpg",
+    "mime": "image/jpeg",
+    "bytes": 3515474
+  },
+  "/structure-assets/sky-detail.json": {
+    "path": "assets/background-j/structure-assets/sky-detail.json",
+    "mime": "application/json",
+    "bytes": 549
+  },
+  "/structure-assets/park-controls.json": {
+    "path": "assets/background-j/structure-assets/park-controls.json",
+    "mime": "application/json",
+    "bytes": 82
+  }
+}

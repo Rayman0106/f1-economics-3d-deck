@@ -1,6 +1,7 @@
 {
   "name": "F1-Economics",
-  "version": "Final",
+  "version": "Final-J",
   "entry": "index.html",
-  "port": 8120
+  "port": 8120,
+  "release": "v2026.11.12-j"
 }

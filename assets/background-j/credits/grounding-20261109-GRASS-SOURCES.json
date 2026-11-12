@@ -1,0 +1,42 @@
+[
+  {
+    "file": "grass-tufts.gltf",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/grass_bermuda_01/grass_bermuda_01_1k.gltf",
+    "bytes": 32912,
+    "source": "https://polyhaven.com/a/grass_bermuda_01",
+    "author": "Rico Cilliers",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "grass-tufts.bin",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/grass_bermuda_01/grass_bermuda_01.bin",
+    "bytes": 32260,
+    "source": "https://polyhaven.com/a/grass_bermuda_01",
+    "author": "Rico Cilliers",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "grass-blades-color.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/grass_bermuda_01/grass_bermuda_01_diff_2k.jpg",
+    "bytes": 494673,
+    "source": "https://polyhaven.com/a/grass_bermuda_01",
+    "author": "Rico Cilliers",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "grass-blades-alpha.png",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/grass_bermuda_01/grass_bermuda_01_alpha_2k.png",
+    "bytes": 118124,
+    "source": "https://polyhaven.com/a/grass_bermuda_01",
+    "author": "Rico Cilliers",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "grass-blades-normal.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/grass_bermuda_01/grass_bermuda_01_nor_gl_1k.jpg",
+    "bytes": 709845,
+    "source": "https://polyhaven.com/a/grass_bermuda_01",
+    "author": "Rico Cilliers",
+    "license": "CC0-1.0"
+  }
+]
