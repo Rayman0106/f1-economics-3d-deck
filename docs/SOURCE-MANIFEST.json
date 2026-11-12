@@ -12,8 +12,8 @@
     "sha256": "ed9cabc9d91aaadcfacd1812521b51ded9d6e6b941c97f5943373b5359bbe211"
   },
   "README.md": {
-    "bytes": 3590,
-    "sha256": "f18724470ba8183fd010497c234a8b8f26b6bd35324bb40de38441ca2073fd80"
+    "bytes": 4748,
+    "sha256": "dae59e612cf1ac06ec8ab8fb8cc31370fc8e792b055abfd63f5783a93b5821bf"
   },
   "THIRD_PARTY_NOTICES.md": {
     "bytes": 2338,
@@ -256,36 +256,36 @@
     "sha256": "44003b6b866912083a3b5baf6510a8215b57fa5e71896b79b10b252622dfe43f"
   },
   "docs/media/SOURCES.md": {
-    "bytes": 813,
-    "sha256": "10d0cb4678cf7ec3b49993839ba32775facfbb6fca2396afd24779d2d9135695"
+    "bytes": 2116,
+    "sha256": "9dd1c75593033e0ff0a2ccda6f875043f4fafc8c8431158e93855896ac71bdee"
   },
   "docs/media/budget.jpg": {
-    "bytes": 205913,
-    "sha256": "a1fc8aa1dcb5a005f2fe6ca8dbb04cf08e7e59c5c561c21c581d3476aa1aa267"
+    "bytes": 65226,
+    "sha256": "c9d4f1be02a6d05de19399fa289ba1793de1177d2b8e975e1dae139d07232398"
   },
   "docs/media/cover.jpg": {
-    "bytes": 177388,
-    "sha256": "48d66c64f25580cedd776983d34a3d126554e0fe3cbe4cd374d9be6631c3262b"
+    "bytes": 54081,
+    "sha256": "1b0dcdb6091383be36eb91e92061f7e42490c158809f05873b4bde1373d10db9"
   },
   "docs/media/development.jpg": {
-    "bytes": 239145,
-    "sha256": "8ea56c44e08648942478e9343da31e300d87757167bef823e8ec0d935e4ee85b"
+    "bytes": 70425,
+    "sha256": "c231dc7c9cf6c55c67d07fc68931e8b94c07b514144c3f41be1830035ff38ce3"
   },
   "docs/media/finale.jpg": {
-    "bytes": 267582,
-    "sha256": "c1897dc1b486c3f159eb70cac3267feaa90e259ca1e3691409c2aafa50ee1ff5"
+    "bytes": 76643,
+    "sha256": "6a89b5249ba7ead66fd8f5931d425c004c5415a651e808db4469d520f166f6ea"
   },
   "docs/media/grid.jpg": {
-    "bytes": 306209,
-    "sha256": "7a463e8faab4a44dd255bc8995e6cb60704092f1f1567655249cf1ecb33fa4f0"
+    "bytes": 145995,
+    "sha256": "c5b4d1ed8a762ff06b26b2ff3dbe7051df0e34e2a481a08b1b691dda7e25fde1"
   },
   "docs/media/manifest.json": {
-    "bytes": 3696,
-    "sha256": "cea93fabfd328b5a68a9eefb12d8530c5e7df829c9a95e37e29998f42b7d534b"
+    "bytes": 4506,
+    "sha256": "0486dc4dfae2129274f9783c328a1072504314c04cdd3b665b24c198d1935acc"
   },
   "docs/media/opening-preview.gif": {
-    "bytes": 4578057,
-    "sha256": "8617c4756b533b8de447b8050b7369a5b46e8ec022430c2486d4118b969027bd"
+    "bytes": 4524737,
+    "sha256": "5403b303e9aec2ac5626dfb94c63554449153de07d4cca8ee3c79d3925bc51d1"
   },
   "docs/speaker/Speaker-Script.md": {
     "bytes": 15554,
@@ -716,8 +716,8 @@
     "sha256": "53c45a53da1b90eb0d7f569adbac8763115e3ee00ecdb06297ab0e6e18a71bbf"
   },
   "docs/FINAL-J.md": {
-    "bytes": 4514,
-    "sha256": "8cb217c777f9f2f8403b48c73e74445341e463d8c39462eb2eb3807948554789"
+    "bytes": 4578,
+    "sha256": "3b16edace3a660784127b259a3f5635f0ad782b4b9e746346d7bb105e618cd31"
   },
   "seed/final-j-shell.html": {
     "bytes": 3275414,
@@ -794,5 +794,21 @@
   "src/j/surface-j.js": {
     "bytes": 7285,
     "sha256": "bd4ac574e34620d58e6bf75220ea148f22a653e2e3cf988c593fdc645991cf90"
+  },
+  "docs/media/competition.jpg": {
+    "bytes": 95118,
+    "sha256": "85cf48bf5a1fb2fd2862277b1d13665a93f68ba5a7c5e9c2a2bf7c03c2aacd4a"
+  },
+  "docs/media/costs.jpg": {
+    "bytes": 48707,
+    "sha256": "ad0fd92d091fa4022a485c1b6e057164da0431b3df061c79c73ab874d97f8cb3"
+  },
+  "docs/media/inspection.jpg": {
+    "bytes": 99737,
+    "sha256": "f5d23fe3ab87c3610c7e848e5cb8367ab24c51ee956fb52d693e0d06bc803e12"
+  },
+  "docs/media/track.jpg": {
+    "bytes": 122204,
+    "sha256": "eb80c2edecfcf4573716f0e41bf5ee152e51eff4b40117fe27246d0793815c49"
   }
 }

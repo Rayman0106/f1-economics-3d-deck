@@ -7,19 +7,25 @@ Eight-slide economics presentation with a 22-car Monza start, continuous 3D tran
 <!-- PROJECT-PREVIEW-START -->
 ## See it in action
 
-![F1 Economics cover: The price of a crash, with the Red Bull car](docs/media/cover.jpg)
+![Final J: The price of a crash, captured from the current presentation](docs/media/cover.jpg?v=final-j-20261112)
 
-[![Animated excerpt: the Monza grid launches and resolves into the title slide](docs/media/opening-preview.gif)](https://github.com/Rayman0106/f1-economics-3d-deck/releases/download/v2026.10.20/F1-Economics-Highlights.mp4)
+[![Final J opening: five red lights, launch, overtaking and the title-slide handoff](docs/media/opening-preview.gif?v=final-j-20261112)](https://github.com/Rayman0106/f1-economics-3d-deck/releases/download/v2026.11.12-j/F1-Economics-J-Opening.mp4)
 
-**[Watch / download the 40-second highlights](https://github.com/Rayman0106/f1-economics-3d-deck/releases/download/v2026.10.20/F1-Economics-Highlights.mp4)** · 1080p · 60 fps · silent
+**[Watch / download the current J opening](https://github.com/Rayman0106/f1-economics-3d-deck/releases/download/v2026.11.12-j/F1-Economics-J-Opening.mp4)** · 16 seconds · silent · native scene frames exported at 30 fps
 
-| Starting grid at Monza | Repair costs and the budget choice |
+| Final J starting grid at Monza | Updated trackside grass and layered forest |
 | --- | --- |
-| ![22-car grid and starting-light gantry](docs/media/grid.jpg) | ![The repair-versus-development budget slide](docs/media/budget.jpg) |
-| **Development and competitive advantage** | **The final four-car composition** |
-| ![McLaren in the economic feedback loop](docs/media/development.jpg) | ![Conclusion with Mercedes, Red Bull, McLaren and Ferrari](docs/media/finale.jpg) |
+| ![Current 22-car grid and starting-light gantry](docs/media/grid.jpg?v=final-j-20261112) | ![Red Bull on the current J track with modelled grass and forest depth](docs/media/track.jpg?v=final-j-20261112) |
+| **Daylight, car paint and the battle** | **Team inspection and architectural materials** |
+| ![Current McLaren and Red Bull battle with refined road and grass](docs/media/competition.jpg?v=final-j-20261112) | ![Current team inspection with HDR paint and building surfaces](docs/media/inspection.jpg?v=final-j-20261112) |
+| **Repair costs and the budget choice** | **Development and competitive advantage** |
+| ![The current repair-versus-development budget slide](docs/media/budget.jpg?v=final-j-20261112) | ![McLaren in the current economic feedback loop](docs/media/development.jpg?v=final-j-20261112) |
+| **The final four-car composition** | **Download the complete deck** |
+| ![Current conclusion with Mercedes, Red Bull, McLaren and Ferrari](docs/media/finale.jpg?v=final-j-20261112) | [Get Final J](https://github.com/Rayman0106/f1-economics-3d-deck/releases/latest) and click Start after preparation. |
 
-Historical October excerpts, before the J scenery/material update; the choreography is retained. [Preview sources and timings](docs/media/SOURCES.md).
+These stills, GIF and opening clip were captured from the accepted **Final J** scene samplers on 12 November 2026, using the default broadcast look. The gallery now shows the current background and materials. [Capture sources, export size and timing](docs/media/SOURCES.md).
+
+The older [October 40-second highlights](https://github.com/Rayman0106/f1-economics-3d-deck/releases/download/v2026.10.20/F1-Economics-Highlights.mp4) remain available as historical media.
 <!-- PROJECT-PREVIEW-END -->
 
 ## Run or rebuild

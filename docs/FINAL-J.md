@@ -70,9 +70,10 @@ Resolution depends on viewport and DPR. Read the actual WebGL drawing buffer;
 a 4K monitor does not imply this scene is rendered at 3840×2160. The release
 retains the accepted quality policy; it does not enable DLSS or change display Hz.
 
-Earlier README images and the 40-second film show the October final, before J's
-background/material revision. They still demonstrate the narrative and are
-labelled historical. No new marketing recording was made for this release.
+The README gallery was refreshed on 12 November with current J stills, a GIF and
+a 16-second opening export. See [media provenance](media/SOURCES.md). This is a
+native sampled export, separate from live frame-rate measurements. The October
+40-second film remains available as historical media.
 
 Reusable techniques are documented in the companion
 [rendering and frame-pacing guide](https://github.com/Rayman0106/build-cinematic-3d-decks/blob/main/references/rendering-and-frame-pacing.md).
