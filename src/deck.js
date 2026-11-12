@@ -381,8 +381,15 @@
     // Unlock recorded audio inside the same user gesture as fullscreen.
     void window.F1Sound?.unlock();
     // Request within the original click/keyboard gesture, before yielding.
-    try{if(!window.F1ReviewMode&&!document.fullscreenElement)await document.documentElement.requestFullscreen?.({navigationUI:'hide'});}
+    let fullscreenTimer;
+    try{if(!window.F1ReviewMode&&!document.fullscreenElement){
+      const fullscreen=document.documentElement.requestFullscreen?.({navigationUI:'hide'});
+      // Embedded browsers can leave the fullscreen request pending forever.
+      // Keep the original user gesture, but let the deck start in-window.
+      await Promise.race([Promise.resolve(fullscreen),new Promise(resolve=>{fullscreenTimer=setTimeout(resolve,1500);})]);
+    }}
     catch(error){console.info('Fullscreen is unavailable in this browser; playing in the current window.',error.name);}
+    finally{clearTimeout(fullscreenTimer);}
     // Settle the viewport and renderer before starting the animation clock.
     await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
     await window.F1Cinematic.warmViewport();

@@ -181,7 +181,9 @@ window.F1Background = (() => {
     if(scene.fog)scene.fog.density=mix(baseline.fogDensity,.00039,t);
     if(key){
       const target=key.target.position,p=key.position,distance=Math.hypot(p.x-target.x,p.z-target.z);
-      p.y=mix(p.y,target.y+distance*daylight.slope,t);
+      // K prototype may lower the key; it falls back to the HDR sun elevation.
+      const slope=window.F1LookK?window.F1LookK.sunSlope(daylight.slope):daylight.slope;
+      p.y=mix(p.y,target.y+distance*slope,t);
     }
   }
   return {registerTrack,prepare,setLook,frameLighting,get mode(){return mode;},state(){return{mode,prepared,families,detail:window.F1DetailLayer.state(),structure:window.F1StructureLayer.state(),refine:window.F1RefineLayer.state(),ground:window.F1GroundLayer.state(),park:window.F1ParkLayer.state(),lighting:daylight&&{sunPixel:daylight.sunPixel,elevationDegrees:T.MathUtils.radToDeg(daylight.elevation),skyRotation:daylight.rotation,weight:dayWeight,fog:scene.fog?.density},textureSources:['clean_asphalt','leafy_grass','kloofendal_48d_partly_cloudy_puresky'],motionModified:false};}};

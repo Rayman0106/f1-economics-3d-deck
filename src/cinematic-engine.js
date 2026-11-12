@@ -553,6 +553,8 @@ window.F1Cinematic = (() => {
     render(story.costs(5.56));await window.F1LightStudy.bakeReflections(worldRoots);
     render(story.entry(15));window.F1Boot?.update(90,'准备场地 HDR 反射与材质');
     await window.F1MaterialJ.prepare(worldRoots);window.F1MaterialJ.setMode(materialMode);
+    // K look prototype patches surfaces here, so the warmup renders below compile them.
+    window.F1LookK?.prepare(i);
     window.F1Background.setLook('H');renderGridOpening(0);renderGridOpening(11.5);renderGridOpening(22.31);render(story.costs(7.8));render(story.competition(6.5));render(story.entry(15));await window.F1Boot?.tick();
     renderGridOpening(0);window.F1Boot?.update(94,'缓存静态场景与赛车投影');await window.F1PerformanceJ.prepare();
     for(const optimized of[false,true]){

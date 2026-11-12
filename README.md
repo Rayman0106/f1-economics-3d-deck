@@ -1,5 +1,17 @@
 # F1 Economics
 
+<!-- K-PROTOTYPE-START -->
+> **K appearance candidate branch.** This branch adds lighting, architectural
+> finish and track-surface detail on top of Final J, with the accepted camera and
+> car choreography preserved. K is enabled by default; `?look=j` restores the J
+> appearance. [Acceptance, actual K screenshots and remaining limits](docs/K-PROTOTYPE.md).
+> The production release and the Final J gallery below remain available.
+
+| K: lights and empty grandstands | K: corner kerbs and road finish |
+| --- | --- |
+| ![K opening](docs/media/k-prototype/opening-k.jpg) | ![K corner](docs/media/k-prototype/corner-k.jpg) |
+<!-- K-PROTOTYPE-END -->
+
 Eight-slide economics presentation with a 22-car Monza start, continuous 3D transitions, editable HTML typography and procedural V6 audio.
 
 **Current production release: Final J (12 November 2026).** The accepted story and choreography now use the refined Monza scenery, daylight/HDR materials, stable opening shadows, parallel preparation and a 60 fps target. [Download the offline HTML](https://github.com/Rayman0106/f1-economics-3d-deck/releases/latest) · [What's changed, source map and measured limits](docs/FINAL-J.md).

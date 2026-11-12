@@ -1,0 +1,245 @@
+{
+  "date": "2026-11-12",
+  "candidate": "K look on Final J",
+  "result": "pass-with-observations",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5070 Laptop GPU (0x00002D59) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "drawingBuffer": [
+      2322,
+      1306
+    ],
+    "cssViewport": [
+      1547,
+      1243
+    ],
+    "dpr": 1.5,
+    "fullscreen": false,
+    "visibility": "visible"
+  },
+  "start": {
+    "nativeClick": true,
+    "unsettledFullscreenReproducedBeforePatch": true,
+    "fullscreenWaitLimitMs": 1500,
+    "awaitingStartAfterPlayback": false
+  },
+  "method": "Visible in-app browser; native elapsed-time playback; intervals between changes of F1PlaybackJ.submitted observed from requestAnimationFrame. No screenshots during measured runs. Includes a lightweight shadow-state sample every 20 submitted frames. First frame and navigation work before it are excluded.",
+  "runs": [
+    {
+      "label": "opening",
+      "intervals": 1855,
+      "meanMs": 16.69369272237197,
+      "p95Ms": 16.80000000000291,
+      "maxMs": 33.40000000000873,
+      "over25ms": 3
+    },
+    {
+      "label": "1-to-2",
+      "intervals": 682,
+      "meanMs": 16.666862170088002,
+      "p95Ms": 16.79999999998836,
+      "maxMs": 17.10000000000582,
+      "over25ms": 0
+    },
+    {
+      "label": "2-to-3",
+      "intervals": 874,
+      "meanMs": 16.66670480549197,
+      "p95Ms": 16.800000000017462,
+      "maxMs": 17,
+      "over25ms": 0
+    },
+    {
+      "label": "3-to-4",
+      "intervals": 346,
+      "meanMs": 16.666763005780382,
+      "p95Ms": 16.79999999998836,
+      "maxMs": 17.199999999953434,
+      "over25ms": 0
+    },
+    {
+      "label": "4-to-5",
+      "intervals": 706,
+      "meanMs": 16.666713881019845,
+      "p95Ms": 16.800000000046566,
+      "maxMs": 17.199999999953434,
+      "over25ms": 0
+    },
+    {
+      "label": "5-to-6",
+      "intervals": 1102,
+      "meanMs": 16.666696914700555,
+      "p95Ms": 16.800000000046566,
+      "maxMs": 17.20000000001164,
+      "over25ms": 0
+    },
+    {
+      "label": "6-to-7",
+      "intervals": 2126,
+      "meanMs": 16.682455315145823,
+      "p95Ms": 16.79999999998836,
+      "maxMs": 33.29999999998836,
+      "over25ms": 2
+    },
+    {
+      "label": "7-to-8",
+      "intervals": 1528,
+      "meanMs": 16.666753926701563,
+      "p95Ms": 16.79999999998836,
+      "maxMs": 17.099999999976717,
+      "over25ms": 0
+    }
+  ],
+  "poseChecks": [
+    {
+      "scene": "opening",
+      "seconds": 16.3,
+      "sameNativePose": true
+    },
+    {
+      "scene": "opening",
+      "seconds": 24.4,
+      "sameNativePose": true
+    },
+    {
+      "scene": "overtake",
+      "seconds": 3.5,
+      "sameNativePose": true
+    },
+    {
+      "scene": "overtake",
+      "seconds": 8.5,
+      "sameNativePose": true
+    },
+    {
+      "scene": "costs",
+      "seconds": 8.2,
+      "sameNativePose": true
+    },
+    {
+      "scene": "competition",
+      "seconds": 6.5,
+      "sameNativePose": true
+    },
+    {
+      "scene": "competition",
+      "seconds": 12.15,
+      "sameNativePose": true
+    },
+    {
+      "scene": "entry",
+      "seconds": 15,
+      "sameNativePose": true
+    },
+    {
+      "scene": "conclusion",
+      "seconds": 12,
+      "sameNativePose": true
+    }
+  ],
+  "landingChecks": [
+    {
+      "slide": 1,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0,
+      "nonzeroAlphaPixels": 186133
+    },
+    {
+      "slide": 3,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0,
+      "nonzeroAlphaPixels": 1544
+    },
+    {
+      "slide": 8,
+      "maxChannelDifference": 1,
+      "meanChannelDifference": 2.4731808271108103e-07,
+      "nonzeroAlphaPixels": 554131
+    }
+  ],
+  "resetChecks": {
+    "forwardReverseWithinTolerance": true,
+    "tolerance": 1e-07,
+    "maxNumericDifference": 5.991296347929165e-11,
+    "openingAfterBattleSame": true,
+    "jKerbs": [
+      {
+        "route": "APEX_CIRCUIT_V10",
+        "visible": true
+      },
+      {
+        "route": "Monza_right_route_road",
+        "visible": true
+      }
+    ],
+    "kKerbs": [
+      {
+        "route": "APEX_CIRCUIT_V10",
+        "visible": false
+      },
+      {
+        "route": "Monza_right_route_road",
+        "visible": false
+      }
+    ]
+  },
+  "patches": {
+    "building": 517,
+    "barrier": 2,
+    "paving": 10,
+    "seat": 25,
+    "turf": 5,
+    "skipped": 0,
+    "track": {
+      "turnStart": 261.279980623888,
+      "turnEnd": 355.5043411292142,
+      "stations": [
+        -700,
+        1532.7149611253005
+      ],
+      "meshes": 10
+    },
+    "asphalt": 1,
+    "runoff": 1
+  },
+  "windowErrors": [],
+  "limits": [
+    "Candidate branch acceptance, not promotion of the public Final J release.",
+    "A few two-vsync intervals occurred: opening 3, inspection 2.",
+    "Existing pre-first-frame navigation cost, background-tab preparation and the 1-to-2 distant car caster threshold are not resolved by this candidate.",
+    "Normal-speed playback completion and frame timing were measured; visual inspection used separate native sampled stills. No full-resolution video review or GPU-time trace was recorded."
+  ],
+  "consoleErrors": [],
+  "visualEvidence": [
+    {
+      "file": "docs/media/k-prototype/opening-k.jpg",
+      "pose": "Opening at 16.3 s",
+      "pixels": [
+        960,
+        540
+      ],
+      "source": "Native K browser scene screenshot",
+      "edits": "Stage crop and resize only; no recolouring or generated content"
+    },
+    {
+      "file": "docs/media/k-prototype/corner-k.jpg",
+      "pose": "5-to-6 competition at 6.5 s",
+      "pixels": [
+        960,
+        540
+      ],
+      "source": "Native K browser scene screenshot",
+      "edits": "Stage crop and resize only; no recolouring or generated content"
+    },
+    {
+      "file": "docs/media/k-prototype/inspection-k.jpg",
+      "pose": "6-to-7 inspection at 15 s",
+      "pixels": [
+        960,
+        540
+      ],
+      "source": "Native K browser scene screenshot",
+      "edits": "Stage crop and resize only; no recolouring or generated content"
+    }
+  ]
+}
